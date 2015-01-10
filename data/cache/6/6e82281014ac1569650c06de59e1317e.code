@@ -1,0 +1,5 @@
+<span class="co2">// Archivo ObjetoEstatico.h</span>
+<span class="co1">#import &lt;Foundation/NSObject.h&gt;</span>
+<span class="kw1">@interface</span> ObjetoEstatico <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a>
+<span class="sy0">+</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setDatosCliente<span class="sy0">:</span> <span class="br0">&#40;</span>DatosCliente<span class="sy0">*</span><span class="br0">&#41;</span> cliente;
+<span class="kw1">@end</span>

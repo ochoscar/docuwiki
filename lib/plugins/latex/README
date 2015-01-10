@@ -1,0 +1,21 @@
+LaTeX-rendering plugin for dokuwiki.
+Based on class.latexrender.php from Benjamin Zeiss, converted to
+Dokuwiki by Alexander 'E-Razor' Krause, extended by Michael Boyle,
+and extended again by Mark Lundeberg.
+
+This plugin requires a LaTeX installation, and ImageMagick to convert
+PS files into images. ImageMagick, in turn, requires Ghostscript.
+
+PHP safe mode will almost always break the plugin.
+
+Adds the following syntax to DokuWiki:
+    $$...$$ syntax for displayed LaTeX-math [ddollar]
+    \begin{displaymath} ... \end{displaymath} syntax [displaymath]
+    $...$ syntax for inline LaTeX-math [dollar]
+    \begin{eqnarray} ... \end{eqnarray} syntax [eqnarray]
+    \begin{eqnarray*} ... \end{eqnarray*} syntax [eqnarraystar]
+    \begin{equation} ... \end{equation} syntax [equation]
+    \begin{equation*} ... \end{equation*} syntax [equationstar]
+    <latex>...</latex> syntax for inline LaTeX (non-math-mode) [latex]
+
+More info at http://www.dokuwiki.org/plugin:latex

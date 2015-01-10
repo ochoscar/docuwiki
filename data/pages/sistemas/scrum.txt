@@ -1,0 +1,325 @@
+====== Scrum ====== 
+
+Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos.
+
+En Scrum se realizan entregas parciales y regulares del producto final, priorizadas por el beneficio que aportan al receptor del proyecto. Por ello, Scrum está especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados pronto, donde los requisitos son cambiantes o poco definidos, donde la innovación, la competitividad, la flexibilidad y la productividad son fundamentales.
+
+Scrum también se utiliza para resolver situaciones en que no se está entregando al cliente lo que necesita, cuando las entregas se alargan demasiado, los costos se disparan o la calidad no es aceptable, cuando se necesita capacidad de reacción ante la competencia, cuando la moral de los equipos es baja y la rotación alta, cuando es necesario identificar y solucionar ineficiencias sistemáticamente o cuando se quiere trabajar utilizando un proceso especializado en el desarrollo de producto.
+
+A continuación se muestra un diagrama que resume el proceso de Scrum.
+
+{{ :sistemas:diagrama-proceso-scrum.gif |}}
+
+Como puede observarse Scrum define iteraciones cuya duración es entre 2 semanas a 1 mes, estas iteraciones deben ser planeadas en una reunión inicial, controladas y monitoreadas en reuniones de seguimiento y finalmente entregadas en reuniones de retrospectiva.
+
+**Terminación anormal de la iteración** 
+
+Sólo en situaciones muy excepcionales el cliente o el equipo pueden solicitar una terminación anormal de la iteración. Esto puede suceder si, por ejemplo, el contexto del proyecto ha cambiado enormemente y no es posible esperar al final de la iteración para aplicar cambios, o si el equipo encuentra que es imposible cumplir con el compromiso adquirido. En ese caso, se dará por finalizada la iteración y se dará inicio a otra mediante una reunión de planificación de la iteración.
+
+----
+
+===== Responsables =====
+
+==== Product owner (cliente) ====
+
+Las responsabilidades del Cliente (que puede ser interno o externo a la organización) son:
+
+  * Ser el representante de todas las personas interesadas en los resultados del proyecto (internas o externas a la organización, promotores del proyecto y usuarios finales [idealmente  también debería ser un usuario clave] o consumidores finales del producto) y actuar como interlocutor único ante el equipo, con autoridad para tomar decisiones.
+  * Definir los objetivos del producto o proyecto.
+  * Dirigir los resultados del proyecto y maximizar su ROI (Return Of Investment). 
+  * Es el propietario de la planificación del proyecto: crea y mantiene la lista priorizada con los requisitos necesarios para cubrir los objetivos del producto o proyecto, conoce el valor que aportará cada requisito y calcula el ROI a partir del costo de cada requisito que le proporciona el equipo.
+  * Reparte los objetivos/requisitos en iteraciones y establece un calendario de entregas.
+  * Antes de iniciar cada iteración replanifica el proyecto en función de los requisitos que aportan más valor en ese momento, de los requisitos completados en la iteración anterior y del contexto del proyecto en ese momento (demandas del mercado, movimientos de la competencia, etc.).
+  * Colaborar con el equipo para planificar, revisar y dar detalle a los objetivos de cada iteración
+  * Participar en la reunión de planificación de iteración, proponiendo los requisitos más prioritarios a desarrollar, respondiendo a las dudas del equipo y detallando los requisitos que el equipo se comprometer a hacer.
+  * Estar disponible durante el curso de la iteración para responder a las preguntas que puedan aparecer.
+  * No cambiar los requisitos que se están desarrollando en una iteración, una vez está iniciada.
+  * Participar en la reunión de demostración de la iteración, revisando los requisitos completados.
+
+==== Scrum Master (Facilitador) ====
+
+Lidera al equipo llevando a cabo las siguientes responsabilidades:
+
+  * Velar por que todos los participantes del proyecto sigan los valores y principios ágiles, las reglas y proceso de Scrum y guiar la colaboración intraequipo y con el cliente de manera que las sinergías sean máximas. Esto implica:
+  * Asegurar que exista una lista de requisitos priorizada y que esté preparada antes de la siguiente iteración.
+  * Facilitar las reuniones de Scrum (planificación de la iteración, reuniones diarias de sincronización del equipo, demostración, retrospectiva), de manera que sean productivas y consigan sus objetivos.
+  * Enseñar al equipo a autogestionarse. No da respuestas, si no que guía al equipo con preguntas para que descubra por sí mismo una solución.
+  * Quitar los impedimentos que el equipo tiene en su camino para conseguir el objetivo de cada iteración (proporcionar un resultado útil al cliente de la manera más efectiva) y poder finalizar el proyecto con éxito. Estos obstáculos se identifican de manera sistemática en las reuniones diarias de sincronización del equipo y en las reuniones de retrospectiva.
+  * Proteger y aislar al equipo de interrupciones externas durante la ejecución de la iteración (introducción de nuevos requisitos, "secuestro" no previsto de un miembro del equipo, etc.). De esta manera, el equipo puede mantener su productividad y el compromiso que adquirió sobre los requisitos que completaría en la iteración [notar, sin embargo, que el equipo debe reservar tiempo para colaborar con al cliente en la preparación de la lista de requisitos para la próxima iteración].
+
+==== Team (equipo) ====
+
+Grupo de personas que de manera conjunta desarrollan el producto del proyecto. Tienen un objetivo común, comparten la responsabilidad del trabajo que realizan (así como de su calidad) en cada iteración y en el proyecto.
+
+El tamaño del equipo está entre 5 y 9 personas. Por debajo de 5 personas cualquier imprevisto o interrupción sobre un miembro del equipo compromete seriamente el compromiso que han adquirido y, por tanto, el resultado que se va a entregar al cliente al finalizar la iteración. Por encima de 9 personas, la comunicación y colaboración entre todos los miembros se hace más difícil y se forma subgrupos.
+ 
+De cualquier manera, se puede hacer Scrum con 3 personas y se ha utilizado en proyectos con 250 personas en varios equipos. Cuando es necesario que más de un equipo trabaje de manera ágil en un mismo proyecto, existen diferentes técnicas que permiten esta colaboración, desde el Scrum de Scrums hasta equipos de integración que dedican parte de su tiempo a trabajar con los equipos de desarrollo, siempre completando incrementos de producto de manera regular.
+ 
+Es un equipo autoorganizado, que comparte información y cuyos miembros confían entre ellos. Realiza de manera conjunta las siguientes actividades:
+
+  * Seleccionar los requisitos que se compromete a completar en una iteración, de forma que estén preparados para ser entregados al cliente.
+  * Estimar la complejidad de cada requisito en la lista de requisitos priorizada del producto o proyecto.
+  * En la reunión de planificación de la iteración decide cómo va a realizar su trabajo
+  * Seleccionar los requisitos que pueden completar en cada iteración, realizando al cliente las preguntas necesarias.
+  * Identificar todas las tareas necesarias para completar cada requisito.
+  * Estimar el esfuerzo necesario para realizar cada tarea.
+  * Cada miembro del equipo se autoasigna a las tareas.
+  * Durante la iteración, trabajar de manera conjunta para conseguir los objetivos de la iteración. Cada especialista lidera el trabajo en su área y el resto colaboran si es necesario para poder completar un requisito.
+
+Al finalizar la iteración:
+
+  * Demostrar al cliente los requisitos completados en cada iteración.
+  * Hacer una retrospectiva al final de cada iteración para mejorar de forma continua su manera de trabajar.
+
+El equipo es multidisciplinar:
+
+  * Los miembros del equipo tienen las habilidades necesarias para poder identificar y ejecutar todas las tareas que permiten proporcionar al cliente los requisitos comprometidos en la iteración.
+  * Tienen que depender lo mínimo de personas externas al equipo, de manera que el compromiso que adquieren en cada iteración no se ponga en peligro.
+  * Se crea una sinergia que permite que el resultado sea más rico al nutrirse de las diferentes experiencias, conocimientos y habilidades de todos. Colaboración creativa.
+  * Los miembros del equipo dedicarse al proyecto a tiempo completo para evitar dañar su productividad por cambios de tareas en diferentes proyectos, para evitar interrupciones externas y así poder mantener el compromiso que adquieren en cada iteración.
+ 
+Todos los miembros del equipo trabajan en la misma localización física, para poder maximizar la comunicación entre ellos mediante conversaciones cara a cara, diagramas en pizarras blancas, etc. De esta manera se minimizan otros canales de comunicación menos eficientes, que hacen que las tareas se transformen en un “pasa pelota” o que hacen perder el tiempo en el establecimiento de la comunicación (como cuando se llama repetidas veces por teléfono cuando la persona no está en su puesto).
+ 
+El equipo debe ser estable durante el proyecto, sus miembros deben cambiar lo mínimo posible, para poder aprovechar el esfuerzo que les ha costado construir sus relaciones interpersonales, engranarse y establecer su organización del trabajo.
+
+----
+
+===== Herramientas =====
+
+==== Lista de requisitos priorizada (Product backlog) ====
+
+La lista de objetivos/requisitos priorizada representa la visión y expectativas del cliente respecto a los objetivos y entregas del producto o proyecto. El cliente es el responsable de crear y gestionar la lista (con la ayuda del Facilitador y del equipo, quien proporciona el costo estimado de completar cada requisito). Dado que reflejar las expectativas del cliente, esta lista permite involucrarle en la dirección de los resultados del producto o proyecto.
+
+  * Contiene los objetivos/requisitos de alto nivel del producto o proyecto, que se suelen expresar en forma de historias de usuario. Para cada objetivo/requisito se indica el valor que aporta al cliente y el coste estimado de completarlo. La lista está priorizada balanceando el valor que cada requisito aporta al negocio frente al coste estimado que tiene su desarrollo, es decir, basándose en el Retorno de la Inversión (ROI).
+  * En la lista se indican las posibles iteraciones y las entregas (releases) esperadas por el cliente (los puntos en los cuales desea que se le entreguen los objetivos/requisitos completados hasta ese momento), en función de la velocidad de desarrollo del (los) equipo(s) que trabajará(n) en el proyecto. Es conveniente que el contenido de cada iteración tenga una coherencia, de manera que se reduzca el esfuerzo de completar todos sus objetivos.
+  * La lista también tiene que considerar los riesgos del proyecto e incluir los requisitos o tareas necesarios para mitigarlos.
+
+Antes de iniciar la primera iteración, el cliente debe tener definida la meta del producto o proyecto y la lista de requisitos creada. No es necesario que la lista sea completa ni que todos los requisitos estén detallados al mismo nivel. Basta con que estén identificados y con suficiente detalle los requisitos más prioritarios con los que el equipo empezará a trabajar. Los requisitos de iteraciones futuras pueden ser mucho más amplios y generales. La incertidumbre y complejidad propia de un proyecto hacen conveniente no detallar todos los requisitos hasta que su desarrollo esté próximo. De esta manera, el esfuerzo de recoger, detallar y desarrollar el resto de requisitos (menos prioritarios) está repartido en el período de ejecución del proyecto. En el caso del desarrollo de un producto, la lista va evolucionando durante toda la vida del producto (los requisitos "emergen"). En el caso de un proyecto, conforme éste avance irán apareciendo los requisitos menos prioritarios que falten. Esto produce varias ventajas:
+Se evita caer en parálisis de análisis al inicio del proyecto, de manera que se puede iniciar antes el desarrollo y el cliente puede empezar a obtener resultados útiles.
+Se evita analizar en detalle requisitos no prioritarios que podrían cambiar durante el transcurso del proyecto, dado que el cliente conocerá mejor cuál ha de ser el resultado a conseguir, o bien por que podrían ser reemplazados por otros.
+Puede llegar a un punto del proyecto en que no valga la pena analizar ni desarrollar los requisitos restantes, dado el poco retorno de inversión (ROI) que tienen.
+ 
+
+=== Definición de completado (Definition of Done) === 
+
+El cliente y el equipo tienen que acordar la "definición de completado” de los objetivos / requisitos en el proyecto:
+Debe asegurar que el incremento de producto es potencialmente entregable al cliente al finalizar cada iteración, que no hay tareas pendientes que puedan impedir utilizar los resultados del proyecto lo antes posible. De este modo, el cliente podrá tomar decisiones correctas cuando al final de cada iteración el equipo le haga una demostración de los requisitos completados: cambiar las prioridades en función de la velocidad de desarrollo, solicitar una entrega del producto desarrollado hasta ese momento, etc.
+Debe incluir lo necesario para considerar de manera clara que el cliente obtendrá lo que necesita según sus criterios de entregables y de calidad (producto construido, probado, documentado, refactorizado para conseguir calidad interna/mantenibilidad, etc.).
+Además de esta definición de completado, a cada objetivo hay que asociarle sus condiciones de satisfacción, preferiblemente en forma de casos de prueba de aceptación, en el momento de crear la lista de requisitos priorizada (Product Backlog).
+Notar que la definición de completado también sirve como base para identificar las tareas necesarias para conseguir cada objetivo/requisito, en la reunión de planificación de la iteración (Sprint planning). Para cada objetivo se crearán más tareas que la definición de completado (o menos) y con más significado. Por ejemplo, respecto a que el objetivo tiene que estar “construido”, pueden aparecer varias tareas, del estilo “construir el componente X”, “modificar la pantalla Y”, “modificar la BBDD”, “preparar el script de carga”, etc.
+ 
+=== Iteración de entrega (release sprint) ===
+
+Cuando el cliente solicita una entrega de los objetivos/requisitos completados hasta ese momento, el equipo puede necesitar añadir una iteración de entrega, más corta que las iteraciones habituales, donde realizar alguna tarea que no ha sido necesaria o posible hasta el momento de la entrega final y acabar de corregir defectos detectados en la última demostración.
+ 
+=== Uso de la lista ===
+
+Para medir la velocidad de desarrollo del equipo, ver una progresión constante y extrapolar la fecha de las entregas, es conveniente seguir las siguientes recomendaciones:
+
+  * Los requisitos deben tener un esfuerzo semejante para ser completados. 
+  * La estimación de un requisito no debe ser superior a 10 días (si las iteraciones son de 20 días laborables). 
+  * Cada requisito tiene asociado un factor de complejidad, que permite ajustar su costo estimado en función de la incertidumbre de la complejidad de su desarrollo en el momento de introducirlo en la lista. Este factor de costo se irá ajustando conforme las iteraciones avancen y el equipo conozca mejor el producto o proyecto, su contexto y su velocidad de desarrollo con las herramientas y tecnologías que utiliza.
+  * Si un requisito depende de otro, se coloca en algún punto por debajo del que depende.
+  * Si un requisito no se finaliza en una iteración, se le vuelve a poner en alguna de las siguientes iteraciones, indicando el costo pendiente de desarrollo.
+  * El "origen" permite saber quién podría participar en la definición de un objetivo/requisito y sería conveniente que estuviese presente en el momento de su demostración.
+  * El progreso del proyecto y su velocidad con respecto a requisitos completados se muestra en un gráfico de trabajo pendiente (Burndown chart).
+
+==== Lista de tareas de la iteración (sprint backlog) ====
+
+Lista de tareas que el equipo elabora en la reunión de planificación de la iteración (Sprint planning) como plan para completar los objetivos/requisitos seleccionados para la iteración y que se compromete a demostrar al cliente al finalizar la iteración, en forma de incremento de producto preparado para ser entregado.
+
+Esta lista permite ver las tareas donde el equipo está teniendo problemas y no avanza, con lo que le permite tomar decisiones al respecto.
+
+Para cada uno de los objetivos/requisitos se muestran sus tareas, el esfuerzo pendiente para finalizarlas y la automarginación que han hecho los miembros del equipo.
+
+El progreso de la iteración y su velocidad con respecto a tareas u horas pendientes se muestra mediante un gráfico de trabajo pendiente (Burndown chart).
+ 
+ 
+Uso de la lista
+
+Los objetivos/requisitos están ordenados por orden de prioridad para el cliente.
+Por ello, signos de falta de foco, problemas o impedimentos serían que se estén completando objetivos que no son los primeros de la lista, así como tener demasiados objetivos/requisitos en progreso simultáneamente.
+Si una tarea depende de otra, se coloca en algún punto por debajo de la que depende.
+Las tareas deben estar identificadas de manera que tengan un costo semejante para ser completadas, entre 4 y 16 horas. Este tamaño permitirá:
+  * Que las tareas sean suficientemente pequeñas como para poder detectar progreso o estancamiento de manera diaria.
+  * Que las tareas no sean muy pequeñas, que sean suficientemente relevantes, no generen ruido ni microgestión.
+  * Medir la velocidad de desarrollo del equipo y extrapolar si es posible finalizarlas dentro de la iteración. 
+
+==== Tablero de control ====
+
+La lista de objetivos a completar en la iteración (Product Backlog Items) se puede gestionar mediante un tablero de tareas (Scrum Taskboard). Al lado de cada objetivo se ponen las tareas necesarias para completarlo, en forma de post-its, y se van moviendo hacia la derecha para cambiarlas de estado (pendientes de iniciar, en progreso, hechas). Para cada miembro del equipo se puede utilizar adhesivos de colores más pequeños sobre cada tarea, de manera que se pueda ver en qué tareas está trabajando cada cual.
+El equipo elabora esta lista de tareas en la segunda parte de la reunión de planificación de la iteración. La lista va evolucionando (nuevas tareas, cambios, estado, esfuerzo pendiente, ...) a medida que la iteración avanza, especialmente durante la reunión diaria de sincronización.
+
+Este tablero o cuadro de mandos actúa como radiador de información tanto para el equipo como para cualquier otra persona relacionada con el proyecto.
+
+=== Anotaciones útiles ===
+
+  * Utilizar una marca específica para las tareas más prioritarias (reservar el color rojo para indicar problemas o riesgos).
+  * Poner colores diferentes en función del tipo de tarea (análisis/diseño, construcción, errores).
+  * Poner 1 punto negro por cada día que una tarea se retrasa, para que el equipo vea si hay algún peligro y para poder reflexionar en la retrospectiva.
+  * Poner 1 punto naranja cada vez que un objetivo/tarea se reabre por que no pasa las pruebas / control de calidad / aceptación y vuelve "hacia atrás".
+  * Sólo mover tareas a "Hechas" en la reunión diaria de sincronización, para que todo el mundo sea conciente del avance. Para ello, cuando alguien acaba una tarea, la marca como "hecha" pero no la mueve.
+  * Poner un número en las tareas para indicar el orden.
+  * Poner en las tareas el ID o nombre abreviado de la historia de usuario (por si se caen).
+  * Tener una zona de Parking para los siguientes objetivos si no caben en el tablero o para tareas que el equipo va detectando que sería necesario hacer antes de finalizar la iteración pero que todavía no han sido clasificadas en objetivos.
+
+==== Gráficos de trabajo pendiente ==== 
+
+Un gráfico de trabajo pendiente a lo largo del tiempo muestra la velocidad a la que se está completando los objetivos/requisitos. Permite extrapolar si el Equipo podrá completar el trabajo en el tiempo estimado.
+
+Se pueden utilizan los siguientes gráficos de esfuerzo pendiente:
+  * Días pendientes para completar los requisitos del producto o proyecto (product burndown chart), realizado a partir de la lista de requisitos priorizada (Product Backlog).
+  * Horas pendientes para completar las tareas de la iteración (sprint burndown chart), realizado a partir de la lista de tareas de la iteración (Iteration Backlog).
+ 
+Este tipo de gráfico permite realizar diversas simulaciones: ver cómo se aplazan las fechas de entrega si se le añaden requisitos, ver cómo se avanzan si se le quitan requisitos o se añade otro equipo, etc.  
+
+==== Historias de usuario ====
+
+Siguiendo esta línea, el primer paso en la estimación y planificación ágil es la creación del product backlog, o sea la definición del proyecto a realizar. Se puede dividir en objetivos expresados como historias de usuario (user stories), cada una aportando valor de negocios incremental e individual. Una historia es un requerimiento de negocios visto desde el punto de vista de un usuario. Se escriben con el siguiente formato: "Como xxx, quiero hacer yyy con el objetivo de zzz",  donde, xxx es el tipo de Usuario (quien), yyy es lo que el sistema debe permitir realizar (el qué) y zzz es el beneficio o valor buscado (el por qué).
+
+Ejemplo:
+"Como cliente del banco, quiero pedir un préstamo para poder comprar una casa"
+
+{{ :sistemas:tarjeta-historia-usuario-scrum-backlog.jpg |}}
+
+Las condiciones de satisfacción de los objetivos suelen ponerse en forma de pruebas de aceptación que se realizarán, indicando cómo debe comportarse el sistema (o BDD, Behaviour Driven Development) con el formato "Dado aaa, cuando se produzca bbb, entonces ccc", donde aaa es la situación en la que se encuentra el sistema, bbb es un evento que lo hará cambiar y ccc es el resultado. Esta técnica permite evitar la aparición de errores por malos entendidos y evitar retrabajar (siguiendo los principios Lean). Por ello es recomendable no empezar a desarrollar en una iteración sin antes haber escrito los casos de prueba, especialmente por que es más barato escribir texto y pensar en cómo desambiguar los requisitos que arreglar errores importantes debido a su mal entendimiento.
+
+Pero en la práctica no hace falta usar estos formatos, cualquier sintaxis donde la acción sea clara y el beneficio buscado sea entendido por todos es suficiente. Si no partimos de cero, podemos simplemente tomar los requerimientos en cualquier formato que estén escritos (por ejemplo casos de uso).
+
+==== Poker de planeación ====
+
+
+La estimación la lleva a cabo el equipo
+ 
+La estimación no la realiza el cliente / Product Owner, por que no es él quien se va a “ensuciar las manos” y luchar por cumplir con fechas.
+Todo el equipo realiza la estimación para:
+Reforzar el compromiso de todo el equipo respecto a las fechas que dan al cliente.
+Reforzar el compromiso de cada miembro del equipo respecto al resto.
+Hacer que todo el mundo se sienta oído.
+La estimación se puede realizar utilizando alguna de las siguientes unidades:
+Días ideales: los días necesarios para que el equipo pueda completar un objetivo, sin considerar interrupciones. Para pasar a días reales hay que aplicar un factor de corrección que puede ir del 60 % al 70 % de dedicación real al proyecto. Asimismo, habrá que tener en cuenta un margen para imprevistos como bajas por enfermedad, etc.
+Puntos de historia de usuario: la complejidad que tiene cada historia de usuario. Un equipo en un proyecto determinado es capaz de completar un número semi-regular de puntos de historia cada iteración (“velocidad”).
+ 
+Planning poker
+ 
+La técnica de planning poker permite hacer una estimación inicial del proyecto rápida y fiable, dado que todos los miembros del equipo comparten sus diferentes informaciones y expresan su opinión sin sentirse condicionados por el resto.
+A continuación se puede ver diferentes barajas de cartas de planning poker.
+
+Cada número significa un peso / esfuerzo / complejidad para completar un objetivo (historia de usuario). La numeración de las cartas está basada en la sucesión de Fibonachi. La distancia entre números crece conforme se hacen mayores. De esta manera, se facilita la decisión sobre qué tamaño tiene un objetivo.
+¿Es un 5 o un 8?. No vale la pena entretenerse en pensar si es un 5 o un 6, ni en el error por no intentar buscar esta precisión, dado que se compensará por encima y por debajo con el resto de estimaciones.
+
+El product backlog es, para ser exactos, una lista priorizada y estimada de historias. Por ahora sólo tenemos historias. Falta estimarlas y priorizarlas. El proceso de estimación se puede hacer utilizando una técnica llamada planning poker (póker de planificación). El objetivo del planning poker es obtener una medida de tamaño relativo de todas las historias respecto a sí mismas.
+
+La teoría es que resulta relativamente fácil decir "A es más grande que B y que C" [no voy a entrar en detalle respecto a cómo efectuar planning poker, dejándolo para otro artículo]. Lo importante de efectuar planning poker sobre todo el backlog (a efectos de la planificación) es que da como resultado que todas las historias han sido estimadas con muy poco esfuerzo. Pero no en días/hombre como se haría tradicionalmente. Planning poker produce estimaciones en una medida arbitraria de tamaño llamada story points o "puntos de historia". Los story points son específicos de cada equipo, no pueden compararse entre diferentes equipos y a veces ni siquiera entre diferentes proyectos del mismo equipo. Lo único que indican es el tamaño relativo que tiene cada funcionalidad del backlog respecto a las demás. Lo importante es que ahora tenemos el tamaño total del proyecto estimado en una unidad llamada story points, y esto nos va a servir de mucho.
+
+=== Priorización ===
+
+La etapa de priorización es sencilla y depende exclusivamente del Product Owner. Sabiendo ya el tamaño de las historias, debe priorizarlas por valor de negocio. Notar que también es posible comenzar con la asignación de valor y después aportar el tamaño, en todo caso, la priorización se realiza balanceando el valor respecto al coste y respecto a los riesgos de cada objetivo.
+
+Una manera rápida de empezar a asignar valor a las historias es dividirlas en 3 grupos, según sean imperativas, importantes o cosméticas/prescindibles (de manera que si se llega a una fecha de entrega predeterminada y no se han completado por lo menos hemos aportado el máximo de valor posible). Dentro de cada grupo nos resultará más fácil realizar una ordenación relativa por valor y después asignarlo.
+
+La prioridad puede cambiar todo el tiempo; pero el tamaño en story points debe mantenerse fijo con la estimación original (o sea: como regla general, no reestimar). Si aparecen historias nuevas, deben estimarse utilizando el mismo criterio que se utilizó originalmente.
+
+Ahora bien: todo esto todavía no nos dice nada respecto a cuánto durará o costará el proyecto; pero al menos es un paso más respecto a como estábamos antes, que solo teníamos el ballpark estimate. Si sólo pudiéramos averiguar a cuántos días/hombre o días/equipo equivale un story point, tendríamos nuestra estimación, y luego nuestra planificación.
+
+=== Duración y proyección a partir de la velocidad del equipo ===
+
+El último paso, por lo tanto, es calcular la velocidad del equipo completando objetivos a lo largo de las iteraciones. Así pues, la velocidad es la cantidad de story points que se completan por iteración. Calcularla es sencilla: solo hay que sentarse y esperar. En dos -como máximo tres- iteraciones, tendrás una idea bastante clara de cuál es la velocidad del equipo y por lo tanto el tamaño y duración del proyecto. Mientras tanto se puede ir construyendo el burndown chart, cosa que no me animo a traducir (gráfico de quemado?). El burndown chart nos muestra en el eje Y la cantidad total de story points del proyecto, y sobre el eje X las iteraciones. Cada vez que se finaliza una iteración, se completa un punto del gráfico, indicando la velocidad en ese ciclo.
+
+Si teníamos una fecha prefijada en la que queremos terminar el proyecto, esto nos permite calcular la velocidad teórica a la que tendremos que ir para alcanzar esa fecha. El burndown chart permite rápidamente y en todo momento ver dos estadísticas vitales para la planificación: la estimación actual de cuándo va a estar terminado el 100% del proyecto; y la estimación del porcentaje de proyecto que va a estar terminado cuando lleguemos a cierta fecha.
+
+=== Ejecución del poker de planeación ===
+
+Planning Poker es un proceso iterativo de planificación. Funciona de la siguiente manera:
+El cliente lee un objetivo (historia de usuario escrita en una tarjeta).
+El equipo le hace preguntas para entender su alcance.
+Las respuestas importantes se pueden apuntar en la propia tarjeta como detalles del objetivo o condiciones de satisfacción.
+Pueden aparecer nuevas historias de usuario.
+Cada miembro del equipo piensa en el esfuerzo necesario para completar el objetivo y todos muestran sus tarjetas simultáneamente, de manera que no están condicionados por las estimaciones de los otros.
+Las personas que están más alejadas del consenso explican por qué su votación es más alta (hay algún problema en el que nadie más ha pensado o el resto no ha tenido en suficiente consideración) o más baja (conocen una manera sencilla de resolver el problema, resolvieron algo muy parecido en un proyecto anterior, etc.).
+El equipo vuelve a votar, hasta que alcanza un acuerdo. No hay democracia, dado que todos deberán comprometerse a que ese objetivo se va a acabar con el esfuerzo acordado (se supone que no hay una persona que siempre vota de manera singular y a la que nunca se puede convencer).
+Diversas personas manifestaron que con esta técnica el equipo ha ido mejorando mucho la precisión de sus estimaciones. De hecho, existen diversos estudios que concluyen que la sinergia que produce esta estimación conjunta es mucho mejor que la de una única persona por separado (típicamente la del jefe de proyecto o un senior en un proyecto tradicional).
+ 
+Algunos consejos y trucos:
+Elegir un objetivo de tamaño típico en el proyecto como patrón con el que comparar el resto de objetivos y asignarle una puntuación de carta también media (por ejemplo un 5).
+Puede ser conveniente no jugar con las cartas más altas, ya que el error de estimación es mucho mayor (además, objetivos tan grandes dificultan ver el progreso y se tarda más en hacer visible si existen problemas en el proyecto). Notar que en la fotografía de las barajas se han apartado las cartas más altas para no jugar con ellas.
+Dada la dificultad de empezar a trabajar con puntos de historia y no con esfuerzo en días ideales, para facilitar el empezar a utilizar Planning Poker se puede hacer el símil de que, por ejemplo, dos puntos de historia corresponden a un día ideal.
+Comparar el tamaño que se va dando a cada objetivo respecto al de otros (triangulación). Ver ejemplo en [2].
+ 
+Velocidad de desarrollo
+ 
+Los puntos de historia permitirán medir la velocidad que tiene el equipo completando objetivos a lo largo e las iteraciones (puntos de historia por iteración) y de esta manera ir proyectando el final del proyecto.
+Las 2-3 primeras iteraciones la velocidad es más inestable (debido a la complejidad propia de un proyecto: dominio/ requisitos nuevos, tecnología nueva, personas nuevas) y después se va estabilizando, con lo que ya es posible utilizarla para hacer predicciones. Si no se estabiliza, posiblemente es por que existen problemas subyacentes que lo impiden (en la organización, en la estabilidad del equipo, etc.) y que habrá que solucionar.
+Las estimaciones (y la velocidad) se ven afectadas cuando se introducen nuevas tecnologías o conceptos de negocio en medio del proyecto, aunque después se vuelven a estabilizar.
+ 
+ 
+Pruebas de concepto para realizar estimaciones
+ 
+Si existe incertidumbre para realizar una estimación de un tipo de objetivos (historias de usuario), se puede hacer un spike o prueba de concepto extremo a extremo en una iteración anterior a su desarrollo. Esta investigación permite conocer el grado de dificultad de completar algo y poder estimar mejor las siguientes iteraciones, donde se desarrollarán las historias de usuario reales.
+La prueba de concepto debe realizarse dentro de un timebox, para obligar a tomar decisiones y no dedicar un tiempo excesivamente largo a investigar.
+ 
+ 
+Estimación y planificación de iteración basada en compromiso
+ 
+En la reunión de planificación de iteración (Sprint Planning) el equipo va seleccionando objetivos del Product Backlog (historias de usuario) y descomponiéndolos en tareas. Escoge tantos objetivos como cree que es capaz de completar en una iteración (commitment driven sprint planning). La velocidad permite verificar (checkpoint) que el total de puntos de historia de la nueva iteración es congruente con las anteriores iteraciones, si están escogiendo demasiados objetivos o demasiado pocos.
+Cada miembro del equipo que escoge una tarea hace su estimación en horas delante de todos, de manera que:
+Se compromete respecto a sus compañeros.
+Evita estimaciones demasiado optimistas (que comprometerían las fechas del proyecto) o demasiado pesimistas (que atentarían contra la competitividad de la empresa). De esta manera se disminuyen y ajustan los buffers.
+ 
+La estimación ágil ayuda a crear “conciencia de equipo”
+ 
+Como consecuencia de las técnicas descritas, la estimación ágil crea conciencia de equipo. Todos participan, tienen voz y voto. Cuando se produce una equivocación en una estimación, se ha equivocado todo el equipo. Por ello, no es para individualistas. No sirve que alguien diga “Yo he hecho mi parte de la historia de usuario”.
+ 
+ 
+ 
+Agradecer a DoubleYou, agencia de publicidad que utiliza prácticas de Scrum y XP en sus proyectos, la cesión de sus instalaciones, los snacks y las bebidas.
+ 
+Agradecer a Telefónica I+D, que también utiliza prácticas de Scrum y XP en sus proyectos, las barajas de cartas de Planning Poker que regaló a los asistentes.
+ 
+Para apuntarse a los próximos encuentros en Barcelona sobre temas ágiles: http://agile-spain.wikidot.com/quedadas-barcelona
+
+----
+
+===== Actividades =====
+
+==== Reunión de planificación ====
+
+El primer día de la iteración se realiza la reunión de planificación de la iteración. Tiene dos partes:
+
+  - **Selección de requisitos (4 horas máximo).** El cliente presenta al equipo la lista de requisitos priorizada del producto o proyecto. El equipo pregunta al cliente las dudas que surgen y selecciona los requisitos más prioritarios que se compromete a completar en la iteración, de manera que puedan ser entregados si el cliente lo solicita. El equipo examina la lista, pregunta al cliente las dudas que le surgen, añade más condiciones de satisfacción.
+  - **Planificación de la iteración (4 horas máximo).** El equipo elabora la lista de tareas de la iteración necesarias para desarrollar los requisitos a que se ha comprometido. La estimación de esfuerzo se hace de manera conjunta y los miembros del equipo se autoasigna las tareas. Se realiza en un timebox de cómo máximo 4 horas. El equipo planifica la iteración, elabora la táctica que le permitirá conseguir el mejor resultado posible con el mínimo esfuerzo. Esta actividad la realiza el equipo dado que ha adquirido un compromiso, es el responsable de organizar su trabajo y es quien mejor conoce cómo realizarlo. 
+Define las tareas necesarias para poder completar cada objetivo/requisito, creando la lista de tareas de la iteración (Sprint Backlog) basándose en la definición de completado.
+Realiza una estimación conjunta del esfuerzo necesario para realizar cada tarea.
+Cada miembro del equipo se autoasigna a las tareas que puede realizar.
+
+==== Reunión diaria de sincronización ====
+
+El objetivo de esta reunión es facilitar la transferencia de información y la colaboración entre los miembros del equipo para aumentar su productividad, al poner de manifiesto puntos en que se pueden ayudar unos a otros.
+
+Cada miembro del equipo inspecciona el trabajo que el resto está realizando (dependencias entre tareas, progreso hacia el objetivo de la iteración, obstáculos que pueden impedir este objetivo) para al finalizar la reunión poder hacer las adaptaciones necesarias que permitan cumplir con el compromiso conjunto que el equipo adquirió para la iteración (en la reunión de planificación de la iteración).
+
+Cada día el equipo realiza una reunión de sincronización (15 minutos máximo). Cada miembro del equipo inspecciona el trabajo que el resto está realizando (dependencias entre tareas, progreso hacia el objetivo de la iteración, obstáculos que pueden impedir este objetivo) para poder hacer las adaptaciones necesarias que permitan cumplir con el compromiso adquirido. En la reunión cada miembro del equipo responde a tres preguntas:
+
+  * ¿Qué he hecho desde la última reunión de sincronización?
+  * ¿Qué voy a hacer a partir de este momento?
+  * ¿Qué impedimentos tengo o voy a tener?
+ 
+Durante la iteración el Facilitador (Scrum Master) se encarga de que el equipo pueda cumplir con su compromiso y de que no se merme su productividad, para ello realiza las siguientes actividades:
+
+  * Elimina los obstáculos que el equipo no puede resolver por sí mismo.
+  * Protege al equipo de interrupciones externas que puedan afectar su compromiso o su productividad.
+
+Recomendaciones
+Realizar la reunión diaria de sincronización de pie, para que los miembros del equipo no se relajen ni se extiendan en más detalles de los necesarios.
+Realizar las reuniones de colaboración entre miembros del equipo justo después de la de sincronización.
+
+==== Reunión de retrospectiva ====
+
+El último día de la iteración se realiza la reunión de revisión de la iteración. Tiene dos partes:
+
+  * **Demostración (4 horas máximo).** El equipo presenta al cliente los requisitos completados en la iteración, en forma de incremento de producto preparado para ser entregado con el mínimo esfuerzo. En función de los resultados mostrados y de los cambios que haya habido en el contexto del proyecto, el cliente realiza las adaptaciones necesarias de manera objetiva, ya desde la primera iteración, replanificando el proyecto. Reunión informal donde el equipo presenta al cliente los requisitos completados en la iteración, en forma de incremento de producto preparado para ser entregado con el mínimo esfuerzo, haciendo un recorrido por ellos lo más real y cercano posible al objetivo que se pretende cubrir. En función de los resultados mostrados y de los cambios que haya habido en el contexto del proyecto, el cliente realiza las adaptaciones necesarias de manera objetiva, ya desde la primera iteración, replanificando el proyecto.
+  * **Retrospectiva (4 horas máximo).** El equipo analiza cómo ha sido su manera de trabajar y cuáles son los problemas que podrían impedirle progresar adecuadamente, mejorando de manera continua su productividad. El Facilitador se encargará de ir eliminando los obstáculos identificados.Con el objetivo de mejorar de manera continua su productividad y la calidad del producto que está desarrollando, el equipo analiza cómo ha sido su manera de trabajar durante la iteración, por qué está consiguiendo o no los objetivos a que se comprometió al inicio de la iteración y por qué el incremento de producto que acaba de demostrar al cliente era lo que él esperaba o no: Qué cosas han funcionado bien, Cuales hay que mejorar, Qué cosas quiere probar hacer en la siguiente iteración. Qué ha aprendido, Cuales son los problemas que podrían impedirle progresar adecuadamente. El Facilitador se encargará de ir eliminando los obstáculos identificados que el propio equipo no pueda resolver por sí mismo. Notar que esta reunión se realiza después de la reunión de demostración al cliente de los objetivos conseguidos en la iteración, para poder incorporar su feedback y cumplimiento de expectativas como parte de los temas a tratar en la reunión de retrospectiva.
+
+===== Referencias =====
+
+Pagina de documentación de Scrum: http://www.proyectosagiles.org/como-funciona-scrum

@@ -1,0 +1,305 @@
+====== Vectores, Matrices y Sistemas de Ecuaciones ======
+
+En el estudio del álgebra lineal aparecen los vectores y las matrices, los primeros como un arreglo de números de una sola dimensión y los segundos como un arreglo de números de más de una dimensión.
+
+===== Vectores =====
+
+Vectores como los siguientes son denominados vectores fila y vectores columna respectivamente.
+
+^Vector fila ^Vector columna ^
+| $\begin{bmatrix} \alpha & \beta & \gamma \end{bmatrix}$ | $\begin{bmatrix} \alpha \\ \beta \\ \gamma \end{bmatrix}$ |
+
+Es importante anotar que un vector es un conjunto ordenando de elementos y cada una de sus posiciones también se denomina elemento o componente.
+
+Este arreglo de elementos puede tener un tamaño determinado y sirve para agrupar un conjunto de valores que están inter-relacionados, existen muchas propiedades importantes de los vectores y las operaciones comunes de aritmética también están disponibles con ellos.
+
+Las componentes de los vectores pueden ser reales $\mathbb R$ o complejos $\mathbb C$ de tal manera un vector de n componentes reales representa el espacio $\mathbb R^n$, así $\mathbb R^2$ se llaman vectores en el plano y $\mathbb R^3$ se llaman vectores en el espacio.
+
+==== Producto vectorial ====
+
+Este producto esta definido por la combinación lineal de dos vectores, de manera que el resultado de esta operación es un valor escalar, dado por la sumatoría de la multiplicación de las correspondientes componentes, de manera que una multiplicación vectorial (o producto punto) de dos vectores es compatible sólo si ambos componentes tienen igual tamaño.
+
+La //combinación lineal// esta dada por la siguiente sumatoría
+
+$$\mathbf a\cdot\mathbf b=\sum_{i=1}^na_ib_i$$
+
+==== Propiedades de los vectores ====
+
+  * $\mathbf a\cdot\mathbf 0=0$
+  * $\mathbf a\cdot\mathbf b=\mathbf b\cdot\mathbf a$
+  * $\mathbf a\cdot(\mathbf b+\mathbf c)=\mathbf a\cdot\mathbf b+\mathbf a\cdot\mathbf c$
+  * $(\alpha\mathbf a)\cdot\mathbf b=\alpha(\mathbf a\cdot\mathbf b)$
+
+===== Matrices =====
+
+Las matrices aparecen, por ejemplo en el estudio de ecuaciones simultáneas, puede considerar para el ejemplo un sistema de ecuaciones de dos incógnitas con dos ecuaciones, que puede presentar los siguientes casos y a través de la siguientes ecuación:
+
+$a_1_1x_1+a_1_2x_2=b_1$ \\ 
+$a_2_1x_1+a_2_2x_2=b_2$
+
+Donde su correspondiente matriz de coeficientes es:
+
+$$\begin{bmatrix} a_1_1 & a_1_2 \\ a_2_1 & a_2_2 \end{bmatrix}$$
+
+1. Una única solución, las rectas se intersecan en un sólo punto, como muestra la siguiente gráfica
+
+<latex>\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(22,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,22){$y$}
+  \put(0,0){\line(1,1){20}}
+  \put(0,12){\line(4,1){20}}
+  \put(16,16){\circle*{1}}
+  \put(16,12){$P$}
+\end{picture}</latex>
+
+2. Las rectas nunca se intersecan por lo tanto no se tiene solución
+
+<latex>\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(21,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,21){$y$}
+  \put(0,0){\line(1,1){20}}
+  \put(0,2){\line(1,1){20}}
+\end{picture}</latex>
+
+3. Las rectas coinciden en todos los puntos y por lo tanto se tienen infinitas soluciones
+
+<latex>\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(21,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,21){$y$}
+  \put(0,0){\line(1,1){20}}
+\end{picture}</latex>
+
+Estos sistemas de ecuaciones se pueden representar a través de matrices como sigue:
+
+$$\mathbf A \cdot x=b$$
+
+Donde $\mathbf A$ es la matriz de coeficientes de las ecuaciones, $x$ es un vector columna con las variables y $b$ es el vector columna con los valores de los coeficientes independientes. Cuando el sistema genérico de n ecuaciones con m incógnitas se no presenta ninguna solución se dice que es un //sistema inconsistente//, por otro lado si tiene al menos una solución se dice que es es un //sistema consistente//. 
+
+==== Producto matricial ====
+
+Este producto es compatible entre dos matrices siempre y cuando el número de columnas de la primera martiz sea el mismo número de filas de la segunda matriz. Esta multiplicación no es conmutativa y el resultado de multilicar dos matrices $\mathbf A$ y $\mathbf B$ esta dado por:
+
+$$c_{ij}=(\text{reglón }i \text{ de } \mathbf A)\cdot(\text{columna }j \text{ de } \mathbf B)$$
+
+==== Propiedades de las matrices ====
+
+  * $\mathbf A+\mathbf 0=\mathbf A$
+  * $\mathbf 0\mathbf A=\mathbf 0$
+  * $\mathbf A+\mathbf B=\mathbf B+\mathbf A$
+  * $(\mathbf A+\mathbf B)+\mathbf C=\mathbf A+(\mathbf B+\mathbf C)$
+  * $\alpha(\mathbf A+\mathbf B)=\alpha\mathbf A+\alpha\mathbf B$
+  * $\mathbf I\mathbf A=\mathbf A$
+  * $(\alpha + \beta)\mathbf A=\alpha\mathbf A+\beta\mathbf A$
+  * $\mathbf A(\mathbf B\mathbf C)=(\mathbf A\mathbf B)\mathbf C$
+  * $\mathbf A(\mathbf B+\mathbf C)=\mathbf A\mathbf B+\mathbf A\mathbf C$
+  * $(\mathbf A+\mathbf B)\mathbf C=\mathbf A\mathbf C+\mathbf B\mathbf C$
+
+===== Sistemas de ecuaciones =====
+
+==== Eliminación de Gauss Jordan ====
+
+El proceso de eliminación de Gauss - Jordan sirve para solucionar la anterior ecuación, para ello se debe escribir la matriz aumentada del sistema $\mathbf A$ seguida del vector $b$ de la siguiente manera:
+
+$$\left(\begin{array}{cc|c}
+  a_1_1 & a_1_2 & b_1\\
+  a_2_1 & a_2_2 & b_2\\
+  \end{array}\right)$$
+
+Donde la idea es obtener una matriz escalonada reducida por reglones y pivote y luego utilizar una sustitución hacia adelante. Para lograr esta matriz se deben hacer tres operaciones fundamentales que puede ser:
+
+  * Conmutacion de filas
+  * División de una fila por un escalar diferente de cero
+  * Adicionar p veces una fila a otra
+
+La notación para estas operaciones fundamentales con reglones es la siguiente:
+
+  * $R_i \rightarrow cR_i$ Reemplaza la fila i-esima, por ella misma multiplicada por un escalar
+  * $R_j \rightarrow R_j+cR_i$ Sustituye el j-esimo reglón por la suma del reglón j más el reglón i multiplicado por c
+  * $R_j \leftrightarrows R_i$ Intercambia los reglones i con el reglón j
+
+Las matrices que se obtienen después de realizar una operación fundamental se denominan //matrices equivalentes por reglones//.
+
+Una matriz se encuentra en su forma escalonada reducida por reglones y pivote siempre que:
+
+  * Si existe una fila de ceros esta es la última
+  * El primer elemento para una fila que no es toda de ceros es uno
+  * Para dos reglones que no todos sus elementos son ceros, entonces el primer uno en el reglon de más abajo también se encuentra más a la derecha.
+  * Cualquier columna que contiene un uno y este uno es el primer elemento en el reglón donde aparece tiene ceros en el resto de sus posición. El primer uno para un reglón diferente de cero se llama //pivote// para el reglón
+
+==== Sistemas homogéneos ====
+
+Un sistema de ecuaciones se dice que es homogéneo cuando el vector $b$ tiene el todas sus componentes en cero, y por lo tanto la matriz aumentada del sistema que le corresponde es la siguiente:
+
+$$\left(\begin{array}{cc|c}
+  a_1_1 & a_1_2 & 0\\
+  a_2_1 & a_2_2 & 0\\
+  \end{array}\right)$$
+
+Todos los sistemas homogéneos tiene un solución trivial, es decir, la solución es entonces $x_1=x_2=0$.
+Para todo sistema homogéneo también se cumple que si tiene más incógnitas que ecuaciones ($n>m$) tiene un número infinito de soluciones.
+
+Para un sistema no homogéneo y su correspondiente sistema homogéneo, se pueden encontrar todas las soluciones teniendo en cuenta que si $\mathbf x_1$ es solución y $\mathbf x_2$ también se solución del sistema no homogéneo entonces $\mathbf x_1-\mathbf x_2$ es solución al sistema homogéneo relacionado.
+Lo anterior es muy útil y se puede representar como $\mathbf y=\mathbf x+\mathbf h$ donde $\mathbf x$ e $\mathbf y$ es una solución del sistema no homogéneo y $\mathbf h$ es solución del sistema homogéneo, por lo tanto para encontrar todas las soluciones al sistema no homogéneo basta con encontrar una solución del sistema no homogéneo y todas las soluciones del sistema homogéneo relacionado.
+
+==== Matriz Inversa ====
+
+La matriz inversa de $\mathbf A$ es aquella que multiplicada por $\mathbf A$ produce la matriz identidad de $\mathbf I$ del mismo tamaño de $\mathbf A$. No todas las matrices tienen inversa y sólo se encuentra definida para matrices cuadradas.
+
+El concepto es poderoso y simple por que permite resolver el sistema de ecuaciones $\mathbf A \cdot x=b$ con una simple multiplicación, así:
+
+  * $\mathbf A \cdot x=b$
+  * $\mathbf A^{-1} \mathbf A \cdot x=\mathbf A^{-1} \cdot b$
+  * $\mathbf I \cdot x = \mathbf A^{-1} \cdot b$
+  * $x = \mathbf A^{-1} \cdot b$
+
+Hemos denotado la inversa de $\mathbf A$ como $\mathbf A^-1$ donde se cumplen las siguientes propiedades:
+
+  * $\mathbf A_n \mathbf I_n = \mathbf I_n \mathbf A_n = \mathbf A_n $
+  * $\mathbf A_n \mathbf A^{-1}_n = I_n$
+
+Para calcular la inversa de una matriz puede recurrirse a la solución de sistemas de ecuaciones o a determinantes, veamos ambos casos.
+
+==== Procedimiento para encontrar la inversa usando sistemas de ecuaciones ====
+
+  - Escriba la matriz aumentada del sistema $\mathbf A| \matbbf I$
+  - Reduzca el sistema para poner $\mathbf A$ en su forma reducida por reglones
+  - Se decide si $\mathbf A$ es invertible
+  * Si la forma escalonada reducida por reglones de $\mathbf A$ es la matriz identidad, entonces la inversa se encuentra a la izquierda en el sistema resuelto
+  * Si en la reducción existe un reglón de ceros a la izquierda, la matriz $\mathbf A$ no es invertible
+
+==== Procedimiento para encontrar la inversa usando determinantes ====
+
+Para hallar la inversa usando determinantes basta recurrir a la siguiente multiplicación:
+
+$$\mathbf A^{-1} = \frac{1}{\det \mathbf A}\begin{bmatrix} a_1_1 & -a_1_2 \\ -a_2_1 & a_2_2 \end{bmatrix}$$
+
+Donde el determinante de una matriz cuadrada de tamaño 2 es:
+
+$$\det \mathbf A = a_{11}a_{22}-a_{12}a_{21}$$
+
+==== Matriz transpuesta ====
+
+Una matriz transpuesta $\mathbf A^t$ de una matriz $\mathbf A$ se obtiene al escribir las filas como columnas. Las matrices transpuestas tienen muchas propiedades útiles, a continuación se muestran estas propiedades:
+
+  - ${(\mathbf A^t)}^t=\mathbf A$
+  - $(\mathbf A^t\mathbf B^t)=\mathbf A^t\mathbf B^t$
+  - $(\mathbf A^t + \mathbf B^t)=\mathbf A^t + \mathbf B^t$
+  - Si $\mathbf A$ es invertible, entonces $\mathbf A^t$ es invertible y ${(\mathbf A^t)}^{-1}={(\mathbf A^{-1})}^{t}$
+
+Se dice que una matriz es **simétrica** si su transpuesta es igual a la matriz, note que sólo las matrices cuadradas pueden ser también simétricas
+
+==== Matrices elementales y matrices inversas ====
+
+Una operación elemental entre reglones puede representarse a través de una operación de multiplicación entre matrices, la matriz por la cual se multiplica se llama matriz elemental. Adicionalmente una matriz inversa (o las operaciones de eliminación Gauss-Jordan) se puede representar como una multiplicación de matrices elementales, esto quiere decir que si una matriz es invertible se puede representar como una multiplicación de matrices elementales.
+
+^Matriz elemental ^Efecto de multiplicación ^
+|Multiplicación | Multiplica el reglón $i$ de $\mathbf A$ por $c$ |
+|Suma | Multiplica el reglon $i$ de $\mathbf A$ por $c$ y lo suma al reglon $j$ |
+|Permutación | Permuta los reglones $i$ y $j$ de $\mathbf A$ |
+
+La representación simbólica de estas operaciones y las matrices correspondientes se muestran a continuación:
+
+=== Multiplicación ===
+
+^ Representación ^ Matriz elemental ^ Observación ^
+| $cR_i$ | $\begin{bmatrix} 1 & 0 & 0 \\ 0 & c & 0 \\ 0 & 0 & 1 \end{bmatrix}$ | Siendo i el reglón 2 en este ejemplo |
+
+=== Suma ===
+
+^ Representación ^ Matriz elemental ^ Observación ^
+| $R_j+cR_i$ | $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ c & 0 & 1 \end{bmatrix}$ | Siendo i el reglón 1 y j 3 en este ejemplo |
+
+=== Permutación ===
+
+^ Representación ^ Matriz elemental ^ Observación ^
+| $P_{ij}$ | $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ c & 0 & 1 \end{bmatrix}$ | Siendo i el reglón 2 y j 3 en este ejemplo |
+
+===== Factorización de matrices =====
+
+** Factorización ** $\mathbf A = \mathbf {LU}$
+
+Suponga que una matriz $\mathbf A$ invertible puede reducir por reglones a una matriz triangular superior sin realizar permutaciones. Entonces existen matrices únicas $\mathbf L$ y $\mathbf U$ tales que L es triangular inferior con unos en la diagonal, $\mathbf U$ es una matriz triangular superior invertible y $\mathbf A=\mathbf L \mathbf U$.
+
+Para hallar la factorización se puede reducir la matriz $\mathbf A$ por reglones (sin dejar unos en la diagonal principal) y la matriz resultante será la matriz $\mathbf U$. De forma similar si se expresan las operaciones elementales sobre reglones como matrices y se multiplican estas matrices se obtiene la matriz $\mathbf L$
+
+** Factorización ** $\mathbf {PA} = \mathbf{LU}$ 
+
+Sea $\mathbf A$ cualquier matriz $mxn$. Entonces existe una matriz de permutación $\mathbf P$ tal que $\mathbf{PA}=\mathbf{LU}$ donde $\mathbf L$ y $\mathbf U$ son como en la factorización $\mathbf {LU}$, en general $\mathbf P$, $\mathbf A$ y $\mathbf U$ no son únicas.
+
+Para hallar esta factorización se procede como en el caso anterior, pero las permutaciones que se requieran hacer para obtener una matriz triangular superior (proceso de reducción por reglones) se expresan en una matriz de permutación $\mathbf P$ haciendo uso de matrices elementales
+
+===== Determinantes =====
+
+Los determinantes son herramientas operativas del álgebra de matrices y lineal que permite simplificar ciertas operaciones que se realizan como el cálculo de la matriz inversa y la determinación del rango de una matriz.
+Las siguientes son definiciones útiles acerca de los determinantes de matrices.
+
+  * El determinante de una matriz cuadrada se expresa como $\det \mathbf A=|\mathbf A|$, note que aquí las barras no indican valor absoluto
+  * Se llama //**menor **//$ij$ de una matriz cuadrada $\mathbf A$ representado con $M_i_j$ a la matriz obtenida al eliminar el reglon $i$ y la columna $j$ de la matriz $\mathbf A$
+  * El //**cofactor **//$ij$ de una matriz cuadrada denotado por $A_i_j$ esta dado por $A_i_j=(-1)^{i+j}|M_i_j|$
+
+Con estas definiciones podemos expresar fácilmente el determinante de cualquier matriz utilizando una expresión conocida como expansión por cofactores, así:
+
+$$\det \mathbf A=\sum_{k=1}^n a_1_kA_1_k$$
+
+Esta expansión por cofactores también se puede llevar a cabo tomando cualquier fila o columna de la matriz. Note que esto lleva a que si cualquier fila o columna de la matriz sean su componentes cero, entonces el determinante será cero también.
+
+Para algunas matrices el cálculo del determinante se puede simplificar, por ejemplo, para las matrices triangulares (superiores o inferiores) el determinante es sólo el producto los componentes de su diagonal principal.
+
+==== Propiedades de los determinantes ====
+
+  * $\det \mathbf {AB}=\det \mathbf A \det \mathbf B$
+  * Si una matriz $\mathbf A$ tiene factorización $\mathbf{A=LU}$ entonces $\det \mathbf{A} = \det \mathbf{U}$
+  * Si una matriz $\mathbf A$ tiene factorización $\mathbf{PA=LU}$ entonces $\det \mathbf{A} = \frac {\det \mathbf{U}}{\det \mathbf P} = \pm \det \mathbf U$
+  * $\det \mathbf A = \det \mathbf A^t$
+  * Si una columna o fila de $\mathbf A$ se multiplica por un escalar $c$ entonces el deteminante de la nueva matriz es $c| \mathbf A|$
+  * Sea tres matrices $\mathbf{A,B,C}$, $\mathbf A$ y $\mathbf B$ son identicas excepto por una columna $j$, y $\mathbf C$ es identica a $\mathbf{A,B}$ excepto que la columna de $\mathbf C$ es la suma de las columnas $j$ de $\mathbf{A,B}$, entonces $\det \mathbf C = \det \mathbf A + \det \mathbf B$, la misma afirmación es cierta para un reglon $i$
+  * El intercambio de dos reglones (o columnas) de una matriz, tiene el efecto de multiplicar su determinante por -1
+  * Si una matriz tiene dos reglones (o columnas) iguales entonces su determinante es cero
+  * Si una matriz tiene un reglon (o columna) igual a cero entonces su determinante es cero
+  * Si una matriz tiene un reglon (o columna) múltiplo escalar de otro entonces su determinante es cero
+  * Si una matriz se suma un multiplo escalar de un reglon (o columna) a otro entonces su determinante no cambia
+  * Si $\mathbf E$ es una matriz elemental que representa la operación de intercambio de dos filas, entonces $\det \mathbf E=-1$
+  * Si $\mathbf E$ es una matriz elemental que representa la operación de suma de una fila con un múltiplo de otra fila, entonces $\det \mathbf E=1$
+  * Si $\mathbf E$ es una matriz elemental que representa la operación de multiplicación de una fila por un escalar $c$, entonces $\det \mathbf E=c$
+
+==== Determinantes y matrices inversas ====
+
+Una de las propiedades más importantes de los determinantes se relaciona con la invertibilidad de una matriz, así:
+
+//Una matriz es invertible, si su determinante es diferente de cero//
+
+A continuación se explorará un concepto importante denominado adjunta de una matriz. Sea $\mathbf A$ una matriz y $A_i_j$ el cofactor de la matriz para los relgones $i$ y $j$; sea $\mathbf B$ otra matriz pero esta construida con los cofactores de la matriz $\mathbf A$ así:
+
+$$\begin{bmatrix} A_1_1 & A_1_2 & \dotsm & A_1_n \\ A_2_1 & A_2_2 & \dotsm & A_2_n \\ \vdots & \vdots & & \vdots \\ A_n_1 & A_n_2 & \dotsm & A_n_n \end{bmatrix}$$
+
+Se denomina matriz adjunta de $\mathbf A$ a la matriz $\mathbf B^t$, es decir a la matriz de cofactores transpuesta. La adjunta se puede representar simbolicamente así:
+
+$adj \mathbf A=\mathbf B^t$
+
+La utilidad de la matriz adjunta tiene que ver con los siguiente dos resultados:
+
+$$(\mathbf A)(adj \mathbf A)=(\det \mathbf A)(\mathbf I)$$
+$$\mathbf A^{-1}=\frac{1}{\det \mathbfA}adj \mathbf A$$
+
+Observe que el primer resultado pone en la diagonal principal el valor del determinante y el segundo resultado implica un cálculo para obtener la inversa de una matriz.
+
+===== Regla de Cramer =====
+
+La regla de Cramer es otro método que permite encontrar la solución a un sistema de ecuaciones simultáneas, con $n$ ecuaciones y $n$ incógnitas. El método actualmente esta en desuso pero tiene trascendencia historia.
+
+Sea el sistema de ecuaciones:
+
+$$\mathbf{Ax}=\mathbf b$$
+
+Donde se representara con $D$ el determinante de la matriz $\mathbf A$. Adicionalmente se tinen $n$ matrices representadas como $\mathbf A_i$ donde cada matriz es la misma matriz $\mathbf A$ pero cambiando la columna $i$ por el vector $\mathbf b$, respectivamente se cuentan con los determinantes de cada una de estas matrices representados como $D_i$, entonces la solución al sistema de ecuaciones es:
+
+$$x_i=\frac{D_i}{D}$$

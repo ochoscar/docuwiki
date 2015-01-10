@@ -1,0 +1,7 @@
+====== Física ======
+
+Esta página agrupa conceptos, notas y generalidades que se han querido tener en cuenta dentro del maravilloso mundo de la física.
+
+Para comenzar se deja el siguiente link donde se encuentran algunas lecturas de Feynman
+
+URL: http://research.microsoft.com/apps/tools/tuva/

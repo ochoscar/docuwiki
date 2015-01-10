@@ -1,0 +1,10 @@
+<span class="co2">// Archivo main.m</span>
+<span class="co1">#import “ObjetoEstatico.h”</span>
+<span class="co1">#import &lt;stdio.h&gt;</span>
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     DatosCliente<span class="sy0">*</span> miCliente <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>DatosCliente alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="br0">&#91;</span>ObjetoEstatico setDatosCliente<span class="sy0">:</span> miCliente<span class="br0">&#93;</span>;
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span>“El telefono del cliente es <span class="sy0">%</span>d\n”, miCliente<span class="sy0">-</span>&gt;telefono<span class="br0">&#41;</span>;
+     <span class="br0">&#91;</span>miCliente release<span class="br0">&#93;</span>;
+     <span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">&#125;</span>

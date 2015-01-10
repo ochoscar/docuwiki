@@ -1,0 +1,4 @@
+<span class="co2">// Archivo MiPrimerProtocolo.h</span>
+<span class="kw1">@protocol</span> MiPrimerProtocolo
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> print
+<span class="kw1">@end</span>

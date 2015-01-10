@@ -1,0 +1,305 @@
+
+<h1 class="sectionedit1" id="objetive_c">Objetive C</h1>
+<div class="level1">
+
+<p>
+Este lenguaje de programación es utilizado para programar dispositivos de la familia IOS de Apple. A continuación las particularidades del lenguaje.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Objetive C" [1-178] -->
+<h3 class="sectionedit2" id="definicion_de_una_clase">Definición de una clase</h3>
+<div class="level3">
+
+<p>
+Las siguientes son las descripciones gráficas de la sintaxis usada en Objective C para declarar clases y métodos:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=sistemas%3Aobjetivec&amp;media=sistemas:class_decl.jpg" class="media" title="sistemas:class_decl.jpg"><img src="/docuwiki/lib/exe/fetch.php?media=sistemas:class_decl.jpg" class="media" title="{{:sistemas:class_decl.jpg|" alt="{{:sistemas:class_decl.jpg|" /></a>}}
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=sistemas%3Aobjetivec&amp;media=sistemas:method_decl.jpg" class="media" title="sistemas:method_decl.jpg"><img src="/docuwiki/lib/exe/fetch.php?media=sistemas:method_decl.jpg" class="media" alt="" /></a>
+</p>
+
+<p>
+La definición de una clase de Objective C se da a través de la separación de la interface de la implementación, adicionalmente todas las clases derivan de NSObjetc (NextStep Object)
+</p>
+<pre class="code objc"><span class="co1">#import &lt;Foundation/NSObject.h&gt;</span>
+&nbsp;
+<span class="co2">//Esta es la definición de atributos </span>
+<span class="kw1">@interface</span> MiClase <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a> <span class="br0">&#123;</span>
+<span class="kw1">@public</span>
+     <span class="co2">// Atributo de tipo entero, también pudo haber sido puntero u otro</span>
+     <span class="kw4">int</span> numeroEntero;
+<span class="kw1">@private</span>
+<span class="kw1">@protected</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co2">// Método para asignar un valor al atributo numeroEntero</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> numero;
+<span class="co2">// Método para mostrar en pantalla el valor de numeroEntero</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> printNumeroEntero;
+<span class="co2">// Método que devuelve el valor del atributo numeroEntero</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> getNumeroEntero;
+<span class="kw1">@end</span></pre>
+
+<p>
+Algunas observaciones importantes son las siguientes:
+</p>
+<ul>
+<li class="level1"><div class="li"> La interface se define entre tags @interface y @end</div>
+</li>
+<li class="level1"><div class="li"> El símbolo - que precede al método indica que se trata de un método no static, si en su lugar se encontrara un símbolo + se entendería como un método static</div>
+</li>
+<li class="level1"><div class="li"> La declaración (prototipo) de los métodos es sustancialmente diferente a la de otros lenguajes, sin embargo se puede apreciar los parametros y el nombre del método</div>
+</li>
+</ul>
+
+<p>
+Ahora estudiaremos la implementación de estos métodos
+</p>
+<pre class="code objc"><span class="co1">#import “MiObjeto.h”</span>
+<span class="co1">#import &lt;stdio.h&gt;</span>
+<span class="kw1">@implementation</span> MiClase
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setNumeroEntero<span class="sy0">:</span>  <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> numero <span class="br0">&#123;</span>
+     <span class="co2">// Asignamos a nuestra variable numeroEntero el valor de numero</span>
+     numeroEntero <span class="sy0">=</span> numero;
+<span class="br0">&#125;</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> printNumeroEntero <span class="br0">&#123;</span>
+     <span class="co2">// Mostramos por pantalla el valor de numeroEntero</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span>“Numero entero<span class="sy0">:</span> <span class="sy0">%</span>d”, numeroEntero<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> getNumeroEntero <span class="br0">&#123;</span>
+     <span class="kw1">return</span> numeroEntero;
+<span class="br0">&#125;</span>
+<span class="kw1">@end</span></pre>
+
+<p>
+De manera similar a las diferencias para declarar un método en Objective C, existen diferencias para llamar a un método, de tal manera que el llamado a un método se realiza de la siguiente manera:
+</p>
+<pre class="code objc"><span class="co1">#import “MiObjeto.h”</span>
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="kw4">int</span> numeroDeArgumentos, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> argumentos<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="co2">// Creamos un puntero a un objeto MiObjeto. Para dar énfasis a que se trata de un puntero, lo inicializamos a nil, que es equivalente a NULL.</span>
+     <span class="kw4">int</span> otroNumeroEntero <span class="sy0">=</span> <span class="nu0">20</span>;
+     MiObjeto<span class="sy0">*</span> objeto <span class="sy0">=</span> <span class="kw2">nil</span>;
+&nbsp;
+     <span class="co2">// Reservamos memoria para el objeto</span>
+     objeto <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjeto alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="co2">// Asignamos un valor al número entero del objeto</span>
+     <span class="br0">&#91;</span>objeto setNumeroEntero<span class="sy0">:</span> <span class="nu0">10</span><span class="br0">&#93;</span>;
+&nbsp;
+     <span class="co2">// Mostramos el valor del numero entero que hemos asignado al objeto</span>
+     <span class="br0">&#91;</span>objeto printNumeroEntero<span class="br0">&#93;</span>;
+     <span class="co2">// Eliminamos el objeto de memoria</span>
+     <span class="br0">&#91;</span>objeto release<span class="br0">&#93;</span>;
+<span class="br0">&#125;</span></pre>
+
+<p>
+La llamada al método alloc permite crear el objeto nuevo, de forma similar a como se realiza con el operador new de otros lenguajes. El llamado a init invoca al constructor de la clase.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Definición de una clase" [179-3120] -->
+<h3 class="sectionedit3" id="constructores">Constructores</h3>
+<div class="level3">
+
+<p>
+La declaración de un constructor debe realizarse a través del método init heredado de NSObject, la siguiente sección muestra un constructor predeterminado y un constructor con parámetros
+</p>
+<pre class="code objc"><span class="co2">// Dentro de la interface de la clase</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> init;
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> initConNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> entero<span class="sy0">:</span>
+&nbsp;
+<span class="co2">// Dentro de la implemetación de la clase</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> init <span class="br0">&#123;</span>
+     self <span class="sy0">=</span> <span class="br0">&#91;</span>super init<span class="br0">&#93;</span>;
+     <span class="kw1">if</span> <span class="br0">&#40;</span>self<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          numeroEntero <span class="sy0">=</span> <span class="nu0">100</span>;
+     <span class="br0">&#125;</span>
+     <span class="kw1">return</span> self;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co2">// Otro constructor, donde definimos de forma explícita los valores de numeroEntero</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjecto<span class="br0">&#41;</span> initConNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> entero <span class="br0">&#123;</span>
+     self <span class="sy0">=</span> <span class="br0">&#91;</span>super init<span class="br0">&#93;</span>;
+     <span class="kw1">if</span> <span class="br0">&#40;</span>self<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          <span class="br0">&#91;</span>setNumeroEntero<span class="sy0">:</span> entero<span class="br0">&#93;</span>;
+     <span class="br0">&#125;</span>
+     <span class="kw1">return</span> self;
+<span class="br0">&#125;</span></pre>
+
+<p>
+El llamado a estos constructores se puede realizar como se muestra a continuación
+</p>
+<pre class="code objc"><span class="kw4">int</span> main<span class="br0">&#40;</span> <span class="kw4">int</span> numeroArgumentos, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> argumentos<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="co2">// Inicializamos usando el NUEVO constructor por defecto, por lo que numeroEntero valdrá 100 en miObjeto1</span>
+     MiObjeto<span class="sy0">*</span> miObjeto1 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjeto alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="co2">// Inicializamos miObjeto2 usando el otro constructor, por lo que numeroEntero en miObjeto2 valdrá 10</span>
+     MiObjeto<span class="sy0">*</span> miObjeto2 <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjecto alloc<span class="br0">&#93;</span> initConNumeroEntero<span class="sy0">:</span><span class="nu0">10</span><span class="br0">&#93;</span>;
+     <span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">&#125;</span></pre>
+
+</div>
+<!-- EDIT3 SECTION "Constructores" [3121-4393] -->
+<h3 class="sectionedit4" id="estaticos">Estáticos</h3>
+<div class="level3">
+
+<p>
+Los métodos y atributos estáticos pueden ser accedido desde cualquier lugar de la clase. Para definir un miembro estático basta con anteponer un símbolo + a su definición como se muestra en el siguiente ejemplo.
+</p>
+<pre class="code objc"><span class="co2">// Archivo ObjetoEstatico.h</span>
+<span class="co1">#import &lt;Foundation/NSObject.h&gt;</span>
+<span class="kw1">@interface</span> ObjetoEstatico <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a>
+<span class="sy0">+</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setDatosCliente<span class="sy0">:</span> <span class="br0">&#40;</span>DatosCliente<span class="sy0">*</span><span class="br0">&#41;</span> cliente;
+<span class="kw1">@end</span></pre>
+<pre class="code objc"><span class="co2">// Archivo ObjetoEstatico.m</span>
+<span class="co1">#import “ObjetoEstatico.h”</span>
+<span class="co1">#import “DatosCliente.h”</span>
+<span class="kw1">@implementation</span> ObjetoEstatico
+<span class="sy0">+</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setDatosCliente<span class="sy0">:</span> <span class="br0">&#40;</span>DatosCliente<span class="sy0">*</span><span class="br0">&#41;</span> cliente <span class="br0">&#123;</span>
+     <span class="co2">// Accedemos a la variable pública teléfono del puntero a DatosCliente que recibe la función.</span>
+     cliente<span class="sy0">-</span>&gt;telefono <span class="sy0">=</span> <span class="nu0">1004</span>;
+<span class="br0">&#125;</span>
+<span class="kw1">@end</span></pre>
+<pre class="code objc"><span class="co2">// Archivo main.m</span>
+<span class="co1">#import “ObjetoEstatico.h”</span>
+<span class="co1">#import &lt;stdio.h&gt;</span>
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     DatosCliente<span class="sy0">*</span> miCliente <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>DatosCliente alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="br0">&#91;</span>ObjetoEstatico setDatosCliente<span class="sy0">:</span> miCliente<span class="br0">&#93;</span>;
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span>“El telefono del cliente es <span class="sy0">%</span>d\n”, miCliente<span class="sy0">-</span>&gt;telefono<span class="br0">&#41;</span>;
+     <span class="br0">&#91;</span>miCliente release<span class="br0">&#93;</span>;
+     <span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">&#125;</span></pre>
+
+</div>
+<!-- EDIT4 SECTION "Estáticos" [4394-5468] -->
+<h3 class="sectionedit5" id="el_tipo_de_dato_id">El Tipo de dato id</h3>
+<div class="level3">
+
+<p>
+Este tipo de dato es un tipo de dato especial reservado y muy útil que se encuentra a disposición en objective c. El tipo de dato id, se parece a un puntero a void de C/C++, pero con la diferencia de ser más versátil. Los objetos de este tipo de dato pueden ponerse apuntar a cualquier otro objeto permitiendo ejecutar métodos o a acceder a miembros, sin necesidad de ningún casting, solamente conociendo la definición del miembro.
+</p>
+<pre class="code">MiObjetoUno* obj1 = [[MiObjetoUno alloc] init];
+MiObjetoDos* obj2 = [[MiObjetoDos alloc] init];
+id ID = obj1;
+[ID inicializaVariable1: 10 variable2: 20 yVariable3: 30];
+ID = obj2;
+[ID inicializaVariable1: 10 variable2: 20 yVariable3: 30];</pre>
+
+<p>
+Suponiendo que las clases MiObjetoUno y MiObjetoDos posean métodos con el siguiente prototipo (pueden diferir en su implementación)
+</p>
+<pre class="code objc">–<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> inicializaVariable1<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> var1 variable2<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> var2 yVariable3<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> var3;</pre>
+
+<p>
+Se puede llamar los métodos usando la referencia id.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "El Tipo de dato id" [5469-6492] -->
+<h3 class="sectionedit6" id="protocolos_e_interfaces">Protocolos e Interfaces</h3>
+<div class="level3">
+
+<p>
+Los protocolos son lo mismo que las interfaces de java, y muy parecidos a los métodos virtuales en C/C++. A continuación se muestra la definición de una interface y su implementación en una clase.
+</p>
+
+<p>
+Lo primero que se debe hacer es declarar la interface a través del tag @protocol:
+</p>
+<pre class="code objc"><span class="co2">// Archivo MiPrimerProtocolo.h</span>
+<span class="kw1">@protocol</span> MiPrimerProtocolo
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> print
+<span class="kw1">@end</span></pre>
+
+<p>
+En el momento que una clase desee utilizar o definir los métodos indicados en un protocol, debe utilizar paréntesis angulares para especificarlo (se puede especificar más de un protocol).
+</p>
+<pre class="code objc"><span class="kw1">@interface</span> MiObjeto <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a> &lt;MiPrimerProtocolo&gt; <span class="br0">&#123;</span>
+<span class="br0">&#125;</span>
+<span class="co2">// Declaro el método print del protocolo</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> print;
+<span class="kw1">@end</span></pre>
+
+<p>
+Finalmente se define la lógica de lo que el método realiza, el uso de NSLog permite escribir mensajes de depuración en la consola.
+</p>
+<pre class="code objc"><span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> print <span class="br0">&#123;</span>
+     NSLog<span class="br0">&#40;</span>@“Soy un objeto tipo MiObjeto que implementa MiPrimerProtocolo<span class="sy0">!</span>\n”<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre>
+
+<p>
+Y se utiliza en un main con un pequeño ejemplo del llamado al método del protocolo, note que el llamado al método no reviste ninguna diferencia
+</p>
+<pre class="code objc"><span class="co2">// Archivo main.m</span>
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     MiObjeto<span class="sy0">*</span> objeto <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjeto alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="kw4">id</span> &lt;MiPrimerProtocolo&gt; esteObjetoPuedeHacerPrint <span class="sy0">=</span> objeto;
+     <span class="co2">// Llamamos al método print de esteObjetoPuedeHacerPrint:</span>
+     <span class="br0">&#91;</span>esteObjetoPuedeHacerPrint print<span class="br0">&#93;</span>;
+     <span class="br0">&#91;</span>release objeto<span class="br0">&#93;</span>
+     <span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">&#125;</span></pre>
+
+</div>
+<!-- EDIT6 SECTION "Protocolos e Interfaces" [6493-7960] -->
+<h3 class="sectionedit7" id="uso_de_nslog_y_caracteres_de_escape">Uso de NSLog y caracteres de escape</h3>
+<div class="level3">
+
+<p>
+Es muy útil cuando se programa imprimir información en pantalla y aunque en objective c podemos usar primitivas de impresión como printf, existe una forma más especializada a través del uso de NSLog la cual permite imprimir mensaje de depuración en la consola.
+</p>
+
+<p>
+A continuación se muestran algunos ejemplos de uso de NSLog
+</p>
+<pre class="code objc">NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;ALL YOUR BASE ARE BELONG TO US&quot;</span><span class="br0">&#41;</span>;
+NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;x = %d, y = %d&quot;</span>, x, y<span class="br0">&#41;</span>;
+NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;%s<span class="es0">\t</span>%s<span class="es0">\t</span>0x%08x&quot;</span>, <span class="st0">&quot;hex&quot;</span>, <span class="st0">&quot;value&quot;</span>, 0x1243<span class="br0">&#41;</span>;</pre>
+
+<p>
+La siguiente es una lista de los especificadores más utiles para usar junto a NSLog
+</p>
+<pre class="code objc"><span class="sy0">%</span>@     Object
+<span class="sy0">%</span>d, <span class="sy0">%</span>i <span class="kw4">signed</span> <span class="kw4">int</span>
+<span class="sy0">%</span>u     <span class="kw4">unsigned</span> <span class="kw4">int</span>
+<span class="sy0">%</span>f     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span>
+<span class="sy0">%</span>x, <span class="sy0">%</span>X hexadecimal <span class="kw4">int</span>
+<span class="sy0">%</span>o     octal <span class="kw4">int</span>
+<span class="sy0">%</span>zu    <span class="kw4">size_t</span>
+<span class="sy0">%</span>p     pointer
+<span class="sy0">%</span>e     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span> <span class="br0">&#40;</span><span class="kw1">in</span> scientific notation<span class="br0">&#41;</span>
+<span class="sy0">%</span>g     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span> <span class="br0">&#40;</span>as <span class="sy0">%</span>f or <span class="sy0">%</span>e, depending on value<span class="br0">&#41;</span>
+<span class="sy0">%</span>s     C <span class="kw4">string</span> <span class="br0">&#40;</span>bytes<span class="br0">&#41;</span>
+<span class="sy0">%</span>S     C <span class="kw4">string</span> <span class="br0">&#40;</span>unichar<span class="br0">&#41;</span>
+<span class="sy0">%</span>.<span class="sy0">*</span>s   Pascal <span class="kw4">string</span> <span class="br0">&#40;</span>requires two arguments, pass pstr<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> as the first, pstr<span class="sy0">+</span><span class="nu0">1</span> as the second<span class="br0">&#41;</span>
+<span class="sy0">%</span>c     character
+<span class="sy0">%</span>C     unichar
+<span class="sy0">%</span>lld   <span class="kw4">long</span> <span class="kw4">long</span>
+<span class="sy0">%</span>llu   <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span>
+<span class="sy0">%</span>Lf    <span class="kw4">long</span> <span class="kw4">double</span></pre>
+
+</div>
+<!-- EDIT7 SECTION "Uso de NSLog y caracteres de escape" [7961-9068] -->
+<h3 class="sectionedit8" id="administracion_de_la_memoria">Administración de la memoria</h3>
+<div class="level3">
+
+<p>
+La administración de memoria en Objective C es muy parecida a la administración de memoria en lenguajes como C o C++. En el caso de Objective C, existen cuatro elementos básicos para la manipulación de la memoria
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>[retainCount]:</strong> Este es un contador global que determina cuantas instancias existen de un objeto. Este método se encuentra disponible para todas las clases puesto que se encuentra definido en NSObject</div>
+</li>
+<li class="level1"><div class="li"> <strong>[alloc]:</strong> Este método se puede utilizar para instanciar (alojar) un objeto en memoria. Desde el punto de vista practico no presenta muchas diferencias con new de java o C++.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[release]:</strong> este método libera la memoria ocupada por una instancia, en caso que el retainCount llege a cero, se liberara toda la memoria utilizada por los objetos y de la clase, incluso aunque existan objetos con apuntadores que les hagan referencia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[retain]:</strong> Este método permite retener un objeto en memoria a fin de evitar el llamado al método dealloc. Dealloc es un método que se llama automáticamente y esta definido en la clase NSObject, por tal razón puede ser sobre escrito pero no invocado manualmente, en su lugar el sistema puede llamar al método dealloc cuando el retainCount de una clase llega a 0. Esto puede suceder aunque realmente todavía existan apuntadores a objetos, por ello es importante hacer un retain antes de liberar la memoria.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Administración de la memoria" [9069-] -->

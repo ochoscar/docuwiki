@@ -1,0 +1,232 @@
+====== Vectores ======
+
+Un vector es un segmento de recta dirigido que se caracteriza por tener magnitud y dirección. También podemos definir un vector como una cantidad que tiene magnitud y dirección.Todos los vectores que tengan la misma magnitud y dirección se denominan equivalentes sin importar su punto inicial. Note que un segmento de recta dirigido se puede caracterizar dando su punto inicial y final.
+El segmento de recta se puede representar geométricamente como $\overrightarrow{PQ}$ y algebraicamente como $\mathbf v$
+El vector de forma algebraica se suele representar con su punto inicial situado en el origen $\overrightarrow{OR}$, de tal forma que estaría especificado por sus coordenadas $(a,b)$, a estos números se les llama elementos o componentes del vector. Nota: la definición anterior aplica a las coordenadas $(x,y)$ en el plano.
+
+El vector cero denotado como $0$ es el único vector que no tiene una dirección especifica. 
+
+===== Magnitud y dirección =====
+
+La magnitud y dirección de un vector se pueden calcular fácilmente para vectores en el plano usando las siguientes relaciones geométricas:
+
+$$\text{magnitud de } \mathbf v=|\mathbf v|=\sqrt{a^2+b^2}$$
+$$\text{dirección de } \mathbf v=\tan(\theta)=\frac{a}{b}$$
+
+===== Operaciones con vectores =====
+
+A continuación se muestran las operaciones más habituales con vectores, para ello consideremos $\mathbf v$, $\mathbf u$ y $\alpha$ dos vectores y un escalar respectivamente.
+
+  - Multiplicación por un escalar: al multiplicar por un escalar la magnitud del vector se multiplica por el valor absoluto del escalar, así: $\alpha \mathbf v=(\alpha a, \alpha b)=| \alpha || \mathbf v |$. En cuanto a la dirección si $\alpha$ es positivo se conserva sin cambios y si $\alpha$ es negativo esta se ve incrementada en $\pi$. Lo anterior conlleva a que dos vectores sean paralelos si uno es múltiplo escalar del otro.
+  - Suma de dos vectores: la suma de dos vectores es: $\mathbf v + \mathbf u = (a_1+a_2,b_1+b_2)$
+  - Resta de dos vectores: la resta de dos vectores es: $\mathbf v - \mathbf u = (a_1-a_2,b_1-b_2)$
+
+Gráficamente estas operaciones se pueden representar como se ilustra en la siguiente figura:
+
+{{:matematicas:vectoresoperaciones.gif|}}
+
+**Desigualdad del triangulo**
+
+Esta es una desigualdad muy utilizada y común en el estudio de las matemáticas y establece lo siguiente en cuanto a los vectores:
+
+$$|\mathbf{u+v}| \leq |\mathbf{u}| + |\mathbf{v}|$$
+
+====  Vectores en el espacio y representaciones ====
+
+Aunque muchos de los conceptos aplicados a $\mathbb R^2$ aplican igualmente a $\mathbb R^3$ como son: suma, multiplicación por escalar, vector unitario, y ángulo entre vectores, se detallaran algunas de las operaciones más relevantes.
+En este caso los puntos en el espacio están determinados por tres coordenadas respecto a los ejes coordinados $x$, $y$ y $z$, así $(a,b,c)$, de tal forma que un vector $\overrightarrow{PQ}$ tiene una magnitud que se puede calcular con la formula de distancia más general:
+
+$$\overline{PQ}=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2}$$
+
+De manera similar la suma y multiplicación por un escalar están dados como sigue:
+
+$$\mathbf u \pm \mathbf v=(x_1 \pm x_2, y_1 \pm y_2, z_1 \pm z_2)$$
+$$\alpha \mathbf u=(\alpha x_1, \alpha y_1, \alpha z_1)$$
+
+Las siguientes son las operaciones y propiedades que tienen los vectores, siendo $\mathbf{a}$ y $\mathbf{b}$ vectores y $c$ y $d$ escalares:
+
+  * Suma y resta: se usa la ley del triángulo o la ley del paralelogramo
+  * Multiplicación por un escalar: escala el tamaño del vector, en caso que el escalar sea un número negativo el vector cambia de dirección y presenta un desfase de 180º 
+  * $\mathbf{a}+\mathbf{b}=\mathbf{b}+\mathbf{a}$
+  * $\mathbf{a}+\mathbf{0}=\mathbf{a}$
+  * $c(\mathbf{a}+\mathbf{b})= c\mathbf{a} +c \mathbf{b}$
+  * $(cd)\mathbf{a}=c(d\mathbf{a})$
+  * $\mathbf{a}+(\mathbf{b}+\mathbf{c})=(\mathbf{a}+\mathbf{b})+\mathbf{c}$
+  * $\mathbf{a}+(-\mathbf{a})=\mathbf{0}$
+  * $(c+d)\mathbf{a}=c\mathbf{a}+d\mathbf{a}$
+  * $1\mathbf{a}=\mathbf{a}$
+
+Un vector que tenga su punto inicial en el origen y el punto final sea $P$ se llama vector posición del punto $P$
+Es importante tener en cuenta que como un vector se define por su magnitud y dirección bien sea en el plano bidimensional o en el espacio tridimensional, no importa el punto de origen, es decir un mismo vector puede tener muchas representaciones simplemente cambiando su punto de origen, por ello se denota:
+
+$$\mathbf{a}=<a_1,a_2>$$
+
+Al vector posición cuyo punto final es $P(a_1,a_2)$ por lo tanto es importante distinguir el punto final, del vector posición de ese punto.
+Ahora bien, dado los puntos $A(x_1,y_1,z_1)$ y $B(x_2,y_2,z_3)$ el vector $\mathbf{a}$ con representación $\overrightarrow{AB}$ es:
+
+$$\mathbf{a}=<x_2-x_1,y_2-y_1,z_2-z_1>$$
+
+La longitud o magnitud de un vector $\mathbf{a}=<a_1,a_2>$ se puede calcular con la fórmula de la distancia:
+
+$$|\mathbf{a}|=\sqrt{a_1^2+a_2^2+a_3^2}$$
+
+Y algebraicamente se pude definir la suma (análogamente la resta) de los vectores y la multiplicación por un escalar como sigue:
+
+$$<a_1,a_2,a_3>+<b_1,b_2,b_3>=<a_1+b_1,a_2+b_2,a_3+b_3>$$
+$$c<a_1,a_2,a_3>=<ca_1,ca_2,ca_3>$$
+
+Podemos escribir los siguientes tres vectores en el espacio, los cuales son muy útiles puesto que permiten representar cualquier vector como combinación lineal de ellos, es decir, estos vectores forman una base para el espacio. Estos vectores son los siguientes:
+
+  * $$\mathbf{i}=<1,0,0>$$
+  * $$\mathbf{j}=<0,1,0>$$
+  * $$\mathbf{k}=<0,0,1>$$
+
+Estos son los denominados **vectores básicos canónicos**. Es importante notar que estos vectores son unitarios, es decir su magnitud es la unidad. 
+El vector unitario que tiene la misma dirección que $\mathbf{a}$ que se denominara $\mathbf{u}$ se puede calcular como:
+
+$$\mathbf{u}=\frac{1}{|\mathbf{a}|}\mathbf{a}=\frac{\mathbf{a}}{|\mathbf{a}|}$$
+
+====Dirección de un vector====
+
+La dirección de un vector está dada por la dirección del vector unitario correspondiente. Adicionalmente se puede calcular los ángulos que forma el vector con los ejes coordinados, en este caso con $x$, $y$ y $z$; para tal fin se definen respectivamente los ángulos $\alpha$, $\beta$, $\gamma$, las siguientes relaciónes permiten calcular estos ángulos:
+
+$$\cos \alpha=\frac{x_0}{|\mathbf v|} \text{  } \cos \beta=\frac{y_0}{|\mathbf v|} \text{  } \cos \gamma=\frac{z_0}{|\mathbf v|}$$
+
+Es importante advertir la siguiente relación:
+
+$$\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1$$
+
+Estos cosenos se denominan cosenos directores y de forma análoga para el vector $\mathbf v=(a,b,c)$ siempre y cuando $|\mathbf v| \neq 1$ los números $a$, $b$, $c$ se denominan números directores del vector
+
+==== Vectores unitarios ====
+
+Dos vectores muy importantes son los vectores $\mathbf i$ y $\mathbf j$, estos vectores de magnitud uno apuntan en dirección de los ejes coordinados $x$ e $y$ respectivamente, en terminología de álgebra lineal estos vectores son linealmente independientes que forman una base para $\mathbb R^2$. Estos vectores son muy utiles por que permiten escribir otros vectores en términos de sus componentes horizontales y verticales como lo muestra la siguiente expresión:
+
+$$\mathbf v = a \mathbf i + b \mathbf j$$
+
+Definamos **vector unitario** como aquel vector que tiene longitud 1, se puede escribir por tanto de las siguientes formas:
+
+$$\mathbf u = (\cos\theta)\mathbf i + (\sin\theta)\mathbf j=\frac{\mathbf v}{|\mathbf v|}$$
+
+==== Producto escalar y proyecciones ====
+
+El producto escalar entre dos vectores se define como:
+
+$$\mathbf u \cdot \mathbf v = a_1a_2+b_1b_2$$
+
+Note que el resultado del producto escalar es un número y esta denotado con un punto.
+
+Así mismo es necesario definir el **ángulo entre dos vectores** como el ángulo no negativo más pequeño entre las representaciones de los vectores teniendo ambos el mismo punto de origen, el ángulo entre los vectores se denota como $\varphi$
+
+Como consecuencia del producto vectorial nos podemos encontrar con los siguientes resultados:
+
+$$|\mathbf v|^2=\mathbf v \cdot \mathbf v$$
+
+Siendo $\varphi$ el ángulo entre vectores:
+
+$$\cos \varphi = \frac{\mathbf u \cdot \mathbf v}{|\mathbf u||\mathbf v|}$$
+
+De tal forma que el producto escalar también se puede expresar en términos del ángulo entre vectores, así:
+
+$$\mathbf v \cdot \mathbf v=|\mathbf u||\mathbf v|\cos \varphi$$
+
+====Vectores paralelos====
+
+Dos vectores son paralelos si el ángulo entre ellos es 0 o 180º. Dos vectores paralelos pueden tener la misma dirección o direcciones opuestas. De esta forma dos vectores $\mathbf u$ y $\mathbf v$ son paralelos implica que $\mathbf v = \alpha \mathbf u$ para alguna constante $\alpha$ y siempre y cuando ambos vectores sean diferentes de cero.
+
+====Vectores ortogonales====
+
+Dos vectores $\mathbf u$ y $\mathbf v$ son ortogonales siempre y cuando sean diferentes de cero, y el ángulo entre ellos sea cero, lo anterior implica que si son ortogonales se cumple que:
+
+$$\mathbf u \cdot \mathbf v =  0$$
+
+====Proyección====
+
+Las proyecciones vectoriales son muy útiles en diversos cálculos. Para poder derivar el resultado de una proyección vectorial se debe partir del siguiente resultado:
+
+$$\mathbf w=\mathbf u-\frac{(\mathbf u \cdot \mathbf v)}{|\mathbf v|^2}\mathbf v$$
+
+Donde $\mathbf u$ y $\mathbf v$ son vectores cualquiera y el vector $\mathbf w$ resultante es ortogonal a $\mathbf v$
+
+De esta forma para los vectores $\mathbf u$ y $\mathbf v$ la proyección de $\mathbf u$ sobre $\mathbf v$ es el vector denotado por $proy_{\mathbf v}\mathbf u$ y definido como:
+
+$$proy_{\mathbf v}\mathbf u=\frac{(\mathbf u \cdot \mathbf v)}{|\mathbf v|^2}\mathbf v$$
+
+La componente de $\mathbf u$ en dirección de $\mathbf v$ es $\frac{(\mathbf u \cdot \mathbf v)}{|\mathbf v|^2}$ y es un escalar.
+La siguiente imagen ilustra esta operación de proyección.
+
+{{:matematicas:proyeccionvectorial.gif|}}
+
+
+====Producto punto o producto escalar====
+
+La definición de producto escalar se amplia en este caso de la siguiente manera:
+
+$$\mathbf u \cdot \mathbf v = a_1a_2+b_1b_2+c_1c_2=|\mathbf u||\mathbf v|\cos \varphi$$
+
+De cualquier forma las relaciones vistas para el calculo de proyecciones siguen siendo las mismas.
+
+==== Producto cruz ====
+
+Note que el producto punto o producto escalar no es cerrado bajo el dominio de los vectores, la operación que se definirá a continuación conocida como producto cruz o producto vectorial si es cerrada y su resultado es un vector perpendicular (ortogonal) a los dos vectores que hagan parte del producto, por esta razón el producto cruz no esta definido para $\mathbb R^2$.
+A continuación se presenta la definición:
+
+$$\mathbf u \times \mathbf v=(b_1c_1-c_1b_2)\mathbf i+(c_1a_2-a_1c_2)\mathbf j+(a_1b_1-b_1a_2)\mathbf k$$
+
+Donde $\mathbf i$, $\mathbf j$ y $\mathbf k$ son vectores unitarios en las direcciones positivas de los ejes coordinados. Alternativamente se puede contar con una definición basada en determinantes, así:
+
+$$\mathbf u \times \mathbf v=\begin{vmatrix} \mathbf i & \mathbf j & \mathbf k \\ a1 & b1 & c1 \\ a2 & b2 & c2 \end{vmatrix}$$
+
+El resultado de este producto es un vector ortogonal a $\mathbf u$ y $\mathbf v$ cuya dirección esta determinada por la regla de la mano derecha.
+
+Las propiedades del producto cruz se muestran a continuación. Sean $\mathbf u$, $\mathbf v$, $\mathbf w$ tres vectores en $\mathbb R^3$ y $\alpha$ un escalar entonces:
+
+  * $\mathbf u \times \mathbf 0 = \mathbf 0 \times \mathbf u = \mathbf 0$
+  * $\mathbf u \times \mathbf v = -(\mathbf v \times \mathbf u)$
+  * $(\alpha \mathbf u) \times \mathbf v=\alpha(\mathbf u \times \mathbf v$
+  * $\mathbf u \times (\mathbf u + \mathbf w)=(\mathbf u \times \mathbf v)+(\mathbf u \times \mathbf w)$
+  * **Triple producto escalar** $(\mathbf u \times \mathbf v) \cdot \mathbf w = \mathbf u \cdot (\mathbf v \times \mathbf w)$
+  * $\mathbf u \cdot (\mathbf u \times \mathbf v)=\mathbf v \cdot (\mathbf u \times \mathbf v)=0$
+  * Si $\mathbf u$ y $\mathbf v$ son diferentes de cero serán paralelos si y sólo si $\mathbf u \times \mathbf v=\mathbf 0$
+
+Otra relación útil para calcular el producto vectorial se obtiene con la siguiente expresión que permite calcular la magnitud del producto, teniendo en cuenta que la dirección es perpendicular a los vectores del producto y esta dada por la regla de la mano derecha:
+
+$$|\mathbf u \times \mathbf v|=|\mathbf u||\mathbf v|\sin\varphi$$
+
+Se puede interpretar la magnitud del vector resultante como el área del paralelogramo que tiene lados adyacentes $\mathbf u$ y $\mathbf v$
+De forma similar la magnitud el triple producto escalar corresponde al área del paralelepipedo definido por los vectores $\mathbf u$, $\mathbf v$ y $\mathbf w$
+
+===== Rectas y planos =====
+
+==== Rectas ====
+
+Para una recta en el espacio se tiene la siguiente ecuación vectorial:
+
+$$\overrightarrow{OR}=\overrightarrow{OP}+t\mathbf v$$
+
+Donde el vector $\mathbf v$ es un vector paralelo a $\overrightarrow{PR}$. Extendiendo los componentes se puede
+obtener las siguientes relaciones denominadas ecuaciones parametricas de la recta:
+
+$$x=x_1+t(x_2-x_1)$$
+$$y=y_1+t(y_2-y_1)$$
+$$z=z_1+t(z_2-z_1)$$
+
+Si se despeja $t$ en las ecuaciones anteriores y se igualan definiendo $a=x_2-x_1$, $b=y_2-y_1$ y $c=z_2-z_1$ se 
+obtienen las llamadas ecuaciones simétricas de la recta:
+
+$$\frac{x-x_1}{a}=\frac{y-y_1}{b}=\frac{z-z_1}{c}$$
+
+Tenga en cuenta que las ecuaciones paramétricas o simétricas de una recta no son únicas.
+
+====Planos====
+
+Sea $P$ un punto y $\mathbf n$ un vector dado diferente de cero, el conjunto de puntos $Q$ que cumplen $\overrightarrow{PQ}\cdot \mathbf n = 0$ se conoce como plano.
+
+Las siguientes ecuaciones son las ecuaciones cartesianas de un plano:
+
+$$ax+by+cz=d$$ 
+$$\text{donde }d=ax_0+by_0+cz_0=\overrightarrow{OP}\cdot \mathbf n $$
+
+En estas ecuaciones los números $a$, $b$ y $c$ son las componenetes del vector $\mathbf n$ normal al plano y los números
+$x_0$, $y_0$ y $z_0$ son loas coordenadas del punto $P$
+Finalmente una definición útil es que dos planos son paralelos si sus vectores normales lo son, es decir si el producto cruz de los vectores normales es cero

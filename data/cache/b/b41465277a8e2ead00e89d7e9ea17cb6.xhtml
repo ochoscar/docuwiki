@@ -1,0 +1,781 @@
+
+<h1 class="sectionedit1" id="areas">Áreas</h1>
+<div class="level1">
+
+<p>
+El problema del área bajo la curva se puede resolver inscribiendo rectángulos de base fija <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0328e08e6de961b2cd1156c077960f17.png" class="latex_inline" alt="$\Delta x=\frac{b-a}{n}$" title="Math" /> donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img55a049b8f161ae7cfeb0197d75aff967.png" class="latex_inline" alt="$n$" title="Math" /> es el número de rectángulos que se inscriben en el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> de esta forma el área se obtiene sumando el área a individual de cada rectángulo y haciendo que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8e5ac09b149a8f375637b349458e91e1.png" class="latex_inline" alt="$n \to \infty$" title="Math" /> los rectángulos incritos pueden tomarse con cualquier punto sobre la curva (puntos de muestra) por ejemplo se pueden tomar para que esten a la izquierda, a la derecha o en un punto medio.
+</p>
+
+<p>
+El área bajo la curva se puede obtener entonces evaluando el siguiente límite:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgea7dabb2db333de18569aeed5fe8df61.png" class="latex_displayed" alt="$$A=\lim_{n \to \infty}[f(x_1)\Delta x+f(x_2)\Delta x+\dotsm+f(x_n)\Delta x]$$" title="Equation" />
+</p>
+
+<p>
+La siguiente gráfica ilustra este proceso:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aintegral&amp;media=matematicas:integral-01.png" class="media" title="matematicas:integral-01.png"><img src="/docuwiki/lib/exe/fetch.php?w=250&amp;tok=1d5c11&amp;media=matematicas:integral-01.png" class="media" alt="" width="250" /></a>
+</p>
+
+<p>
+Note que para poder hallar esta área se requiere que la función sea continua.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Áreas" [1-852] -->
+<h1 class="sectionedit2" id="integrales">Integrales</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT2 SECTION "Integrales" [853-878] -->
+<h2 class="sectionedit3" id="integral_definida">Integral definida</h2>
+<div class="level2">
+
+<p>
+A continuación se presenta la definición de integral definida.
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es una función continua definida para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09d13a0a4c4c7ee44dfbd56e63f629ba.png" class="latex_inline" alt="$a \le x \le b$" title="Math" />, dividimos el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img55a049b8f161ae7cfeb0197d75aff967.png" class="latex_inline" alt="$n$" title="Math" /> subintervalos de igual ancho <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0328e08e6de961b2cd1156c077960f17.png" class="latex_inline" alt="$\Delta x=\frac{b-a}{n}$" title="Math" />. Hacemos que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9a54cf4d5b0f670b71ac544d369736f6.png" class="latex_inline" alt="$x_0(=a),x_1,x_2,\dotso,x_n(=b)$" title="Math" /> seab los puntos extremos de estos subintervalos y elegimos <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img58a80953cbcb537fe917e27c9d79eda1.png" class="latex_inline" alt="$x_i^*$" title="Math" /> se encuentre en el i-esimo subintervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7dba8f1395729d6eeb6250e5d0b0e3d9.png" class="latex_inline" alt="$[x_{i-1},x_{i}]$" title="Math" />, entonces la <strong>integral definida de</strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> <strong>desde</strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> <strong>hasta</strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" />, es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img11a7b088deca6a0f809a3af80f8348b0.png" class="latex_displayed" alt="$$\int_{a}^{b}f(x)dx=\lim_{n \to \infty}\sum_{i=1}^{n}f(x_i^*)\Delta x$$" title="Equation" />
+</p>
+
+<p>
+En la notación anterior se tiene los límites de la integral definida, la función y la variable que se quiere integrar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img74380e4b90b7786c87c490f3d94f2f68.png" class="latex_inline" alt="$dx$" title="Math" />, esta es la notación de Leibniz. De otra parte la sumatoria es conocida como Suma de Riemann.
+Como se anoto antes este límite siempre existe y es independiente de la elección de los puntos de muestra siempre y cuando pertenezcan al subintervalo correspondiente. Este límite también se puede hallar si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> posee discontinuidades de tipo brinco, pero no de tipo infinito.
+</p>
+
+<p>
+En caso que la función a integrar tome valores negativos (este por debajo del eje x), durante esos intervalos el área de la función será considerada como negativa y al tomar la integral sobre un intervalo mayor que abarque porciones de la función donde sea negativa y positiva, la integral definida al ser evaluada corresponderá a una diferencia de áreas y por lo tanto en estos casos no puede ser interpretado el resultado como un área.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Integral definida" [879-2399] -->
+<h3 class="sectionedit4" id="regla_del_punto_medio">Regla del punto medio</h3>
+<div class="level3">
+
+<p>
+Una forma de mejorar las aproximaciones obtenidas con la suma de Riemann consiste en utilizar los puntos medios de cada subintervalo, a este procedimiento se le conoce como regla del punto medio y establece que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge8636761956950d626e49f25def686cf.png" class="latex_displayed" alt="$$\int_a^bf(x)dx \approx \sum_{i=1}^nf(\overline{x_i})\Delta x$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0328e08e6de961b2cd1156c077960f17.png" class="latex_inline" alt="$\Delta x=\frac{b-a}{n}$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcc995818f27fbc0dd7cdc9227a581ef5.png" class="latex_inline" alt="$\overline{x_i}=\frac{1}{2}(x_{i-1}+x_i)$" title="Math" /> es decir el punto medio del subintervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img960bcb0dadbcd77b85d11b7a8f68773e.png" class="latex_inline" alt="$[x_{i-1},x_i]$" title="Math" />
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Regla del punto medio" [2400-2844] -->
+<h3 class="sectionedit5" id="propiedades">Propiedades</h3>
+<div class="level3">
+
+<p>
+Supongamos que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> son funciones continuas, entonces se cumplen las siguientes propiedades:
+</p>
+<ol>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1be67fe49b2b62e9f6885d1161e995fe.png" class="latex_inline" alt="$\int_b^af(x)dx=-\int_a^bf(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8fd5bb0eeaa8887f6a312c99359a3b93.png" class="latex_inline" alt="$a=b$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcf520e810d340a8342536664848d396e.png" class="latex_inline" alt="$\Delta x=0$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img56ba446ffc12127191a1b32fd0e9d729.png" class="latex_inline" alt="$\int_a^af(x)dx=0$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9cbe67bbd12161f17e3d54428346aa7f.png" class="latex_inline" alt="$\int_a^bcdx=c(b-a)$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd4c1299148fb96d754224982129733b0.png" class="latex_inline" alt="$\int_a^b(f(x)+g(x))dx=\int_a^bf(x)dx+\int_a^bg(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img129f9e59d9e6388c7ebfbb857a7d15d3.png" class="latex_inline" alt="$\int_a^bcf(x)dx=c\int_a^bf(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e627a66b54a0a32978685fb454159f0.png" class="latex_inline" alt="$\int_a^b(f(x)-g(x))dx=\int_a^bf(x)dx-\int_a^bg(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf8046f81c04345c26d5dcaa34eac346c.png" class="latex_inline" alt="$\int_a^cf(x)dx+\int_c^bf(x))dx=\int_a^bf(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img81249fe67fac5c724a740b3e13403c53.png" class="latex_inline" alt="$f(x) \ge 0$" title="Math" /> para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09d13a0a4c4c7ee44dfbd56e63f629ba.png" class="latex_inline" alt="$a \le x \le b$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd49a2e1eba467e4e3d6aedd896b4428d.png" class="latex_inline" alt="$\int_a^bf(x)dx \ge 0$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfc6146686b80487b0ff5beeb62f98f45.png" class="latex_inline" alt="$f(x) \ge g(x)$" title="Math" /> para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09d13a0a4c4c7ee44dfbd56e63f629ba.png" class="latex_inline" alt="$a \le x \le b$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5685ed4ae9ef41f0cf2d0aa17fb93477.png" class="latex_inline" alt="$\int_a^bf(x)dx \ge \int_a^bg(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf22faf2ae82b64e7c33cdba7af62ec79.png" class="latex_inline" alt="$m \le f(x) \le M$" title="Math" /> para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09d13a0a4c4c7ee44dfbd56e63f629ba.png" class="latex_inline" alt="$a \le x \le b$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb2c8ac1915a14dc42f9d82df55b65828.png" class="latex_inline" alt="$m(b-a) \le \int_a^bf(x)dx \le M(b-a)$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT5 SECTION "Propiedades" [2845-3551] -->
+<h3 class="sectionedit6" id="teorema_de_evaluacion">Teorema de evaluación</h3>
+<div class="level3">
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua sobre el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img33f8d4bb2c66b58fc24056b360395ff2.png" class="latex_displayed" alt="$$\int_A^bf(x)dx=F(b)-F(a)$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb8bc815b5e9d5177af01fd4d3d3c2f10.png" class="latex_inline" alt="$F$" title="Math" /> es cualquier antiderivada de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />, es decir, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgbbdecff4baf8e7abbe4963132e349a37.png" class="latex_inline" alt="$F'=f$" title="Math" />
+</p>
+
+<p>
+Esta expresión esta muy relacionada con el teorema fundamental del cálculo. Existen varias notaciones adicionales para expresar la evaluación de esta integral como la que se muestra a continuación:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd76663418f5fba9341d8dda6e9b9c62f.png" class="latex_displayed" alt="$$\int_A^bf(x)dx=F(x)\biggr\rvert_a^b=F(x)\biggr]_a^b$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Teorema de evaluación" [3552-3995] -->
+<h2 class="sectionedit7" id="integrales_indefinidas">Integrales indefinidas</h2>
+<div class="level2">
+
+<p>
+La notación más conveniente para una antiderivada es una integral indefinida, que se escribe como:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf7ea0017f2acbe73a342889b94a7d2ad.png" class="latex_displayed" alt="$$\int f(x)dx=F(x)$$" title="Equation" />
+</p>
+
+<p>
+Significa que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img69df943e1b5eedbd8c11244142fb34f2.png" class="latex_inline" alt="$F'(x)=f(x)$" title="Math" />
+</p>
+
+<p>
+Note que una integral indefinida es una familia de funciones mientras que una integral definida es un número. Las integrales definidas e indefinidas se pueden relacionar mediante el siguiente resultado:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4675830c23fa25db3e3312200c099121.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=\int f(x)dx\biggr\rvert_a^b$$" title="Equation" />
+</p>
+
+<p>
+Las integrales indefinidas siguen las mismas propiedades de las integrales definidas, adicionalmente es conveniente contar con una breve tabla de integrales que indefinidas que permitan encontrar rapidamente las antiderivadas buscadas, a continuación se provee una breve tabla.
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb488a76844590fef02c558fe0b81e644.png" class="latex_displayed" alt="$$\int \biggl[f(x) \pm g(x)\biggr]dx=\int f(x)dx \pm \int g(x)dx$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8a16e7aec2849d8258dadd72efb62556.png" class="latex_displayed" alt="$$\int cf(x)dx=c\int f(x)dx$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img225469f34675c1fcadcd2ce917ddb7a7.png" class="latex_displayed" alt="$$\int x^ndx=\frac{x^{n+1}}{n+a}+C \text{ con }n \ne -1$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4a201e58c4c731f47147226e434c38cf.png" class="latex_displayed" alt="$$\int \frac{1}{x}dx=\ln |x|+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img78db6d6653096fe4472e4afa806ab6d6.png" class="latex_displayed" alt="$$\int e^xdx=e^x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga25bbb88eb3883b3496636657b0798be.png" class="latex_displayed" alt="$$\int \sin x dx=-\cos x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfea1056f5db2e17335d7827e2e1894c1.png" class="latex_displayed" alt="$$\int \cos x dx=\sin x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb640699703a1f55dd924e0a0c1b14c8e.png" class="latex_displayed" alt="$$\int \sec^2xdx=\tan x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgbfd762ff82333f06ddbb5a46216d1d72.png" class="latex_displayed" alt="$$\int \csc^2xdx=-\cot x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img69d5021928e8c639f65ee88d1220b0d1.png" class="latex_displayed" alt="$$\int \sec x \tan xdx=\sec x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4c68aa9c69c6da3e4ad27a4a5d564355.png" class="latex_displayed" alt="$$\int \csc x \cot xdx=-\csc x +C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge76c126acb825629c50babff75691ba9.png" class="latex_displayed" alt="$$\int \frac{1}{\sqrt{1-x^2}}dx=\sin ^{-1}x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img423aebd6174d687043143cb8c404fe3c.png" class="latex_displayed" alt="$$\int -\frac{1}{\sqrt{1-x^2}}dx=\cos ^{-1}x+C$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf3e4697ce72645f12485ff8248443ce3.png" class="latex_displayed" alt="$$\int \frac{1}{x^2+1}dx=\tan^{-1}x+C$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Integrales indefinidas" [3996-5260] -->
+<h3 class="sectionedit8" id="teorema_del_cambio_total">Teorema del cambio total</h3>
+<div class="level3">
+
+<p>
+De los resultados anteriores se puede escribir el siguiente teorema denominado teorema del cambio total:
+</p>
+
+<p>
+La integral de una razón de cambio es el cambio total:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8367f3c010d415ff1ad6b00b85c259f0.png" class="latex_displayed" alt="$$\int_a^bF'(x)dx=F(b)-F(a)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Teorema del cambio total" [5261-5490] -->
+<h1 class="sectionedit9" id="teorema_fundamental_del_calculo">Teorema fundamental del cálculo</h1>
+<div class="level1">
+
+<p>
+El teorema fundamental del cálculo relaciona los dos ramas del cálculo, cálculo diferencial y cálculo integral y muestra como el proceso de integración es contrario o inverso al proceso de derivación y viceversa.
+</p>
+
+<p>
+Para expresar este hecho con una formulación matemática se puede plantear de la siguiente manera:
+</p>
+
+<p>
+Sea <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> una función continua sobre el intervalo cerrado <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" />, luego la función definida por:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga094a6967d9a618703217e0a8d8bdb4a.png" class="latex_displayed" alt="$$A(x)=\int_a^xf(t)dt\text{ con }a\le x \le b$$" title="Equation" />
+</p>
+
+<p>
+Es una antiderivada de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />, es decir, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd5ea36d20c5fd9ae54ebbbcb872e36e2.png" class="latex_inline" alt="$A'(x)=f(x)$" title="Math" />
+</p>
+
+<p>
+De forma alternativa se puede utilizar la notación de Leibniz:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdf6bdb486a68b9e5acc96f9faaa03e62.png" class="latex_displayed" alt="$$\frac{d}{dx}\int_a^xf(t)dt=f(x)$$" title="Equation" />
+</p>
+
+<p>
+Adicionalmente el teorema fundamental del cálculo establece que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img42bbca7806d84570a9a59d9df4b051ca.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=F(b)-F(a)$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb8bc815b5e9d5177af01fd4d3d3c2f10.png" class="latex_inline" alt="$F$" title="Math" /> es cualquier antiderivada de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />.
+Lo anterior implica que el teorema de evaluación esta incluido en el Teorema Fundamental del Cálculo.
+</p>
+
+<p>
+La siguiente imagen ilustra la función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img53d147e7f3fe6e47ee05b88b166bd3f6.png" class="latex_inline" alt="$A$" title="Math" /> (función de acumulación).
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aintegral&amp;media=matematicas:tfc.png" class="media" title="matematicas:tfc.png"><img src="/docuwiki/lib/exe/fetch.php?w=300&amp;tok=53e57f&amp;media=matematicas:tfc.png" class="media" alt="" width="300" /></a>
+</p>
+
+</div>
+<!-- EDIT9 SECTION "Teorema fundamental del cálculo" [5491-6511] -->
+<h1 class="sectionedit10" id="tecnicas_de_integracion">Técnicas de integración</h1>
+<div class="level1">
+
+<p>
+A continuación se presentan una serie de técnicas que permiten realizar el proceso de integración, de integrales complejas que no se encuentran relacionadas en las integraciones de funciones básicas definidas al principio de esta página.
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Técnicas de integración" [6512-6796] -->
+<h2 class="sectionedit11" id="sustitucion">Sustitución</h2>
+<div class="level2">
+
+<p>
+La regla de sustitución es muy versátil y aplica en muchos casos, esta regla es correspondiente a la regla de la cadena para la derivación y establece de forma general lo siguiente:
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2e1d79effd763d1f6d872f8fad0eee3e.png" class="latex_inline" alt="$u=g(x)$" title="Math" /> es una función derivable cuyo rango es un intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img21fd4e8eecd6bdf1a4d3d6bd1fb8d733.png" class="latex_inline" alt="$I$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua sobre <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img21fd4e8eecd6bdf1a4d3d6bd1fb8d733.png" class="latex_inline" alt="$I$" title="Math" />, entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfca633815ac3019df21ad4997f6b2586.png" class="latex_displayed" alt="$$\int f(g(x))g'(x)dx=\int f(u)du$$" title="Equation" />
+</p>
+
+<p>
+La regla de la sustitución también funciona para la evaluación de integrales definidas, en este caso la regla establece lo siguiente:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2921754f20119a15dbbd268a7ad6d3c1.png" class="latex_displayed" alt="$$\int_a^b f(g(x))g'(x)dx=\int_{g(a)}^{g(b)} f(u)du=F(g(x))\biggr\rvert_a^b=F(u)\biggr\rvert_{g(a)}^{g(b)}$$" title="Equation" />
+</p>
+
+<p>
+Un ejemplo de la aplicación de esta regla se da a continuación:
+</p>
+
+<p>
+Integrar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedfa76a94a8a062eb503852ec4e38fe4.png" class="latex_inline" alt="$\int x^3\cos (x^4+2)dx$" title="Math" />, para este caso hagamos <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9e9369eba14e841891e4f06bf3fde354.png" class="latex_inline" alt="$u=x^4+2$" title="Math" />, de tal forma que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6257077f60cf4295f57744ed5235a0c1.png" class="latex_inline" alt="$du=4x^3dx$" title="Math" /> o lo que es lo mismo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga4d3e68c65ad0cc75a5b92e68b37c2d4.png" class="latex_inline" alt="$x^3dx=\frac{du}{4}$" title="Math" />, la integral original queda de la forma: <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img162393cacfcfb954ff0b9a0f62a47785.png" class="latex_inline" alt="$\int \frac{\cos(u)}{4}du=\sin(u)$" title="Math" />, finalmente reemplazamos de nuevo para volver a la variable original <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> de esta manera la respuesta a la integral es: <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgecc6543689a674ffb7f4938249cae62d.png" class="latex_inline" alt="$\sin(x^4+2)$" title="Math" /> lo cual se puede corroborar mediante derivación.
+</p>
+
+</div>
+<!-- EDIT11 SECTION "Sustitución" [6797-7868] -->
+<h2 class="sectionedit12" id="simetria">Simetría</h2>
+<div class="level2">
+
+<p>
+Se puede aplicar simetría para evaluar funciones definidas si estas son pares o impares de la siguiente manera:
+</p>
+<ol>
+<li class="level1"><div class="li"> Si una función es par <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7b0afbecb5221b529e5618d2f656cb0e.png" class="latex_inline" alt="$f(x)=f(-x)$" title="Math" /> entonces la integral <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6a95ec6507c97d841fd72656964b1d1d.png" class="latex_inline" alt="$\int_{-a}^af(x)dx=2\int_0^af(x)dx$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si una función es impar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgae2b1588912012136031ce3a01034341.png" class="latex_inline" alt="$f(-x)=-f(x)$" title="Math" /> entonces la integral <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb5bb4b70a6f1cae4e23c32846df83f6f.png" class="latex_inline" alt="$\int_{-a}^af(x)dx=0$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT12 SECTION "Simetría" [7869-8189] -->
+<h2 class="sectionedit13" id="integracion_por_partes">Integración por partes</h2>
+<div class="level2">
+
+<p>
+La integración por partes hace uso de la regla del producto para derivación a fin de simplificar la integral y obtener una integral más sencilla. En terminos generales se puede escribir la regla de integración por partes de la siguiente manera:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9e2331922db574a8af25018f87a924a7.png" class="latex_displayed" alt="$$\int udv = uv-\int vdu$$" title="Equation" />
+</p>
+
+<p>
+Se debe elegir en la integral original <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6dbb78540bd76da3f1625782d42d6d16.png" class="latex_inline" alt="$u$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6c4adbc36120d62b98deef2a20d5d303.png" class="latex_inline" alt="$v$" title="Math" /> de manera que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6dbb78540bd76da3f1625782d42d6d16.png" class="latex_inline" alt="$u$" title="Math" /> sea fácil de derivar y sea fácil obtener <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6c4adbc36120d62b98deef2a20d5d303.png" class="latex_inline" alt="$v$" title="Math" /> integrando <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img506b91c584989815738603114451e6b7.png" class="latex_inline" alt="$dv$" title="Math" />.
+A continuación se muestra un ejemplo de aplicación de esta regla.
+</p>
+
+<p>
+Integrar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6458d69a63abc41e71ee9caa148e3095.png" class="latex_inline" alt="$\int e^x\sin x dx$" title="Math" />
+</p>
+
+<p>
+Elegimos:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf9ccde5ec9791747e251bfe62eb0b367.png" class="latex_inline" alt="$u=e^x$" title="Math" /> de forma que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6ffb6c64053e5d091af782f4b623a71e.png" class="latex_inline" alt="$du=e^xdx$" title="Math" /> <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3010e9fa8f5250cf423b223c5e409cd8.png" class="latex_inline" alt="$dv=\sin x dx$" title="Math" /> de forma que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga1f97671f81fecbd29eb1900dd770859.png" class="latex_inline" alt="$v=-\cos x$" title="Math" /> <br/>
+
+</p>
+
+<p>
+Reemplazando en la fórmula de integración por partes se obtiene:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga1847f0604e08b4b4d5c9136b8a9c0be.png" class="latex_displayed" alt="$$\int e^x\sin x dx=-e^x\cos x-\int (-\cos x)e^xdx$$" title="Equation" />
+</p>
+
+<p>
+En este caso debemos volver a integrar por partes pues la segunda integral es igual de compleja que la original.
+En este nuevo caso tenemos que resolver la integral <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2c6e790d1d2d1027763bedb5a7cf9002.png" class="latex_inline" alt="$\int e^x\cos xdx$" title="Math" />
+</p>
+
+<p>
+Elegimos
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf9ccde5ec9791747e251bfe62eb0b367.png" class="latex_inline" alt="$u=e^x$" title="Math" /> de forma que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6ffb6c64053e5d091af782f4b623a71e.png" class="latex_inline" alt="$du=e^xdx$" title="Math" /> <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5d857364b26bc8143bc6335de25de6ae.png" class="latex_inline" alt="$dv=\cos xdx$" title="Math" /> de forma que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img32439cd09922eeeb5105adbbd67fde2a.png" class="latex_inline" alt="$v=\sin x$" title="Math" /> <br/>
+
+</p>
+
+<p>
+Reemplazando en la fórmula de integración por partes se obtiene:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6c0c7578e722dcb655a5b85aa4c412ea.png" class="latex_displayed" alt="$$\int e^x\cos xdx=e^x\sin x - \int e^x\sin xdx$$" title="Equation" />
+</p>
+
+<p>
+Ahora se reemplaza este resultado en la primera integral por partes obteniendo:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfafdb17ef42c41138be0f6d3a992f522.png" class="latex_displayed" alt="$$\int e^x\sin x dx=-e^x\cos x + e^x\sin x - \int e^x\sin xdx$$" title="Equation" />
+</p>
+
+<p>
+Para finalmente despejar y obtener la solución:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd2775651f91c2d68af7bbbf9fec19d78.png" class="latex_displayed" alt="$$\int e^x\sin x dx=\frac{-e^x\cos x + e^x\sin x}{2}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT13 SECTION "Integración por partes" [8190-9589] -->
+<h2 class="sectionedit14" id="integracion_trigonometrica">Integración trigonométrica</h2>
+<div class="level2">
+
+<p>
+La sustitución trigonométrica es útil cuando se tiene integrales que impliquen raíces. Las siguientes sustituciones pueden ser útiles:
+</p>
+<ol>
+<li class="level1"><div class="li"> Un factor de la forma <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga47888d941c743749babcfa3207d4beb.png" class="latex_inline" alt="$\sqrt{a^2-x^2}$" title="Math" /> puede tratarse con la sustitución <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1410d85f60b4847b81bea783a1e7edef.png" class="latex_inline" alt="$x=a\sin \theta$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Un factor de la forma <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1d9404b330205be79446e183d56db633.png" class="latex_inline" alt="$\sqrt{a^2+x^2}$" title="Math" /> puede tratarse con la sustitución <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7ba57eb4d3e2d84cd2d1d967873e0970.png" class="latex_inline" alt="$x=a\tan \theta$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Un factor de la forma <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5a39d7631103aa343be79adbed3e952d.png" class="latex_inline" alt="$\sqrt{x^2-a^2}$" title="Math" /> puede tratarse con la sustitución <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img925272766b0695f81035d07465e3f0e7.png" class="latex_inline" alt="$x=a\sec \theta$" title="Math" /></div>
+</li>
+</ol>
+
+<p>
+A continuación se muestra un ejemplo del uso de esta técnica.
+</p>
+
+<p>
+Integrar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img84a7594f9fe50b1b132da97bdffe099b.png" class="latex_inline" alt="$\int \sqrt{r^2-x^2}dx$" title="Math" /> usamos la sustitución:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36ed9765ce26869f293e17345f593ef6.png" class="latex_inline" alt="$x=r\sin\theta$" title="Math" /> lo que equivale a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img18913e15d2ae13cd615745baf6e29791.png" class="latex_inline" alt="$\theta=\sin^{-1}\frac{x}{r}$" title="Math" />
+</p>
+
+<p>
+Y por lo tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img84c0680f46bbdfbac5270995a769d7cb.png" class="latex_inline" alt="$dx=r\cos\theta d\theta$" title="Math" />
+</p>
+
+<p>
+La integral original es ahora:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4819c45df23dde36e1eaa836f640b931.png" class="latex_displayed" alt="$$\int \sqrt{r^2-x^2}dx=r\int \sqrt{r^2-r^2\sin\theta}\cos\theta d\theta=\int\sqrt{r^2\cos^2\theta}\cos\theta d\theta=r^2\int\cos^2\theta d\theta$$" title="Equation" />
+</p>
+
+<p>
+Para resolver esta nueva integral recurrimos a las fórmulas de ángulo doble:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img497ac2790a4f451e343b8c450d652184.png" class="latex_displayed" alt="$$\cos^2\theta=\frac{1}{2}(1+\cos{2\theta})$$" title="Equation" />
+</p>
+
+<p>
+Convirtiendo nuevamente esta integral trigonométrica en:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6ab2525026d69fc5cbb9102162c25ea0.png" class="latex_displayed" alt="$$r^2\int\cos^2\theta d\theta=r^2\int \frac{1}{2}(1+\cos{2\theta})=r^2\biggl(\frac{\theta}{2}+\frac{\sin{2\theta}}{4}\biggl)$$" title="Equation" />
+</p>
+
+<p>
+Al volver a la variable original se obtiene:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1537a89d5811c1f29da47505be731b2c.png" class="latex_displayed" alt="$$\int \sqrt{r^2-x^2}dx=r^2\biggl(\frac{\sin^{-1}\frac{x}{r}}{2}+\frac{\sin{(2\sin^{-1}\frac{x}{r}})}{4}\biggl)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT14 SECTION "Integración trigonométrica" [9590-10943] -->
+<h2 class="sectionedit15" id="integracion_por_fracciones_parciales">Integración por fracciones parciales</h2>
+<div class="level2">
+
+<p>
+La técnica de fracciones parciales permite reducir una fracción dada en forma de cociente de polinomios a una forma más sencilla en términos de fracciones simples que pueden integrarse fácilmente.
+</p>
+
+<p>
+Por ejemplo la integral:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0c8517d47f357ecbef9d276270288c65.png" class="latex_displayed" alt="$$\int \frac{5x-4}{2x^2+x-1}dx$$" title="Equation" />
+</p>
+
+<p>
+Puede simplificarse notablemente si se aplica fracciones parciales:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img23f8e917f99976776d572a4470918f92.png" class="latex_displayed" alt="$$\int \biggl( \frac{3}{x+1}-\frac{1}{2x-1} \biggr)dx$$" title="Equation" />
+</p>
+
+<p>
+Esta última integral es muy fácil de resolver aplicando sustituciones
+</p>
+
+</div>
+<!-- EDIT15 SECTION "Integración por fracciones parciales" [10944-11456] -->
+<h2 class="sectionedit16" id="integrales_impropias">Integrales impropias</h2>
+<div class="level2">
+
+<p>
+Algo muy importante cuando se tienen integrales definidas es si estas se evaluan sobre un intervalo que o bien es infinito o bien la función tiene una discontinuidad infinita, en ambos casos la integral recibe el nombre de integral impropia y debe evaluarse utilizando limites.
+</p>
+
+<p>
+A continuación se muestran las diferentes formas en las que una integral impropia debe evaluarse.
+</p>
+
+</div>
+<!-- EDIT16 SECTION "Integrales impropias" [11457-11870] -->
+<h3 class="sectionedit17" id="integrales_impropias_por_intervalos_infinitos">Integrales impropias por intervalos infinitos</h3>
+<div class="level3">
+
+<p>
+Esta integral es comúnmente conocida como integral impropia de tipo 1 y presenta tres casos.
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgba32617500d6fd8e6c1b261bd179825a.png" class="latex_inline" alt="$\int_a^tf(x)dx$" title="Math" /> existe para todo número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img93dc89dba649bc9acdabb30f174da519.png" class="latex_inline" alt="$t \ge a$" title="Math" /> entonces</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img34149cc782398c805ed6b967d92d2e8b.png" class="latex_displayed" alt="$$\int_a^\infty f(x)dx=\lim_{t \to \infty}\int_a^tf(x)dx$$" title="Equation" />
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge7b65fff84d5580b0ac6a9162bbd6abf.png" class="latex_inline" alt="$\int_t^bf(x)dx$" title="Math" /> existe para todo número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgaeb7e7aea1bb3591622e78806ee0866c.png" class="latex_inline" alt="$t \le a$" title="Math" /> entonces</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4963bd829e103db121ad7982cccd36cd.png" class="latex_displayed" alt="$$\int_{-\infty}^b f(x)dx=\lim_{t \to -\infty}\int_t^bf(x)dx$$" title="Equation" />
+</p>
+
+<p>
+Siempre y cuando el límite exista.
+</p>
+
+<p>
+Se dice que las integrales impropias son <strong>convergentes</strong> si el límite existe y <strong>divergentes</strong> si el límite no existe.
+</p>
+<ul>
+<li class="level1"><div class="li"> Si tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7f97622ec234489f0aec30e1b4902e9b.png" class="latex_inline" alt="$\int_a^{\infty}f(x)dx$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8168de66debe59ed547df4ea75b0a9f8.png" class="latex_inline" alt="$\int_{-\infty}^bf(x)dx$" title="Math" /> son convergentes, entonces definimos</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3826cd3ec7e76d8173697f56dc7b342e.png" class="latex_displayed" alt="$$\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^af(x)dx+\int_a^{\infty}f(x)dx$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> es cualquier número real.
+</p>
+
+<p>
+Es importante realizar varias observaciones con este tipo de integrales. La primera de ellas consiste en que no se puede obviar las fórmulas dadas y estas integrales deben evaluarse a través del uso de límites para obtener resultados correctos. Otro resultado importante es el siguiente:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb0af2e33b946f3ac92307fb5b852bc09.png" class="latex_displayed" alt="$$\int_1^{\infty}\frac{1}{x}dx\text{ es divergente}$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgac2c77ca7d7c5316965acc349d1f5cd7.png" class="latex_displayed" alt="$$\int_1^{\infty}\frac{1}{x^2}dx\text{ es convergente}$$" title="Equation" />
+</p>
+
+<p>
+La siguiente gráfica muestra la función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgda081b3f8d920cf8e3578503667d991e.png" class="latex_inline" alt="$f(x)=\frac{1}{x^2}$" title="Math" />
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aintegral&amp;media=matematicas:impropia.png" class="media" title="matematicas:impropia.png"><img src="/docuwiki/lib/exe/fetch.php?w=300&amp;tok=740ade&amp;media=matematicas:impropia.png" class="media" alt="" width="300" /></a>
+</p>
+
+<p>
+En términos generales se puede escribir:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf1bb0bece9d2c932c05cd402347a5ec5.png" class="latex_displayed" alt="$$\int_1^{\infty}\frac{1}{x^p}dx\text{ converge si }p&gt;1\text{ y diverge si }p \le 1$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT17 SECTION "Integrales impropias por intervalos infinitos" [11871-13303] -->
+<h3 class="sectionedit18" id="integrales_impropias_por_discontinuidades_infinitas">Integrales impropias por discontinuidades infinitas</h3>
+<div class="level3">
+
+<p>
+Esta integral es comúnmente conocida como integral impropia de tipo 2 y presenta tres casos.
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img305bd660e05845b2be4c9509fbd18dba.png" class="latex_inline" alt="$[a,b)$" title="Math" /> y discontinua (infinitamente) en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> entonces</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge5965a09d5e296224eff092e3d0f9610.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=\lim_{t \to b^-}\int_a^tf(x)dx$$" title="Equation" />
+</p>
+
+<p>
+Si este limite existe.
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua sobre <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc6f523011785edb445cc341039ecd26e.png" class="latex_inline" alt="$(a,b]$" title="Math" /> y discontinua (infinitamente) en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> entonces</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img253422b7f0f7ac3893c75313d4239bd1.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=\lim_{t \to a^+}\int_t^bf(x)dx$$" title="Equation" />
+</p>
+
+<p>
+Si este límite existe
+</p>
+
+<p>
+Se dice que las integrales impropias son <strong>convergentes</strong> si el límite existe y <strong>divergentes</strong> si el límite no existe.
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un discontinuidad infinita en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge072ea11115616feb40509563eb3d4d7.png" class="latex_inline" alt="$a&lt;c&lt;b$" title="Math" /> y tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4e7e3f2e028b89005736eac99d4445c8.png" class="latex_inline" alt="$\int_a^cf(c)dx$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img11b1b43da1e9e81893f06497f952dfa7.png" class="latex_inline" alt="$\int_c^bf(x)dx$" title="Math" /> son convergentes, entonces definimos</div>
+</li>
+</ul>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06ed162b33726fd48ec64cd9042e8055.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=\int_a^cf(x)dx+\int_c^bf(x)dx$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT18 SECTION "Integrales impropias por discontinuidades infinitas" [13304-14099] -->
+<h3 class="sectionedit19" id="teorema_de_comparacion">Teorema de comparación</h3>
+<div class="level3">
+
+<p>
+Este teorema es útil cuando no se puede calcular la integral impropia, pero se desea saber si es convergente o divergente, establece lo siguiente.
+</p>
+
+<p>
+Suponga que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> son funciones continuas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3b5c7c071e4306533207b424ee9d4590.png" class="latex_inline" alt="$f(x) \ge g(x) \ge 0$" title="Math" /> para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img71073219450375271f9b2901d0277fdb.png" class="latex_inline" alt="$x \ge a$" title="Math" />
+</p>
+<ul>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7f97622ec234489f0aec30e1b4902e9b.png" class="latex_inline" alt="$\int_a^{\infty}f(x)dx$" title="Math" /> es convergente, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge72f81bafb576f951f9daa971c6b3e4e.png" class="latex_inline" alt="$\int_a^{\infty}g(x)dx$" title="Math" /> también lo es.</div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge72f81bafb576f951f9daa971c6b3e4e.png" class="latex_inline" alt="$\int_a^{\infty}g(x)dx$" title="Math" /> es divergente, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7f97622ec234489f0aec30e1b4902e9b.png" class="latex_inline" alt="$\int_a^{\infty}f(x)dx$" title="Math" /> también lo es.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT19 SECTION "Teorema de comparación" [14100-14559] -->
+<h1 class="sectionedit20" id="aplicaciones_de_la_integracion">Aplicaciones de la Integración</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT20 SECTION "Aplicaciones de la Integración" [14560-14606] -->
+<h2 class="sectionedit21" id="areas_entre_curvas">Áreas entre curvas</h2>
+<div class="level2">
+
+<p>
+El área de una región <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img53d147e7f3fe6e47ee05b88b166bd3f6.png" class="latex_inline" alt="$A$" title="Math" /> limitada por las curvas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0e241c321e18ed6141f9a47d8095bebd.png" class="latex_inline" alt="$y=f(x)$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3a3d948dae6ca8879fc89c531b12a84e.png" class="latex_inline" alt="$y=g(x)$" title="Math" /> y las rectas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4d74936f278565f42f4bb42d6534712a.png" class="latex_inline" alt="$x=a$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7408ba34e16eebed1eeff0fd68535629.png" class="latex_inline" alt="$x=b$" title="Math" />, donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> son continuas en el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfc6146686b80487b0ff5beeb62f98f45.png" class="latex_inline" alt="$f(x) \ge g(x)$" title="Math" /> para toda <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> en el intervalo, es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgee573405e9214f59fd0c98931bd89ed3.png" class="latex_displayed" alt="$$A=\int_a^b \biggl( f(x)-g(x) \biggr)dx$$" title="Equation" />
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aintegral&amp;media=matematicas:areacurvas.png" class="media" title="matematicas:areacurvas.png"><img src="/docuwiki/lib/exe/fetch.php?w=250&amp;tok=2e0134&amp;media=matematicas:areacurvas.png" class="media" alt="" width="250" /></a>
+</p>
+
+<p>
+En ocasiones es más fácil hallar estas áreas si expresamos las curvas en términos de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdeceeaf6940a8c7a5a02373728002b0f.png" class="latex_inline" alt="$y$" title="Math" />, de forma equivalente y para casos específicos el área se puede calcular como:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga68f74813dfa37be5d8045e2772365ee.png" class="latex_displayed" alt="$$A=\int_c^d \biggl( f(y)-g(y) \biggr)dy$$" title="Equation" />
+</p>
+
+<p>
+Para el caso de curvas parametricas se puede calcular el área bajo las curvas utilizando la siguiente relación.
+Sea una curva parametrica definida por las ecuaciones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga402407fb7879981eec7400894b29fe7.png" class="latex_inline" alt="$x=f(t)$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge9a3e31ae3cccf78463b2ad031cd8b53.png" class="latex_inline" alt="$y=g(t)$" title="Math" /> entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7ff447259297e228839642a25d0a2d59.png" class="latex_displayed" alt="$$A=\int_a^bydx=\int_{\alpha}^{\beta}g(t)f'(t)dt$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT21 SECTION "Áreas entre curvas" [14607-15399] -->
+<h2 class="sectionedit22" id="volumenes">Volumenes</h2>
+<div class="level2">
+
+<p>
+El caso de calcular un volumen es similar a calcular un área, en este caso necesitamos una función que describa el área y como esta varia según una variable dependiente. 
+</p>
+
+<p>
+Sea <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge257acd1ccbe7fcb654708f1a866bfe9.png" class="latex_inline" alt="$S$" title="Math" /> un sólido que se encuentra entre <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4d74936f278565f42f4bb42d6534712a.png" class="latex_inline" alt="$x=a$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7408ba34e16eebed1eeff0fd68535629.png" class="latex_inline" alt="$x=b$" title="Math" /> Si el área de la sección transversal de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge257acd1ccbe7fcb654708f1a866bfe9.png" class="latex_inline" alt="$S$" title="Math" /> en el plano <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdf5a289587a2f0247a5b97c1e8ac58ca.png" class="latex_inline" alt="$P$" title="Math" />, quepasa por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> y es perpendicular al eje <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" />, es <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44464d5df0694c6ba968e633ffaf8806.png" class="latex_inline" alt="$A(x)$" title="Math" />, donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img53d147e7f3fe6e47ee05b88b166bd3f6.png" class="latex_inline" alt="$A$" title="Math" /> es una función continua, entonces el volumen de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge257acd1ccbe7fcb654708f1a866bfe9.png" class="latex_inline" alt="$S$" title="Math" /> es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4e949caa332e274d17f684f3be192578.png" class="latex_displayed" alt="$$V=\lim_{n \to \infty}{\sum_{i=1}^nA(x_i*)\Delta x}=\int_a^bA(x)dx$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT22 SECTION "Volumenes" [15400-15914] -->
+<h2 class="sectionedit23" id="longitud_de_arco">Longitud de arco</h2>
+<div class="level2">
+
+<p>
+Si una curva suave con ecuaciones paramétricas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga402407fb7879981eec7400894b29fe7.png" class="latex_inline" alt="$x=f(t)$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge9a3e31ae3cccf78463b2ad031cd8b53.png" class="latex_inline" alt="$y=g(t)$" title="Math" /> con <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge05e25947acb8863d44789d0aba83a27.png" class="latex_inline" alt="$a \lg t \lg b$" title="Math" /> se recorre exactamente una vez cuando <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4f4f4e395762a3af4575de74c019ebb5.png" class="latex_inline" alt="$t$" title="Math" /> aumenta de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" />, entonces la longitud de archo es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img16e2f2f00e6af99693fd86d98f5c2cd7.png" class="latex_displayed" alt="$$L=\int_a^b\sqrt{ \biggl(\frac{dx}{dt}\biggr)^2 + \biggl(\frac{dy}{dt}\biggr)^2}dt$$" title="Equation" />
+</p>
+
+<p>
+En caso de contar con las ecuacion es de la curva <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0e241c321e18ed6141f9a47d8095bebd.png" class="latex_inline" alt="$y=f(x)$" title="Math" /> con <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0cc1197a95cf933c7b8ea3e156c8d427.png" class="latex_inline" alt="$a \lg x \lg b$" title="Math" /> entonces se puede considerar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> como un parámetro y tener las ecuaciones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2e64e08a3599196cefb9f64a5a67c3ac.png" class="latex_inline" alt="$x=x$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0e241c321e18ed6141f9a47d8095bebd.png" class="latex_inline" alt="$y=f(x)$" title="Math" /> por lo tanto la fórmula anterior se convierte en:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7fd3c4624554a18aa6c6237c2b46aa07.png" class="latex_displayed" alt="$$L=\int_a^b\sqrt{1+\biggl(\frac{dy}{dx}\biggr)^2}dx$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT23 SECTION "Longitud de arco" [15915-16497] -->
+<h2 class="sectionedit24" id="valor_promedio_de_una_funcion">Valor promedio de una función</h2>
+<div class="level2">
+
+<p>
+Para calcular el valor promedio de una función es suficiente tomar elementos representativos, sumarlos y dividir por el total de elementos tomados. de esa forma se puede llevar al límite y obtener una integral para el calculo del valor promedio de la siguiente manera
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc409ffbb8191bc53b672ac7af34660aa.png" class="latex_displayed" alt="$$f(c)=f_{prom}=\frac{1}{b-a}\int_a^bf(x)dx$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> representan los valores extremos del intervalo cerrado donde se quiere calcular el valor promedio de la función.
+</p>
+
+</div>
+<!-- EDIT24 SECTION "Valor promedio de una función" [16498-16990] -->
+<h2 class="sectionedit25" id="teorema_del_valor_medio_para_las_integrales">Teorema del valor medio para las integrales</h2>
+<div class="level2">
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" />, entonces existe un número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> tal que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc409ffbb8191bc53b672ac7af34660aa.png" class="latex_displayed" alt="$$f(c)=f_{prom}=\frac{1}{b-a}\int_a^bf(x)dx$$" title="Equation" />
+</p>
+
+<p>
+es decir:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb0b15bf62fb1769c9cf17f561e070930.png" class="latex_displayed" alt="$$\int_a^bf(x)dx=f(c)(b-a)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT25 SECTION "Teorema del valor medio para las integrales" [16991-] -->

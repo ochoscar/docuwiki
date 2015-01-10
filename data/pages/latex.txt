@@ -1,0 +1,329 @@
+(Download Greasemonkey and then Tex The World to read my LaTeX)
+
+===== Layout =====
+
+Removing indent locally
+
+<code latex>    
+\noindent
+</code>
+
+removing indent globally
+<code latex>
+    \setlength{\parindent}{0pt}
+</code>
+
+Footnotes
+<code latex>
+\footnote[number]{text}
+</code>
+====  Formula  ====
+
+<columns  ->
+<code latex>
+$ $
+
+\[ \]
+
+\begin{equation}
+\end{equation}
+
+$\mbox{Text}$
+
+$\text{Text}$
+</code>
+
+<newcolumn>
+
+$\mbox{Text}$
+
+$\text{Text}$
+</columns>
+
+====  Equations  ====
+
+<code latex>
+
+\begin{align*}
+
+ f(x) &= (x+a)(x+b) \\
+ &= x^2 + (a+b)x + ab
+\end{align*}
+
+
+</code>
+
+
+
+
+
+<code latex>
+\[
+  f(n) = \left\{ 
+  \begin{array}{l l}
+    n/2 & \quad \text{if $n$ is even}\\
+    -(n+1)/2 & \quad \text{if $n$ is odd}\\
+  \end{array} \right.
+\]
+</code>
+
+
+
+<columns  ->
+<code latex>
+\begin{eqnarray*}
+& & \frac{3}{4 \pi}   \sqrt{4 \cdot x^2   12}\\
+& & \lim_{n \to \infty}
+  \sum_{k=1}^n \frac{1}{k^2} = \frac{\pi^2}{6}\\
+& & {\it f}(x) = \frac{1}{\sqrt{x} x^2}\\
+& & e^{i \pi} + 1 = 0\;
+\end{eqnarray*}
+</code>
+
+<newcolumn>
+\begin{eqnarray*}
+& & \frac{3}{4 \pi}   \sqrt{4 \cdot x^2   12}\\
+& & \lim_{n \to \infty}
+  \sum_{k=1}^n \frac{1}{k^2} = \frac{\pi^2}{6}\\
+& & {\it f}(x) = \frac{1}{\sqrt{x} x^2}\\
+& & e^{i \pi} + 1 = 0\;
+\end{eqnarray*}
+
+</columns>
+
+
+
+
+
+
+<columns  ->
+
+<code latex>
+$$
+f(n) = 
+\begin{cases} 
+n/2, & \text{if }n\text{ is even} \\
+3n+1, & \text{if }n\text{ is odd} 
+\end{cases}
+$$
+</code>
+<newcolumn>
+
+$$
+f(n) =
+\begin{cases}
+n/2, & \text{if }n\text{ is even} \\
+3n+1, & \text{if }n\text{ is odd}
+\end{cases}
+$$
+
+</columns>
+====  Tables  ====
+
+<code latex>
+\begin{itemize}
+\item $ \neg p $ (read "not p")--the negation of p
+\item $ p \land q $ (read "p and q")--the conjunction of p and q
+\item $ p\lor q $ (read "p or q")--the disjunction of p and q
+\item $ p \implies q$ (read "p implies q")--the implication of q from p
+\item $ p \leftarrow q $ (read "p if q")--the implication of p from q
+\item $ p \iff q$ (read "p if and only if q" or "p is equivalent to q") 
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{ c | c | c |c | c | c | c  }
+p & q & $\neg p$ & $ p \land q$ &$ p \lor $q & $ p \implies q$ &$ p \iff q$ \\ \hline
+true & true & false & true & true  & true & true \\
+true & false & false & false & true &  false & false \\
+false & true & true & false & true &  true & false \\
+false & false & true & false & false &  true & true \\
+\end{tabular}
+\end{center}
+
+</code> 
+
+====  Lists ====
+
+<code latex>
+\begin{enumerate}  \itemsep -2pt 
+\item India
+\item China
+\item Italy
+\end{enumerate}
+</code> 
+
+
+<code latex>
+\begin{itemize}  \itemsep -2pt 
+\item India
+\item China
+\item Italy
+\end{itemize}
+</code>
+
+
+<code latex>
+\begin{description}
+
+  \item[[First]] The first item
+  \item[[Second]] The second item
+  \item[[Third]] The third etc \ldots
+\end{description}
+</code>
+
+
+<code latex>
+\begin{description}
+  \item[[First]] \hfill \\
+  The first item
+  \item[[Second]] \hfill \\
+  The second item
+  \item[[Third]] \hfill \\
+  The third etc \ldots
+\end{description}
+
+
+\begin{enumerate}
+  \item The first item
+  \begin{enumerate}
+    \item Nested item 1
+    \item Nested item 2
+  \end{enumerate}
+  \item The second item
+  \item The third etc \ldots
+\end{enumerate}
+
+</code>
+
+=====  Figures  =====
+
+<code latex>
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.42\textwidth]{./img/MDP1.png}
+\caption{Gridworld}
+\label{fig:grid_model}
+\end{figure}
+</code>
+
+=====  Text  =====
+
+
+<code latex>
+\left(
+\right) 
+
+
+
+</code>
+
+=====  Symbols  =====
+
+| \sqrt[root]{arg}  |$\sqrt[root]{arg}   $ | 
+| \partial |$\partial  $ | 
+| \sum |$\sum  $ | 
+| \lim |$\lim  $ | 
+| \int |$\int  $ | 
+| \equiv     |$\equiv  $ |         
+| \approx |$\approx  $ |         
+| \propto |$\propto  $ |             
+| \simeq     |$\simeq  $ |         
+| \sim |$\sim $ |                 
+| \neq     |$\neq  $ |            
+| \geq |$\geq  $ | 
+| \gg  |$\gg  $ |         
+| \infty |$\infty  $ | 
+| \pm |$\pm  $ | 
+| \times | $ \times  $ | 
+| \rightarrow |$\rightarrow  $ | 
+| \leftarrow |$\leftarrow  $ | 
+| \xleftarrow{Polar Bond} |$\xleftarrow{Polar Bond}  $ | 
+| \hat{a} | $ \hat{a} $ | 
+| \vec{a} |$\vec{a} $ | 
+| \bar{a} |$\bar{a}  $ | 
+| \nabla | $ \nabla $ | 
+| \neq |$\neq  $ | 
+| \longleftrightarrow |$\longleftrightarrow  $ | 
+| \leftrightarrow |$\leftrightarrow  $ | 
+| \cdot | $\cdot  $ | 
+| \underset{r0}{(2, 4, 6, 8, 10, 12, 14, 16)} | $  \underset{r0}{(2, 4, 6, 8, 10, 12, 14, 16)} $ | 
+| \pm   |$\pm  $ | 
+| \otimes |$\otimes  $ | 
+| \oplus |$\oplus  $ | 
+| \ominus |$\ominus $ | 
+| \subset |$\subset  $ | 
+| \subseteq |$\subseteq  $ | 
+| \in | $ \in $ | 
+| \notin | $\notin$ |
+| \supseteq |$\supseteq  $ | 
+| \supset |$\supset   $ | 
+| \forall | $ \forall $ | 
+| \exists | $ \exists $ | 
+| \nmid  | $\nmid  $ | 
+| \iff  | $\iff  $ | 
+| \cap  | $\cap  $ | 
+| \cup  | $\cup  $ | 
+| \thefore  |$\therefore  $ | 
+| \binom{n}{n} | $ \binom{n}{n} $ |
+| \langle | $\langle$ |
+| \rangle | $\rangle$ |
+| \implies | $\implies$ |
+| \lfloor \rfloor | $\lfloor \rfloor$ |
+| \lceil \lceil | $\lceil \rceil$ |
+===== Matrices =====
+<columns>
+\begin{pmatrix} \\
+a & b \\
+c & d  \\
+\end{pmatrix} \\
+<newcolumn>
+$$
+\begin{pmatrix}
+a & b \\
+c & d 
+\end{pmatrix}
+$$
+</columns>
+
+
+
+<columns>
+\quad\quad\begin{bmatrix} \\
+a & b \\
+c & d \\
+\end{bmatrix} \\
+<newcolumn>
+
+$$
+\quad\quad\begin{bmatrix}
+a & b \\
+c & d \end{bmatrix}
+$$
+
+</columns>
+
+
+
+
+
+
+
+$$S(n,k)=\left\{\begin{matrix} n \\ k \end{matrix}\right\}= S_n^{(k)}$$
+=====  Greek  =====
+
+
+
+| \lambda | $\lambda$ | 
+| \epsilon | $\epsilon$ |
+| \alpha | $\alpha$ |
+
+$\mathbb{P}$ for prime numbers using \mathbb{P}, \\
+$\mathbb{N}$ for natural numbers using \mathbb{N}, \\
+$\mathbb{Z}$ for integers using \mathbb{Z}, \\
+$\mathbb{I}$ for irrational numbers using \mathbb{I}, \\
+$\mathbb{Q}$ for rational numbers using \mathbb{Q}, \\
+$\mathbb{R}$ for real numbers using \mathbb{R} and \\
+$\mathbb{C}$ for complex numbers using \mathbb{C}. \\
+===== References ======
+http://latex.wikia.com/wiki/List_of_LaTeX_symbols

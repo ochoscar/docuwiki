@@ -1,0 +1,274 @@
+====== Objetive C ======
+
+Este lenguaje de programación es utilizado para programar dispositivos de la familia IOS de Apple. A continuación las particularidades del lenguaje.
+
+==== Definición de una clase ====
+
+Las siguientes son las descripciones gráficas de la sintaxis usada en Objective C para declarar clases y métodos:
+
+{{:sistemas:class_decl.jpg|{{:sistemas:class_decl.jpg|}}}}
+
+{{:sistemas:method_decl.jpg|}}
+
+La definición de una clase de Objective C se da a través de la separación de la interface de la implementación, adicionalmente todas las clases derivan de NSObjetc (NextStep Object)
+
+<code objc>
+#import <Foundation/NSObject.h>
+
+//Esta es la definición de atributos 
+@interface MiClase : NSObject {
+@public
+     // Atributo de tipo entero, también pudo haber sido puntero u otro
+     int numeroEntero;
+@private
+@protected
+}
+
+// Método para asignar un valor al atributo numeroEntero
+-(void) setNumeroEntero: (int) numero;
+// Método para mostrar en pantalla el valor de numeroEntero
+-(void) printNumeroEntero;
+// Método que devuelve el valor del atributo numeroEntero
+-(int) getNumeroEntero;
+@end
+</code>
+
+Algunas observaciones importantes son las siguientes:
+
+  * La interface se define entre tags @interface y @end
+  * El símbolo - que precede al método indica que se trata de un método no static, si en su lugar se encontrara un símbolo + se entendería como un método static
+  * La declaración (prototipo) de los métodos es sustancialmente diferente a la de otros lenguajes, sin embargo se puede apreciar los parametros y el nombre del método
+
+Ahora estudiaremos la implementación de estos métodos
+
+<code objc>
+#import “MiObjeto.h”
+#import <stdio.h>
+@implementation MiClase
+-(void) setNumeroEntero:  (int) numero {
+     // Asignamos a nuestra variable numeroEntero el valor de numero
+     numeroEntero = numero;
+}
+-(void) printNumeroEntero {
+     // Mostramos por pantalla el valor de numeroEntero
+     printf(“Numero entero: %d”, numeroEntero);
+}
+-(int) getNumeroEntero {
+     return numeroEntero;
+}
+@end
+</code>
+
+
+De manera similar a las diferencias para declarar un método en Objective C, existen diferencias para llamar a un método, de tal manera que el llamado a un método se realiza de la siguiente manera:
+
+
+<code objc>
+#import “MiObjeto.h”
+int main (int numeroDeArgumentos, const char* argumentos) {
+     // Creamos un puntero a un objeto MiObjeto. Para dar énfasis a que se trata de un puntero, lo inicializamos a nil, que es equivalente a NULL.
+     int otroNumeroEntero = 20;
+     MiObjeto* objeto = nil;
+
+     // Reservamos memoria para el objeto
+     objeto = [[MiObjeto alloc] init];
+     // Asignamos un valor al número entero del objeto
+     [objeto setNumeroEntero: 10];
+
+     // Mostramos el valor del numero entero que hemos asignado al objeto
+     [objeto printNumeroEntero];
+     // Eliminamos el objeto de memoria
+     [objeto release];
+}
+</code>
+
+La llamada al método alloc permite crear el objeto nuevo, de forma similar a como se realiza con el operador new de otros lenguajes. El llamado a init invoca al constructor de la clase.
+
+
+
+==== Constructores ====
+
+La declaración de un constructor debe realizarse a través del método init heredado de NSObject, la siguiente sección muestra un constructor predeterminado y un constructor con parámetros
+
+<code objc>
+// Dentro de la interface de la clase
+-(MiObjeto*) init;
+-(MiObjeto*) initConNumeroEntero: (int) entero:
+
+// Dentro de la implemetación de la clase
+-(MiObjeto*) init {
+     self = [super init];
+     if (self) {
+          numeroEntero = 100;
+     }
+     return self;
+}
+
+// Otro constructor, donde definimos de forma explícita los valores de numeroEntero
+-(MiObjecto) initConNumeroEntero: (int) entero {
+     self = [super init];
+     if (self) {
+          [setNumeroEntero: entero];
+     }
+     return self;
+}
+</code>
+
+El llamado a estos constructores se puede realizar como se muestra a continuación
+
+<code objc>
+int main( int numeroArgumentos, const char* argumentos) {
+     // Inicializamos usando el NUEVO constructor por defecto, por lo que numeroEntero valdrá 100 en miObjeto1
+     MiObjeto* miObjeto1 = [[MiObjeto alloc] init];
+     // Inicializamos miObjeto2 usando el otro constructor, por lo que numeroEntero en miObjeto2 valdrá 10
+     MiObjeto* miObjeto2 = [[MiObjecto alloc] initConNumeroEntero:10];
+     return 0;
+}
+</code>
+
+==== Estáticos ====
+
+Los métodos y atributos estáticos pueden ser accedido desde cualquier lugar de la clase. Para definir un miembro estático basta con anteponer un símbolo + a su definición como se muestra en el siguiente ejemplo.
+
+<code objc>
+// Archivo ObjetoEstatico.h
+#import <Foundation/NSObject.h>
+@interface ObjetoEstatico : NSObject
++(void) setDatosCliente: (DatosCliente*) cliente;
+@end
+</code>
+
+<code objc>
+// Archivo ObjetoEstatico.m
+#import “ObjetoEstatico.h”
+#import “DatosCliente.h”
+@implementation ObjetoEstatico
++(void) setDatosCliente: (DatosCliente*) cliente {
+     // Accedemos a la variable pública teléfono del puntero a DatosCliente que recibe la función.
+     cliente->telefono = 1004;
+}
+@end
+</code>
+
+<code objc>
+// Archivo main.m
+#import “ObjetoEstatico.h”
+#import <stdio.h>
+int main(void) {
+     DatosCliente* miCliente = [[DatosCliente alloc] init];
+     [ObjetoEstatico setDatosCliente: miCliente];
+     printf(“El telefono del cliente es %d\n”, miCliente->telefono);
+     [miCliente release];
+     return 0;
+}
+</code>
+
+==== El Tipo de dato id ====
+
+Este tipo de dato es un tipo de dato especial reservado y muy útil que se encuentra a disposición en objective c. El tipo de dato id, se parece a un puntero a void de C/C++, pero con la diferencia de ser más versátil. Los objetos de este tipo de dato pueden ponerse apuntar a cualquier otro objeto permitiendo ejecutar métodos o a acceder a miembros, sin necesidad de ningún casting, solamente conociendo la definición del miembro.
+
+<code>
+MiObjetoUno* obj1 = [[MiObjetoUno alloc] init];
+MiObjetoDos* obj2 = [[MiObjetoDos alloc] init];
+id ID = obj1;
+[ID inicializaVariable1: 10 variable2: 20 yVariable3: 30];
+ID = obj2;
+[ID inicializaVariable1: 10 variable2: 20 yVariable3: 30];
+</code>
+
+Suponiendo que las clases MiObjetoUno y MiObjetoDos posean métodos con el siguiente prototipo (pueden diferir en su implementación)
+
+<code objc>
+–(void) inicializaVariable1: (int) var1 variable2: (int) var2 yVariable3: (int) var3;
+</code>
+
+Se puede llamar los métodos usando la referencia id.
+
+==== Protocolos e Interfaces ====
+
+Los protocolos son lo mismo que las interfaces de java, y muy parecidos a los métodos virtuales en C/C++. A continuación se muestra la definición de una interface y su implementación en una clase.
+
+Lo primero que se debe hacer es declarar la interface a través del tag @protocol:
+
+<code objc>
+// Archivo MiPrimerProtocolo.h
+@protocol MiPrimerProtocolo
+-(void) print
+@end
+</code>
+
+En el momento que una clase desee utilizar o definir los métodos indicados en un protocol, debe utilizar paréntesis angulares para especificarlo (se puede especificar más de un protocol).
+
+<code objc>
+@interface MiObjeto : NSObject <MiPrimerProtocolo> {
+}
+// Declaro el método print del protocolo
+-(void) print;
+@end
+</code>
+
+Finalmente se define la lógica de lo que el método realiza, el uso de NSLog permite escribir mensajes de depuración en la consola.
+
+<code objc>
+-(void) print {
+     NSLog(@“Soy un objeto tipo MiObjeto que implementa MiPrimerProtocolo!\n”);
+}
+</code>
+
+Y se utiliza en un main con un pequeño ejemplo del llamado al método del protocolo, note que el llamado al método no reviste ninguna diferencia
+
+<code objc>
+// Archivo main.m
+int main(void) {
+     MiObjeto* objeto = [[MiObjeto alloc] init];
+     id <MiPrimerProtocolo> esteObjetoPuedeHacerPrint = objeto;
+     // Llamamos al método print de esteObjetoPuedeHacerPrint:
+     [esteObjetoPuedeHacerPrint print];
+     [release objeto]
+     return 0;
+}
+</code>
+
+==== Uso de NSLog y caracteres de escape ====
+
+Es muy útil cuando se programa imprimir información en pantalla y aunque en objective c podemos usar primitivas de impresión como printf, existe una forma más especializada a través del uso de NSLog la cual permite imprimir mensaje de depuración en la consola.
+
+A continuación se muestran algunos ejemplos de uso de NSLog
+
+<code objc>
+NSLog(@"ALL YOUR BASE ARE BELONG TO US");
+NSLog(@"x = %d, y = %d", x, y);
+NSLog(@"%s\t%s\t0x%08x", "hex", "value", 0x1243);
+</code>
+
+La siguiente es una lista de los especificadores más utiles para usar junto a NSLog
+
+<code objc>
+%@     Object
+%d, %i signed int
+%u     unsigned int
+%f     float/double
+%x, %X hexadecimal int
+%o     octal int
+%zu    size_t
+%p     pointer
+%e     float/double (in scientific notation)
+%g     float/double (as %f or %e, depending on value)
+%s     C string (bytes)
+%S     C string (unichar)
+%.*s   Pascal string (requires two arguments, pass pstr[0] as the first, pstr+1 as the second)
+%c     character
+%C     unichar
+%lld   long long
+%llu   unsigned long long
+%Lf    long double
+</code>
+
+==== Administración de la memoria ====
+
+La administración de memoria en Objective C es muy parecida a la administración de memoria en lenguajes como C o C++. En el caso de Objective C, existen cuatro elementos básicos para la manipulación de la memoria
+
+  * **[retainCount]:** Este es un contador global que determina cuantas instancias existen de un objeto. Este método se encuentra disponible para todas las clases puesto que se encuentra definido en NSObject
+  * **[alloc]:** Este método se puede utilizar para instanciar (alojar) un objeto en memoria. Desde el punto de vista practico no presenta muchas diferencias con new de java o C++.
+  * **[release]:** este método libera la memoria ocupada por una instancia, en caso que el retainCount llege a cero, se liberara toda la memoria utilizada por los objetos y de la clase, incluso aunque existan objetos con apuntadores que les hagan referencia.
+  * **[retain]:** Este método permite retener un objeto en memoria a fin de evitar el llamado al método dealloc. Dealloc es un método que se llama automáticamente y esta definido en la clase NSObject, por tal razón puede ser sobre escrito pero no invocado manualmente, en su lugar el sistema puede llamar al método dealloc cuando el retainCount de una clase llega a 0. Esto puede suceder aunque realmente todavía existan apuntadores a objetos, por ello es importante hacer un retain antes de liberar la memoria.

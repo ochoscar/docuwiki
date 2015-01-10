@@ -1,0 +1,18 @@
+<span class="sy0">%</span>@     Object
+<span class="sy0">%</span>d, <span class="sy0">%</span>i <span class="kw4">signed</span> <span class="kw4">int</span>
+<span class="sy0">%</span>u     <span class="kw4">unsigned</span> <span class="kw4">int</span>
+<span class="sy0">%</span>f     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span>
+<span class="sy0">%</span>x, <span class="sy0">%</span>X hexadecimal <span class="kw4">int</span>
+<span class="sy0">%</span>o     octal <span class="kw4">int</span>
+<span class="sy0">%</span>zu    <span class="kw4">size_t</span>
+<span class="sy0">%</span>p     pointer
+<span class="sy0">%</span>e     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span> <span class="br0">&#40;</span><span class="kw1">in</span> scientific notation<span class="br0">&#41;</span>
+<span class="sy0">%</span>g     <span class="kw4">float</span><span class="sy0">/</span><span class="kw4">double</span> <span class="br0">&#40;</span>as <span class="sy0">%</span>f or <span class="sy0">%</span>e, depending on value<span class="br0">&#41;</span>
+<span class="sy0">%</span>s     C <span class="kw4">string</span> <span class="br0">&#40;</span>bytes<span class="br0">&#41;</span>
+<span class="sy0">%</span>S     C <span class="kw4">string</span> <span class="br0">&#40;</span>unichar<span class="br0">&#41;</span>
+<span class="sy0">%</span>.<span class="sy0">*</span>s   Pascal <span class="kw4">string</span> <span class="br0">&#40;</span>requires two arguments, pass pstr<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> as the first, pstr<span class="sy0">+</span><span class="nu0">1</span> as the second<span class="br0">&#41;</span>
+<span class="sy0">%</span>c     character
+<span class="sy0">%</span>C     unichar
+<span class="sy0">%</span>lld   <span class="kw4">long</span> <span class="kw4">long</span>
+<span class="sy0">%</span>llu   <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span>
+<span class="sy0">%</span>Lf    <span class="kw4">long</span> <span class="kw4">double</span>

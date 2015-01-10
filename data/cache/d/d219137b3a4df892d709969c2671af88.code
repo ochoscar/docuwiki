@@ -1,0 +1,5 @@
+<span class="kw1">@interface</span> MiObjeto <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a> &lt;MiPrimerProtocolo&gt; <span class="br0">&#123;</span>
+<span class="br0">&#125;</span>
+<span class="co2">// Declaro el método print del protocolo</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> print;
+<span class="kw1">@end</span>

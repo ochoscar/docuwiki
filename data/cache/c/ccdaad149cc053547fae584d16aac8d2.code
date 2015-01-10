@@ -1,0 +1,9 @@
+<span class="co2">// Archivo ObjetoEstatico.m</span>
+<span class="co1">#import “ObjetoEstatico.h”</span>
+<span class="co1">#import “DatosCliente.h”</span>
+<span class="kw1">@implementation</span> ObjetoEstatico
+<span class="sy0">+</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setDatosCliente<span class="sy0">:</span> <span class="br0">&#40;</span>DatosCliente<span class="sy0">*</span><span class="br0">&#41;</span> cliente <span class="br0">&#123;</span>
+     <span class="co2">// Accedemos a la variable pública teléfono del puntero a DatosCliente que recibe la función.</span>
+     cliente<span class="sy0">-</span>&gt;telefono <span class="sy0">=</span> <span class="nu0">1004</span>;
+<span class="br0">&#125;</span>
+<span class="kw1">@end</span>

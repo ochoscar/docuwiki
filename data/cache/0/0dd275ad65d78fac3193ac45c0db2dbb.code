@@ -1,0 +1,5 @@
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">itemize</span><span class="sy0">}</span>  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citemsep"><span class="kw1">itemsep</span></a> -2pt 
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> India
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> China
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Italy
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">itemize</span></span><span class="sy0">}</span>

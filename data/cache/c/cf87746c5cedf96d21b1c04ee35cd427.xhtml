@@ -1,0 +1,477 @@
+
+<p>
+(Download Greasemonkey and then Tex The World to read my LaTeX)
+</p>
+
+<h2 class="sectionedit1" id="layout">Layout</h2>
+<div class="level2">
+
+<p>
+Removing indent locally
+</p>
+<pre class="code latex">    
+<span class="re12">\noindent</span></pre>
+
+<p>
+removing indent globally
+</p>
+<pre class="code latex">    <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Csetlength"><span class="kw1">setlength</span></a><span class="sy0">{</span><span class="re9"><span class="re12">\parindent</span>}{0pt</span><span class="sy0">}</span></pre>
+
+<p>
+Footnotes
+</p>
+<pre class="code latex"><span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cfootnote"><span class="kw1">footnote</span></a><span class="sy0">[</span><span class="re2">number</span><span class="sy0">]{</span><span class="re9">text</span><span class="sy0">}</span></pre>
+
+</div>
+<!-- EDIT1 SECTION "Layout" [66-284] -->
+<h3 class="sectionedit2" id="formula"> Formula  </h3>
+<div class="level3">
+
+<p>
+&lt;columns  →
+</p>
+<pre class="code latex"><span class="re3">$ $</span>
+&nbsp;
+<span class="sy0">\[</span><span class="re2"> \</span><span class="sy0">]</span>
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">equation</span><span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">equation</span><span class="sy0">}</span>
+&nbsp;
+<span class="re3">$\<a href="http://www.golatex.de/wiki/index.php?title=%5Cmbox"><span class="kw1">mbox</span></a>{Text}$</span>
+&nbsp;
+<span class="re3">$<span class="re12">\text</span>{Text</span>}$</span></pre>
+
+<p>
+&lt;newcolumn&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga472fae51983244a496e595373e88b0f.png" class="latex_inline" alt="$\mbox{Text}$" title="Math" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img369bbc269a7cd327d960e1ee16e19b70.png" class="latex_inline" alt="$\text{Text}$" title="Math" />
+&lt;/columns&gt;
+</p>
+
+</div>
+<!-- EDIT2 SECTION " Formula  " [285-471] -->
+<h3 class="sectionedit3" id="equations"> Equations  </h3>
+<div class="level3">
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">align*</span><span class="sy0">}</span>
+&nbsp;
+ f(x) <span class="sy0">&amp;</span>= (x+a)(x+b) <span class="sy0">\\</span>
+ <span class="sy0">&amp;</span>= x^2 + (a+b)x + ab
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">align*</span></span><span class="sy0">}</span></pre>
+<pre class="code latex"><span class="sy0">\[</span><span class="re2">
+  f(n) = <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cleft"><span class="kw1">left</span></a><span class="sy0">\{</span><span class="re9"> 
+  <span class="re8">\begin</span><span class="sy0">{</span><span class="re7">array</span><span class="sy0">}{</span>l l<span class="sy0">}</span>
+    n/2 <span class="sy0">&amp;</span> <span class="re12">\quad</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="re3">$n$</span> is even<span class="sy0">}\\</span>
+    -(n+1)/2 <span class="sy0">&amp;</span> <span class="re12">\quad</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="re3">$n$</span> is odd<span class="sy0">}\\</span>
+  <span class="re8">\end</span><span class="sy0">{</span><span class="re7">array</span></span><span class="sy0">}</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cright"><span class="kw1">right</span></a>.
+\</span><span class="sy0">]</span></pre>
+
+<p>
+&lt;columns  →
+</p>
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">eqnarray*</span><span class="sy0">}</span>
+<span class="sy0">&amp;</span> <span class="sy0">&amp;</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cfrac"><span class="kw1">frac</span></a><span class="sy0">{</span>3<span class="sy0">}{</span>4 <span class="re12">\pi</span><span class="sy0">}</span>   <span class="re12">\sqrt</span><span class="sy0">{</span>4 <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Ccdot"><span class="kw1">cdot</span></a> x^2   12<span class="sy0">}\\</span>
+<span class="sy0">&amp;</span> <span class="sy0">&amp;</span> <span class="re12">\lim</span>_<span class="sy0">{</span>n <span class="re12">\to</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cinfty"><span class="kw1">infty</span></a><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Csum"><span class="kw1">sum</span></a>_<span class="sy0">{</span>k=1<span class="sy0">}</span>^n <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cfrac"><span class="kw1">frac</span></a><span class="sy0">{</span>1<span class="sy0">}{</span>k^2<span class="sy0">}</span> = <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cfrac"><span class="kw1">frac</span></a><span class="sy0">{</span><span class="re12">\pi</span>^2<span class="sy0">}{</span>6<span class="sy0">}\\</span>
+<span class="sy0">&amp;</span> <span class="sy0">&amp;</span> <span class="sy0">{</span><span class="re12">\it</span> f<span class="sy0">}</span>(x) = <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cfrac"><span class="kw1">frac</span></a><span class="sy0">{</span>1<span class="sy0">}{</span><span class="re12">\sqrt</span><span class="sy0">{</span>x<span class="sy0">}</span> x^2<span class="sy0">}\\</span>
+<span class="sy0">&amp;</span> <span class="sy0">&amp;</span> e^<span class="sy0">{</span>i <span class="re12">\pi</span><span class="sy0">}</span> + 1 = 0<span class="sy0">\</span>;
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">eqnarray*</span></span><span class="sy0">}</span></pre>
+
+<p>
+&lt;newcolumn&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge411b2b8c67869115dda9adc2578fc95.png" class="latex_displayed" alt="\begin{eqnarray*}
+&amp; &amp; \frac{3}{4 \pi}   \sqrt{4 \cdot x^2   12}\\
+&amp; &amp; \lim_{n \to \infty}
+  \sum_{k=1}^n \frac{1}{k^2} = \frac{\pi^2}{6}\\
+&amp; &amp; {\it f}(x) = \frac{1}{\sqrt{x} x^2}\\
+&amp; &amp; e^{i \pi} + 1 = 0\;
+\end{eqnarray*}" title="Equations" />
+</p>
+
+<p>
+&lt;/columns&gt;
+</p>
+
+<p>
+&lt;columns  →
+</p>
+<pre class="code latex"><span class="re3">$$
+f(n) = 
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">cases</span><span class="sy0">}</span> 
+n/2, <span class="sy0">&amp;</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="sy0">}</span>n<span class="re12">\text</span><span class="sy0">{</span> is even<span class="sy0">}</span> <span class="sy0">\\</span>
+3n+1, <span class="sy0">&amp;</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="sy0">}</span>n<span class="re12">\text</span><span class="sy0">{</span> is odd<span class="sy0">}</span> 
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">cases</span></span>}
+$</span>$</pre>
+
+<p>
+&lt;newcolumn&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfad00ca84995a654f1cf920669f541e2.png" class="latex_displayed" alt="$$
+f(n) =
+\begin{cases}
+n/2, &amp; \text{if }n\text{ is even} \\
+3n+1, &amp; \text{if }n\text{ is odd}
+\end{cases}
+$$" title="Equation" />
+</p>
+
+<p>
+&lt;/columns&gt;
+</p>
+
+</div>
+<!-- EDIT3 SECTION " Equations  " [472-1579] -->
+<h3 class="sectionedit4" id="tables"> Tables  </h3>
+<div class="level3">
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">itemize</span><span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ <span class="re12">\neg</span> p $</span> (read &quot;not p&quot;)--the negation of p
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\land</span> q $</span> (read &quot;p and q&quot;)--the conjunction of p and q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p<span class="re12">\lor</span> q $</span> (read &quot;p or q&quot;)--the disjunction of p and q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\implies</span> q$</span> (read &quot;p implies q&quot;)--the implication of q from p
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\leftarrow</span> q $</span> (read &quot;p if q&quot;)--the implication of p from q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\iff</span> q$</span> (read &quot;p if and only if q&quot; or &quot;p is equivalent to q&quot;) 
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">itemize</span><span class="sy0">}</span>
+&nbsp;
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">center</span><span class="sy0">}</span>
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">tabular</span><span class="sy0">}{</span> c | c | c |c | c | c | c  <span class="sy0">}</span>
+p <span class="sy0">&amp;</span> q <span class="sy0">&amp;</span> <span class="re3">$<span class="re12">\neg</span> p$</span> <span class="sy0">&amp;</span> <span class="re3">$ p <span class="re12">\land</span> q$</span> <span class="sy0">&amp;</span><span class="re3">$ p <span class="re12">\lor</span> $</span>q <span class="sy0">&amp;</span> <span class="re3">$ p <span class="re12">\implies</span> q$</span> <span class="sy0">&amp;</span><span class="re3">$ p <span class="re12">\iff</span> q$</span> <span class="sy0">\\</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chline"><span class="kw1">hline</span></a>
+true <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true  <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true <span class="sy0">\\</span>
+true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span>  false <span class="sy0">&amp;</span> false <span class="sy0">\\</span>
+false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span>  true <span class="sy0">&amp;</span> false <span class="sy0">\\</span>
+false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span>  true <span class="sy0">&amp;</span> true <span class="sy0">\\</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">tabular</span><span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">center</span></span><span class="sy0">}</span></pre>
+
+</div>
+<!-- EDIT4 SECTION " Tables  " [1580-2445] -->
+<h3 class="sectionedit5" id="lists"> Lists</h3>
+<div class="level3">
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">enumerate</span><span class="sy0">}</span>  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citemsep"><span class="kw1">itemsep</span></a> -2pt 
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> India
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> China
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Italy
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">enumerate</span></span><span class="sy0">}</span></pre>
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">itemize</span><span class="sy0">}</span>  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citemsep"><span class="kw1">itemsep</span></a> -2pt 
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> India
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> China
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Italy
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">itemize</span></span><span class="sy0">}</span></pre>
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">description</span><span class="sy0">}</span>
+&nbsp;
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[First</span><span class="sy0">]]</span> The first item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Second</span><span class="sy0">]]</span> The second item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Third</span><span class="sy0">]]</span> The third etc <span class="re12">\ldots</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">description</span></span><span class="sy0">}</span></pre>
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">description</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[First</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The first item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Second</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The second item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Third</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The third etc <span class="re12">\ldots</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">description</span><span class="sy0">}</span>
+&nbsp;
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The first item
+  <span class="re8">\begin</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+    <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Nested item 1
+    <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Nested item 2
+  <span class="re8">\end</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The second item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The third etc <span class="re12">\ldots</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">enumerate</span></span><span class="sy0">}</span></pre>
+
+</div>
+<!-- EDIT5 SECTION " Lists" [2446-3264] -->
+<h2 class="sectionedit6" id="figures"> Figures  </h2>
+<div class="level2">
+<pre class="code latex"><span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">figure</span><span class="sy0">}[</span><span class="re2">htb</span><span class="sy0">]</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Ccentering"><span class="kw1">centering</span></a>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cincludegraphics"><span class="kw1">includegraphics</span></a><span class="sy0">[</span><span class="re2">width=0.42\<a href="http://www.golatex.de/wiki/index.php?title=%5Ctextwidth"><span class="kw1">textwidth</span></a></span><span class="sy0">]{</span>./img/MDP1.png<span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Ccaption"><span class="kw1">caption</span></a><span class="sy0">{</span>Gridworld<span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Clabel"><span class="kw1">label</span></a><span class="sy0">{</span>fig:grid_model<span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">figure</span></span><span class="sy0">}</span></pre>
+
+</div>
+<!-- EDIT6 SECTION " Figures  " [3265-3453] -->
+<h2 class="sectionedit7" id="text"> Text  </h2>
+<div class="level2">
+<pre class="code latex"><span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cleft"><span class="kw1">left</span></a>(
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cright"><span class="kw1">right</span></a>)</pre>
+
+</div>
+<!-- EDIT7 SECTION " Text  " [3454-3517] -->
+<h2 class="sectionedit8" id="symbols"> Symbols  </h2>
+<div class="level2">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> \sqrt[root]{arg}  </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8282fb2fea3559b33bd4dd2ff71900da.png" class="latex_inline" alt="$\sqrt[root]{arg}   $" title="Math" /> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> \partial </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img648f02cf2a5d917b956db57e46af51ed.png" class="latex_inline" alt="$\partial  $" title="Math" /> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> \sum </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img914e966405123d93a5cddc244e392944.png" class="latex_inline" alt="$\sum  $" title="Math" /> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> \lim </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf3ab19ad77ba17d14d49485d16bec7a5.png" class="latex_inline" alt="$\lim  $" title="Math" /> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> \int </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5e8542298e5efedecf17e2f7b4911d49.png" class="latex_inline" alt="$\int  $" title="Math" /> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> \equiv     </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img893fbf891d0a5045c683c96bec8c2087.png" class="latex_inline" alt="$\equiv  $" title="Math" /> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> \approx </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img26adc427d59755a3edde0b62641470ba.png" class="latex_inline" alt="$\approx  $" title="Math" /> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> \propto </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9b0df721e058297d6fff5aec8dd67926.png" class="latex_inline" alt="$\propto  $" title="Math" /> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> \simeq     </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img01262cfd6795d72e2443c91307562dd4.png" class="latex_inline" alt="$\simeq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> \sim </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img713764aa85bce3e1f4fe7380e0ed78b8.png" class="latex_inline" alt="$\sim $" title="Math" /> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> \neq     </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6c1b2b72419e81f5f2d8f24b31b4f138.png" class="latex_inline" alt="$\neq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> \geq </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc21cbe77434bb5a027a6787005127255.png" class="latex_inline" alt="$\geq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> \gg  </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2930024a0fa460742f16040683001445.png" class="latex_inline" alt="$\gg  $" title="Math" /> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> \infty </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6a32f24afd4a2ec032129c1b3131b106.png" class="latex_inline" alt="$\infty  $" title="Math" /> </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> \pm </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7e8669bd0275415d28e3fc6967de7ca3.png" class="latex_inline" alt="$\pm  $" title="Math" /> </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> \times </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4fa3ffc7dfb3e6850edcdc13ecc703dc.png" class="latex_inline" alt="$ \times  $" title="Math" /> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> \rightarrow </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6d363c46ed9a06c9efab947fd165f5e8.png" class="latex_inline" alt="$\rightarrow  $" title="Math" /> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> \leftarrow </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgaed773ebe7aa791b3d461a75e70d35d0.png" class="latex_inline" alt="$\leftarrow  $" title="Math" /> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> \xleftarrow{Polar Bond} </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img694d7a63175f1e836aac55ba15d5f170.png" class="latex_inline" alt="$\xleftarrow{Polar Bond}  $" title="Math" /> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> \hat{a} </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img056190d8326dd193143ba7a8bb679618.png" class="latex_inline" alt="$ \hat{a} $" title="Math" /> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> \vec{a} </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e44c75bc03cb5570c1397ad4377f762.png" class="latex_inline" alt="$\vec{a} $" title="Math" /> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> \bar{a} </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img53a4640344ff14869d9d72e306a5d856.png" class="latex_inline" alt="$\bar{a}  $" title="Math" /> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> \nabla </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img086481cd391b05ad5e3f73ae0d43e086.png" class="latex_inline" alt="$ \nabla $" title="Math" /> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> \neq </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6c1b2b72419e81f5f2d8f24b31b4f138.png" class="latex_inline" alt="$\neq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> \longleftrightarrow </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3db24d636b2caff6a1c263299bf72106.png" class="latex_inline" alt="$\longleftrightarrow  $" title="Math" /> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> \leftrightarrow </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd67ce9f66360f1eda322fcd578a1d5cb.png" class="latex_inline" alt="$\leftrightarrow  $" title="Math" /> </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> \cdot </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf56fe36716c6492fb96da22498d53400.png" class="latex_inline" alt="$\cdot  $" title="Math" /> </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> \underset{r0}{(2, 4, 6, 8, 10, 12, 14, 16)} </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1a385b5ab5103b368624a3ab8d091296.png" class="latex_inline" alt="$  \underset{r0}{(2, 4, 6, 8, 10, 12, 14, 16)} $" title="Math" /> </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> \pm   </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7e8669bd0275415d28e3fc6967de7ca3.png" class="latex_inline" alt="$\pm  $" title="Math" /> </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"> \otimes </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga5ec3550d3175b0cd0d467130b14c856.png" class="latex_inline" alt="$\otimes  $" title="Math" /> </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"> \oplus </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc78719b61140e05440dc7a36f979e316.png" class="latex_inline" alt="$\oplus  $" title="Math" /> </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"> \ominus </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2e63f80101a54977eea411dcab2d54d8.png" class="latex_inline" alt="$\ominus $" title="Math" /> </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"> \subset </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img487dde1ea6ff33ce66cf6938013532e7.png" class="latex_inline" alt="$\subset  $" title="Math" /> </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"> \subseteq </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6496561510dd4b4b649d405266a26ff0.png" class="latex_inline" alt="$\subseteq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"> \in </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcacde74bec203687c20f9b5a862ba86b.png" class="latex_inline" alt="$ \in $" title="Math" /> </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"> \notin </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdf18809e1833c2136b126039605448.png" class="latex_inline" alt="$\notin$" title="Math" /> </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"> \supseteq </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5d632cf20d794934c25db7fc90d307c1.png" class="latex_inline" alt="$\supseteq  $" title="Math" /> </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"> \supset </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3d02a6042e6fb5a64142cead352b0ae1.png" class="latex_inline" alt="$\supset   $" title="Math" /> </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"> \forall </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb175f8de02628a743f03151ffb4ca1c7.png" class="latex_inline" alt="$ \forall $" title="Math" /> </td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"> \exists </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc75e99af69300a18e7b7c6897f1ee117.png" class="latex_inline" alt="$ \exists $" title="Math" /> </td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"> \nmid  </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09fd1f52ea44093e9feab8a6081c512a.png" class="latex_inline" alt="$\nmid  $" title="Math" /> </td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"> \iff  </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img53d6612dfc906dd380212f153f7f46f0.png" class="latex_inline" alt="$\iff  $" title="Math" /> </td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"> \cap  </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfcf885d0b8fbade3a77e54152b7eb34b.png" class="latex_inline" alt="$\cap  $" title="Math" /> </td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"> \cup  </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf8719abb493ef8821b9bebb92251118f.png" class="latex_inline" alt="$\cup  $" title="Math" /> </td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"> \thefore  </td><td class="col1"><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img98d91620a2455ee08440b719a8e052fb.png" class="latex_inline" alt="$\therefore  $" title="Math" /> </td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"> \binom{n}{n} </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge3b9afeef5892ae535801d3f179dc8e1.png" class="latex_inline" alt="$ \binom{n}{n} $" title="Math" /> </td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"> \langle </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8a3003255478a8b4b4e52f2f212fd348.png" class="latex_inline" alt="$\langle$" title="Math" /> </td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"> \rangle </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img50a9ef76c8bf8eb91244ed909528dac5.png" class="latex_inline" alt="$\rangle$" title="Math" /> </td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"> \implies </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1b0d922798b4d32a51ea4cf1c23d30ec.png" class="latex_inline" alt="$\implies$" title="Math" /> </td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"> \lfloor \rfloor </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd70a5f70b0bc1da8130a3180ad89f0e1.png" class="latex_inline" alt="$\lfloor \rfloor$" title="Math" /> </td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"> \lceil \lceil </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf00caf37b8f0a27609691ace9959bef7.png" class="latex_inline" alt="$\lceil \rceil$" title="Math" /> </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [3543-5163] -->
+</div>
+<!-- EDIT8 SECTION " Symbols  " [3518-5163] -->
+<h2 class="sectionedit10" id="matrices">Matrices</h2>
+<div class="level2">
+
+<p>
+&lt;columns&gt;
+\begin{pmatrix} <br/>
+
+a &amp; b <br/>
+
+c &amp; d  <br/>
+
+\end{pmatrix} <br/>
+
+&lt;newcolumn&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6b6226bec112530af317b944f91d2d06.png" class="latex_displayed" alt="$$
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d 
+\end{pmatrix}
+$$" title="Equation" />
+</p>
+
+<p>
+&lt;/columns&gt;
+</p>
+
+<p>
+&lt;columns&gt;
+\quad\quad\begin{bmatrix} <br/>
+
+a &amp; b <br/>
+
+c &amp; d <br/>
+
+\end{bmatrix} <br/>
+
+&lt;newcolumn&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img60bc430f69cf70b8b357169316521977.png" class="latex_displayed" alt="$$
+\quad\quad\begin{bmatrix}
+a &amp; b \\
+c &amp; d \end{bmatrix}
+$$" title="Equation" />
+</p>
+
+<p>
+&lt;/columns&gt;
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6a698b70d0b83bce2d39847cb2b71a8c.png" class="latex_displayed" alt="$$S(n,k)=\left\{\begin{matrix} n \\ k \end{matrix}\right\}= S_n^{(k)}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Matrices" [5164-5567] -->
+<h2 class="sectionedit11" id="greek"> Greek  </h2>
+<div class="level2">
+<div class="table sectionedit12"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> \lambda </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfd8be73b54f5436a5cd2e73ba9b6bfa9.png" class="latex_inline" alt="$\lambda$" title="Math" /> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> \epsilon </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7ccca27b5ccc533a2dd72dc6fa28ed84.png" class="latex_inline" alt="$\epsilon$" title="Math" /> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> \alpha </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc745b9b57c145ec5577b82542b2df546.png" class="latex_inline" alt="$\alpha$" title="Math" /> </td>
+	</tr>
+</table></div>
+<!-- EDIT12 TABLE [5593-5665] -->
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img865a2c771b7419b8742c1a4a04cc5584.png" class="latex_inline" alt="$\mathbb{P}$" title="Math" /> for prime numbers using \mathbb{P}, <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4fd661cfefdf4318d1aa35fb483796b2.png" class="latex_inline" alt="$\mathbb{N}$" title="Math" /> for natural numbers using \mathbb{N}, <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb9477ea14234215f4d516bad55d011b8.png" class="latex_inline" alt="$\mathbb{Z}$" title="Math" /> for integers using \mathbb{Z}, <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4567a3e3433096c842571bce51043321.png" class="latex_inline" alt="$\mathbb{I}$" title="Math" /> for irrational numbers using \mathbb{I}, <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0f452ec0bcf578fa387e4857f80f03f4.png" class="latex_inline" alt="$\mathbb{Q}$" title="Math" /> for rational numbers using \mathbb{Q}, <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf3e711926cecfed3003f9ae341f3d92b.png" class="latex_inline" alt="$\mathbb{R}$" title="Math" /> for real numbers using \mathbb{R} and <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img81324f07e9ffb7920321df72cc0bee1b.png" class="latex_inline" alt="$\mathbb{C}$" title="Math" /> for complex numbers using \mathbb{C}. <br/>
+
+</p>
+
+</div>
+<!-- EDIT11 SECTION " Greek  " [5568-6039] -->
+<h2 class="sectionedit13" id="references">References</h2>
+<div class="level2">
+
+<p>
+<a href="http://latex.wikia.com/wiki/List_of_LaTeX_symbols" class="urlextern" title="http://latex.wikia.com/wiki/List_of_LaTeX_symbols"  rel="nofollow">http://latex.wikia.com/wiki/List_of_LaTeX_symbols</a>
+</p>
+
+</div>
+<!-- EDIT13 SECTION "References" [6040-] -->

@@ -1,0 +1,219 @@
+====== Matemáticas Operativas ======
+
+===== Trigonometría =====
+
+Algunas de las relaciones trigonométricas mas útiles, relacionadas con las funciones trigonometricas básicas como el seno, el coseno y la tangente se listan a continuación:
+
+$$\sin\theta=\frac{1}{\csc\theta}\text{ ; }\cos\theta=\frac{1}{\sec\theta}\text{ ; }\tan\theta=\frac{1}{\cot\theta}$$
+
+Las relaciones en un triangulo rectangulo donde $h$ representa la hipotenusa, $co$ el cateto opuesto y $ca$ el cateto adyacente del ángulo $\theta$ están dadas por las siguientes relaciones
+
+$$\sin\theta=\frac{co}{h}\text{ ; }\cos\theta=\frac{ca}{h}\text{ ; }\tan\theta=\frac{co}{ca}=\frac{\sin\theta}{\cos\theta}$$
+
+$$\sin^2\theta + \cos^2\theta = 1$$
+
+$$\tan^2\theta + 1 = \sec^2\theta$$
+
+$$\cot^2\theta + 1 = \csc^2\theta$$
+
+$$\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\sin\beta\cos\alpha$$
+
+$$\cos(\alpha\pm\beta)=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta$$
+
+$$\tan(\alpha\pm\beta)=\frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}$$
+
+$$\sin(2\theta)=2\sin\theta\cos\theta$$
+
+$$\cos(2\theta)=\cos^2\theta-\sin^2\theta$$
+
+$$\tan(2\theta)=\frac{2\tan\theta}{1-\tan^2\theta}$$
+
+$$\sin\biggl(\frac{\theta}{2}\biggr)=\pm\sqrt{\frac{1-\cos\theta}{2}}$$
+
+$$\cos\biggl(\frac{\theta}{2}\biggr)=\pm\sqrt{\frac{1+\cos\theta}{2}}$$
+
+$$\tan\biggl(\frac{\theta}{2}\biggr)=\csc\theta-\cot\theta=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{\sin\theta}{1+\cos\theta}$$
+
+
+
+====Ley de senos y cosenos====
+
+Dado el siguiente gráfico:
+
+{{ :matematicas:leysenocoseno.jpg?400 |}}
+
+La ley de senos establece que:
+
+$$\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}$$
+
+La ley de cosenos establece que:
+
+$$c^2=a^2+b^2-2ab\cos C$$
+
+===== Logaritmos y exponenciales=====
+
+Las siguientes son las leyes más representativas para el manejo de logaritmos y funciones exponenciales
+
+  * $\log_a(xy)=\log_a(x)+\log_a(y)$
+  * $\log_a(\frac{x}{y})=\log_a(x)-\log_a(y)$
+  * $\log_a(x^r)=r\log_a(x)$
+  * $\log_a(x)=\frac{\ln x}{\ln a}$
+  * $a^{x+y}=a^xa^y$
+  * $a^{x-y}=\frac{a^x}{a^y}$
+  * $(a^x)^y=a^{xy}$
+  * $(ab)^x=a^xb^x$
+
+===== Funciones =====
+
+Regla que asigna a cada elemento $x$ de un conjunto $A$ exactamente un elemento, llamado $f(x)$ de un conjunto $B$.
+$A$ se denomina **dominio** de la función y $B$ se denomina **rango** o **codominio** de la función. Formalmente una función se denota como:
+
+$$f\text{ }:A\text{ }\rightarrow\text{ }B$$
+
+====Simetría====
+
+  * Función par es aquella que cumple que $f(x)=f(-x)$
+  * Función impar es aquella que cumple que $f(-x)=-f(x)$
+
+====Funciones crecientes y decrecientes====
+
+  * La función creciente en un intervalo $I$ cumple que $f(x_1)<f(x_2) \text{siempre que }x_1<x_2 \text{ en } I$
+  * La función decreciente en un intervalo $I$ cumple que $f(x_1)>f(x_2) \text{siempre que }x_1>x_2 \text{ en } I$
+
+====Construcciones de funciones====
+
+Sea $f(x)$ una función y $c$ una constantes mayor que 1, se pueden obtener funciones nuevas utilizando las siguientes construcciones
+
+  - Desplazamiento hacia arriba: $f(x)+c$
+  - Desplazamiento hacia abajo: $f(x)-c$
+  - Desplazamiento a la derecha: $f(x-c)$
+  - Desplazamiento a la izquierda: $f(x+c)$
+  - Alargamiento vertical: $cf(x)$
+  - Compresión vertical: $\frac{1}{c}f(x)$
+  - Compresión horizontal: $f(cx)$
+  - Alargamiento horizontal: $f(\frac{x}{c})$
+  - Reflexión respecto al eje $x$: $-f(x)$
+  - Reflexión respecto al eje $y$: $f(-x)$
+
+====Combinación de funciones====
+
+Sean dos funciones $f$ y $g$ en la variable $x$ y con dominios $A$ y $B$ respectivamente, se pueden combinar de las siguientes maneras:
+
+  - $(f+g)(x)=f(x)+g(x) \text{ dominio: }A \cap B$
+  - $(f-g)(x)=f(x)-g(x) \text{ dominio: }A \cap B$
+  - $(fg)(x)=f(x)g(x) \text{ dominio: }A \cap B$
+  - $(\frac{f}{g})(x)=\frac{f(x)}{g(x)} \text{ dominio: }\lbrace x \in A \cap B|g(x) \neq 0\rbrace$
+  - Composición: $(f \circ g)(x)=f(g(x)) \text{ dominio: }\lbrace x \in g(x) \in A \rbrace$
+
+Note que el dominio de las funciones combinadas puede cambiar como resultado de la propia combinación.
+
+====Curvas paramétricas====
+
+En ocasiones las funciones pueden escribirse en términos de sus componentes en los ejes $x$ e $y$, para ellos se expresan en dos ecuaciones como sigue:
+
+$x=f(t) \text{  ;  } y=g(t)$
+
+La variable $t$ se conoce como parámetro. Es importante notar que estas expresiones pueden dar lugar a un concepto más general que el de función 
+debido a que si se despeja $t$ en las ecuaciones anteriores y se igualan el resultado puede no superar la prueba de la línea vertical y como 
+consecuencia obtener una relación, para ello se utiliza el termino más general curva. Considere como ejemplo el caso de las curvas paramétricas 
+de un circulo de centro $(h,k)$ y radio $r$:
+
+$x=h+r\sin(t) \text{  ;  } y=k+r\cos(t)$
+
+====Funciones inversas====
+
+Antes de definir la función inversa, definamos una función uno a uno (ver correspondencia de funciones) como aquella función que nunca 
+adopta el mismo valor dos veces:
+
+$$f(x_1) \neq f(x_2) \text{ siempre que } x_1 \neq x_2$$
+
+Las funciones uno a uno se pueden comprobar gráficamente si al trazar una línea horizontal esta sólo interseca la gráfica de de la curva una sola vez.
+
+Se define la función inversa siendo $f$ una función uno a uno con dominio $A$ y rango $B$, luego la función
+inversa $f^{-1}$ tiene rango $A$ y dominio $A$ y se define mediante:
+
+$$f^{-1}(y)=x \Leftrightarrow f(x)=y$$
+
+La función inversa implica las siguientes expresiones:
+
+  * $f^{-1}(f(x))=x \text{ ; }\forall x \in A$
+  * $f(f^{-1}(x))=x \text{ ; }\forall x \in B$
+
+====Correspondencia de funciones====
+
+A continuación se estudia las principales correspondencias de funciones, como son: univoca, biunivoca, inyectiva, biyectiva, sobreyectiva; las primeras correspondencias entre funciones (unívoca, biunivoca) tratan los conceptos más generales aplicados a conjuntos, pero también pueden entenderse desde el punto de vista de las funciones y en este caso las correspondencias se denominan aplicaciones, teniendo los casos inyectiva, biyectiva y sobreyectiva que se resumen a continuación. 
+Considere $A$ el dominio de una función $f$ cuyo rango es $B$
+
+===Funciones inyectivas===
+
+Una función es inyectiva si a elementos diferentes del dominio asigna elementos diferentes del rango, formalmente las funciones inyectivas se definen como:
+
+$$a\text{ , }a' \in A\text{ y }a \neq a'\text{ entonces }f(a) \neq f(a')$$
+
+===Funciones sobreyectiva===
+
+Las funciones sobreyectivas también son denominadas funciones suprayectivas, epiyectivas, suryectiva, exhaustiva o subyectivas y se definen como aquellas funciones que para todo número en el rango tienen un correspondiente valor en el dominio, formalmente se define como:
+
+$$\forall b \in B \text{ } \exists \text{ } a \in A \text{ con }f(a)=b$$
+
+La función también puede ser no sobreyectiva si la anterior premisa no se cumple.
+
+===Funciones biyectivas===
+
+Estas funciones también se denominan uno a uno, y son aquellas que son inyectivas y sobreyectivas al mismo tiempo.
+
+===Ejemplos===
+
+A continuación se muestran ejemplos de los diferentes tipos de funciones.
+
+^  Tipos de funciones  ^^^
+| |  Inyectiva  |  No inyectiva  |
+| Sobreyectiva | {{:matematicas:biyectiva.png?100|}} \\ Este caso también se \\ conoce biyectiva o \\ uno a uno | {{:matematicas:noinyec_sobreyec.png?100|}} |
+| No sobreyectiva | {{:matematicas:inyecnosobre.png?100|}} | {{:matematicas:noinyec_nosobreyec.png?100|}} |
+
+===== Fracciones parciales =====
+
+La expansión por fracciones parciales es una técnica muy útil para simplificar un cociente de polinomios como la combinación lineal de cocientes de polinomios más simples. Pueden analizarse la expansión en fracciones parciales utilizando los siguientes casos.
+
+==== Caso 1 ====
+
+Caso en el cual el grado del numerador sea un grado más pequeño que el denominador.
+El siguiente ejemplo ilustra el proceso:
+
+$$\frac{5x-4}{2x^2+x-1}$$
+
+Se pude expresar como:
+
+$$\frac{5x-4}{(x+1)(2x-1)}=\frac{A}{x+1}+\frac{B}{2x-1}$$
+
+Donde $A$ y $B$ son constantes que se puede hallar al multiplicar ambos lados de la expresión por el denominador factorizado para obtener:
+
+$$5x-4=A(2x-1)+B(x+1)$$
+$$5x-4=(2A+B)x+(-A+B)$$
+
+Lo cual conduce a dos ecuaciones simultáneas:
+
+$5=2A+B$ y $-4=-A+B$
+
+De allí se obtiene la solución y la expansión por fracciones parciales resulta ser:
+
+$$\frac{5x-4}{(x+1)(2x-1)}=\frac{3}{x+1}-\frac{1}{2x-1}$$
+
+==== Caso 2 ====
+
+Si el grado del numerador es mayor o igual que el denominador es necesario realizar la división de polinomios para luego aplicar las mismas consideraciones del caso 1.
+
+==== Caso 3 ====
+
+Si el denominador tiene más de un factor lineal es necesario incluir un término correspondiente por cada factor.
+Por ejemplo:
+
+$$\frac{x+6}{x(x-3)(4x+5)}=\frac{A}{x}+\frac{B}{x-3}+\frac{C}{4x+5}$$
+
+Lo cual conduce a un sistema con tres incógnitas y tres ecuaciones.
+
+==== Caso 4 ====
+
+En el caso en que el denominador posea un factor cuadrático irreducible $ax^2+bx+c$ donde el discriminante $b^2-4ac$ sea negativo entonces la fracción parcial corresponde de la siguiente manera:
+
+$$\frac{Ax+B}{ax^2+bx+c}$$

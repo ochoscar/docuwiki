@@ -1,0 +1,15 @@
+<span class="co1">#import “MiObjeto.h”</span>
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="kw4">int</span> numeroDeArgumentos, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> argumentos<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="co2">// Creamos un puntero a un objeto MiObjeto. Para dar énfasis a que se trata de un puntero, lo inicializamos a nil, que es equivalente a NULL.</span>
+     <span class="kw4">int</span> otroNumeroEntero <span class="sy0">=</span> <span class="nu0">20</span>;
+     MiObjeto<span class="sy0">*</span> objeto <span class="sy0">=</span> <span class="kw2">nil</span>;
+&nbsp;
+     <span class="co2">// Reservamos memoria para el objeto</span>
+     objeto <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjeto alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="co2">// Asignamos un valor al número entero del objeto</span>
+     <span class="br0">&#91;</span>objeto setNumeroEntero<span class="sy0">:</span> <span class="nu0">10</span><span class="br0">&#93;</span>;
+&nbsp;
+     <span class="co2">// Mostramos el valor del numero entero que hemos asignado al objeto</span>
+     <span class="br0">&#91;</span>objeto printNumeroEntero<span class="br0">&#93;</span>;
+     <span class="co2">// Eliminamos el objeto de memoria</span>
+     <span class="br0">&#91;</span>objeto release<span class="br0">&#93;</span>;

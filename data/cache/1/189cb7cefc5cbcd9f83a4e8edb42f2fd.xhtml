@@ -1,0 +1,618 @@
+
+<h1 class="sectionedit1" id="vectores_matrices_y_sistemas_de_ecuaciones">Vectores, Matrices y Sistemas de Ecuaciones</h1>
+<div class="level1">
+
+<p>
+En el estudio del álgebra lineal aparecen los vectores y las matrices, los primeros como un arreglo de números de una sola dimensión y los segundos como un arreglo de números de más de una dimensión.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Vectores, Matrices y Sistemas de Ecuaciones" [1-266] -->
+<h2 class="sectionedit2" id="vectores">Vectores</h2>
+<div class="level2">
+
+<p>
+Vectores como los siguientes son denominados vectores fila y vectores columna respectivamente.
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Vector fila </th><th class="col1">Vector columna </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img10fc4c8ac12eaef1e9d884558be6b8a1.png" class="latex_inline" alt="$\begin{bmatrix} \alpha &amp; \beta &amp; \gamma \end{bmatrix}$" title="Math" /> </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb5cbe979ea43f3a084b81e94aa8f4b16.png" class="latex_inline" alt="$\begin{bmatrix} \alpha \\ \beta \\ \gamma \end{bmatrix}$" title="Math" /> </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [385-535] -->
+<p>
+Es importante anotar que un vector es un conjunto ordenando de elementos y cada una de sus posiciones también se denomina elemento o componente.
+</p>
+
+<p>
+Este arreglo de elementos puede tener un tamaño determinado y sirve para agrupar un conjunto de valores que están inter-relacionados, existen muchas propiedades importantes de los vectores y las operaciones comunes de aritmética también están disponibles con ellos.
+</p>
+
+<p>
+Las componentes de los vectores pueden ser reales <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgbc0baa1bd1772406881ea71a3524054d.png" class="latex_inline" alt="$\mathbb R$" title="Math" /> o complejos <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img03bad8dcce7ba12da7a6691210bc22cc.png" class="latex_inline" alt="$\mathbb C$" title="Math" /> de tal manera un vector de n componentes reales representa el espacio <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb6c7cadec618bfd8eac2edf55746ded5.png" class="latex_inline" alt="$\mathbb R^n$" title="Math" />, así <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imged5e84062bc1b4e4e51106fefe3dd6c7.png" class="latex_inline" alt="$\mathbb R^2$" title="Math" /> se llaman vectores en el plano y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2f307f963ae9f215c4b3859d7a2a5be9.png" class="latex_inline" alt="$\mathbb R^3$" title="Math" /> se llaman vectores en el espacio.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Vectores" [267-1227] -->
+<h3 class="sectionedit4" id="producto_vectorial">Producto vectorial</h3>
+<div class="level3">
+
+<p>
+Este producto esta definido por la combinación lineal de dos vectores, de manera que el resultado de esta operación es un valor escalar, dado por la sumatoría de la multiplicación de las correspondientes componentes, de manera que una multiplicación vectorial (o producto punto) de dos vectores es compatible sólo si ambos componentes tienen igual tamaño.
+</p>
+
+<p>
+La <em>combinación lineal</em> esta dada por la siguiente sumatoría
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb87f0d09afb7799464b706c2cea0138e.png" class="latex_displayed" alt="$$\mathbf a\cdot\mathbf b=\sum_{i=1}^na_ib_i$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Producto vectorial" [1228-1735] -->
+<h3 class="sectionedit5" id="propiedades_de_los_vectores">Propiedades de los vectores</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3a93d6c3ee15959d3844e5b793b37322.png" class="latex_inline" alt="$\mathbf a\cdot\mathbf 0=0$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5270308a30c47cce8b61e299cdf2f73a.png" class="latex_inline" alt="$\mathbf a\cdot\mathbf b=\mathbf b\cdot\mathbf a$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc6c2654ae85d61f94e56567e465d3c7d.png" class="latex_inline" alt="$\mathbf a\cdot(\mathbf b+\mathbf c)=\mathbf a\cdot\mathbf b+\mathbf a\cdot\mathbf c$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7d0493a19750e4c7a7b16687d406365a.png" class="latex_inline" alt="$(\alpha\mathbf a)\cdot\mathbf b=\alpha(\mathbf a\cdot\mathbf b)$" title="Math" /></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT5 SECTION "Propiedades de los vectores" [1736-2021] -->
+<h2 class="sectionedit6" id="matrices">Matrices</h2>
+<div class="level2">
+
+<p>
+Las matrices aparecen, por ejemplo en el estudio de ecuaciones simultáneas, puede considerar para el ejemplo un sistema de ecuaciones de dos incógnitas con dos ecuaciones, que puede presentar los siguientes casos y a través de la siguientes ecuación:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb5f9481ee0fd0ebf2403fc54ae12fa21.png" class="latex_inline" alt="$a_1_1x_1+a_1_2x_2=b_1$" title="Math" /> <br/>
+
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc6cf83c29a9afadeeac2f53ed60246b3.png" class="latex_inline" alt="$a_2_1x_1+a_2_2x_2=b_2$" title="Math" />
+</p>
+
+<p>
+Donde su correspondiente matriz de coeficientes es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcdbb62039025d57d91bed17b695df153.png" class="latex_displayed" alt="$$\begin{bmatrix} a_1_1 &amp; a_1_2 \\ a_2_1 &amp; a_2_2 \end{bmatrix}$$" title="Equation" />
+</p>
+
+<p>
+1. Una única solución, las rectas se intersecan en un sólo punto, como muestra la siguiente gráfica
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8fcf3afbf991f2cfb0252ea2c9046796.png" class="latex_inline" alt="\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(22,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,22){$y$}
+  \put(0,0){\line(1,1){20}}
+  \put(0,12){\line(4,1){20}}
+  \put(16,16){\circle*{1}}
+  \put(16,12){$P$}
+\end{picture}" title="LaTeX" />
+</p>
+
+<p>
+2. Las rectas nunca se intersecan por lo tanto no se tiene solución
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8086c450c18346ea9d26b70b90974eb0.png" class="latex_inline" alt="\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(21,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,21){$y$}
+  \put(0,0){\line(1,1){20}}
+  \put(0,2){\line(1,1){20}}
+\end{picture}" title="LaTeX" />
+</p>
+
+<p>
+3. Las rectas coinciden en todos los puntos y por lo tanto se tienen infinitas soluciones
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img856b5f7a9fe9a5f7949fcd12712eb267.png" class="latex_inline" alt="\setlength{\unitlength}{1mm}
+\begin{picture}(93,46)
+  \put(1,10){\vector(1,0){20}} 
+  \put(21,9){$x$}
+  \put(10,0){\vector(0,1){20}} 
+  \put(9,21){$y$}
+  \put(0,0){\line(1,1){20}}
+\end{picture}" title="LaTeX" />
+</p>
+
+<p>
+Estos sistemas de ecuaciones se pueden representar a través de matrices como sigue:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img84c468230e1f8782ac1fc5288fc22785.png" class="latex_displayed" alt="$$\mathbf A \cdot x=b$$" title="Equation" />
+</p>
+
+<p>
+Donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> es la matriz de coeficientes de las ecuaciones, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> es un vector columna con las variables y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> es el vector columna con los valores de los coeficientes independientes. Cuando el sistema genérico de n ecuaciones con m incógnitas se no presenta ninguna solución se dice que es un <em>sistema inconsistente</em>, por otro lado si tiene al menos una solución se dice que es es un <em>sistema consistente</em>. 
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Matrices" [2022-4003] -->
+<h3 class="sectionedit7" id="producto_matricial">Producto matricial</h3>
+<div class="level3">
+
+<p>
+Este producto es compatible entre dos matrices siempre y cuando el número de columnas de la primera martiz sea el mismo número de filas de la segunda matriz. Esta multiplicación no es conmutativa y el resultado de multilicar dos matrices <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcaf318af296c67d62969dd56fbb8c97c.png" class="latex_inline" alt="$\mathbf B$" title="Math" /> esta dado por:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgec492b1431be641bd50917e41a70f587.png" class="latex_displayed" alt="$$c_{ij}=(\text{reglón }i \text{ de } \mathbf A)\cdot(\text{columna }j \text{ de } \mathbf B)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Producto matricial" [4004-4414] -->
+<h3 class="sectionedit8" id="propiedades_de_las_matrices">Propiedades de las matrices</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga6d592ac9e13581ea9932dce5f0b0016.png" class="latex_inline" alt="$\mathbf A+\mathbf 0=\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img40ba26e0cb1da65c59c86e79bdbe9076.png" class="latex_inline" alt="$\mathbf 0\mathbf A=\mathbf 0$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgba02050479a55eb31ed7a2148e793c04.png" class="latex_inline" alt="$\mathbf A+\mathbf B=\mathbf B+\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img083fba0b45e33df03c755fa7d82d9012.png" class="latex_inline" alt="$(\mathbf A+\mathbf B)+\mathbf C=\mathbf A+(\mathbf B+\mathbf C)$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge267e522669664d91aa33777ca3f32fd.png" class="latex_inline" alt="$\alpha(\mathbf A+\mathbf B)=\alpha\mathbf A+\alpha\mathbf B$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3bdfdb81b5bf7d6bbd2c13d38f31a030.png" class="latex_inline" alt="$\mathbf I\mathbf A=\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img26ae05211ee964b128ed0ae4638d569b.png" class="latex_inline" alt="$(\alpha + \beta)\mathbf A=\alpha\mathbf A+\beta\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1e65b66350ec061b5000654b0731ad74.png" class="latex_inline" alt="$\mathbf A(\mathbf B\mathbf C)=(\mathbf A\mathbf B)\mathbf C$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4604493f4ef16b9ca511eef6a179c8fc.png" class="latex_inline" alt="$\mathbf A(\mathbf B+\mathbf C)=\mathbf A\mathbf B+\mathbf A\mathbf C$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf4597a34ddced5c229ff60993a6837cb.png" class="latex_inline" alt="$(\mathbf A+\mathbf B)\mathbf C=\mathbf A\mathbf C+\mathbf B\mathbf C$" title="Math" /></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT8 SECTION "Propiedades de las matrices" [4415-5021] -->
+<h2 class="sectionedit9" id="sistemas_de_ecuaciones">Sistemas de ecuaciones</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT9 SECTION "Sistemas de ecuaciones" [5022-5057] -->
+<h3 class="sectionedit10" id="eliminacion_de_gauss_jordan">Eliminación de Gauss Jordan</h3>
+<div class="level3">
+
+<p>
+El proceso de eliminación de Gauss - Jordan sirve para solucionar la anterior ecuación, para ello se debe escribir la matriz aumentada del sistema <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> seguida del vector <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> de la siguiente manera:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1717eee2ad2589369291f4d84df091e0.png" class="latex_displayed" alt="$$\left(\begin{array}{cc|c}
+  a_1_1 &amp; a_1_2 &amp; b_1\\
+  a_2_1 &amp; a_2_2 &amp; b_2\\
+  \end{array}\right)$$" title="Equation" />
+</p>
+
+<p>
+Donde la idea es obtener una matriz escalonada reducida por reglones y pivote y luego utilizar una sustitución hacia adelante. Para lograr esta matriz se deben hacer tres operaciones fundamentales que puede ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> Conmutacion de filas</div>
+</li>
+<li class="level1"><div class="li"> División de una fila por un escalar diferente de cero</div>
+</li>
+<li class="level1"><div class="li"> Adicionar p veces una fila a otra</div>
+</li>
+</ul>
+
+<p>
+La notación para estas operaciones fundamentales con reglones es la siguiente:
+</p>
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img34044db18296d60a706df13ded1032d8.png" class="latex_inline" alt="$R_i \rightarrow cR_i$" title="Math" /> Reemplaza la fila i-esima, por ella misma multiplicada por un escalar</div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1ac1047431143e0235d599e220a9f09e.png" class="latex_inline" alt="$R_j \rightarrow R_j+cR_i$" title="Math" /> Sustituye el j-esimo reglón por la suma del reglón j más el reglón i multiplicado por c</div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img789bc9ba495550528316a37a04fc61e8.png" class="latex_inline" alt="$R_j \leftrightarrows R_i$" title="Math" /> Intercambia los reglones i con el reglón j</div>
+</li>
+</ul>
+
+<p>
+Las matrices que se obtienen después de realizar una operación fundamental se denominan <em>matrices equivalentes por reglones</em>.
+</p>
+
+<p>
+Una matriz se encuentra en su forma escalonada reducida por reglones y pivote siempre que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si existe una fila de ceros esta es la última</div>
+</li>
+<li class="level1"><div class="li"> El primer elemento para una fila que no es toda de ceros es uno</div>
+</li>
+<li class="level1"><div class="li"> Para dos reglones que no todos sus elementos son ceros, entonces el primer uno en el reglon de más abajo también se encuentra más a la derecha.</div>
+</li>
+<li class="level1"><div class="li"> Cualquier columna que contiene un uno y este uno es el primer elemento en el reglón donde aparece tiene ceros en el resto de sus posición. El primer uno para un reglón diferente de cero se llama <em>pivote</em> para el reglón</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT10 SECTION "Eliminación de Gauss Jordan" [5058-6843] -->
+<h3 class="sectionedit11" id="sistemas_homogeneos">Sistemas homogéneos</h3>
+<div class="level3">
+
+<p>
+Un sistema de ecuaciones se dice que es homogéneo cuando el vector <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> tiene el todas sus componentes en cero, y por lo tanto la matriz aumentada del sistema que le corresponde es la siguiente:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img243a380562c161bee34922cf20938233.png" class="latex_displayed" alt="$$\left(\begin{array}{cc|c}
+  a_1_1 &amp; a_1_2 &amp; 0\\
+  a_2_1 &amp; a_2_2 &amp; 0\\
+  \end{array}\right)$$" title="Equation" />
+</p>
+
+<p>
+Todos los sistemas homogéneos tiene un solución trivial, es decir, la solución es entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd1ec5f3db6e38f195c802cd6121974d7.png" class="latex_inline" alt="$x_1=x_2=0$" title="Math" />.
+Para todo sistema homogéneo también se cumple que si tiene más incógnitas que ecuaciones (<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img256effc5b249cfe20fc820b82ae49def.png" class="latex_inline" alt="$n&gt;m$" title="Math" />) tiene un número infinito de soluciones.
+</p>
+
+<p>
+Para un sistema no homogéneo y su correspondiente sistema homogéneo, se pueden encontrar todas las soluciones teniendo en cuenta que si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd2c7b19b7ae48c995a19f92acc36f646.png" class="latex_inline" alt="$\mathbf x_1$" title="Math" /> es solución y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcde3b9f4025b0cd196ba51e69dd3104f.png" class="latex_inline" alt="$\mathbf x_2$" title="Math" /> también se solución del sistema no homogéneo entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7791c13a70ab996e60267a0b465a9bea.png" class="latex_inline" alt="$\mathbf x_1-\mathbf x_2$" title="Math" /> es solución al sistema homogéneo relacionado.
+Lo anterior es muy útil y se puede representar como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f2c9d1bd4270e1e89db877096fcd8f2.png" class="latex_inline" alt="$\mathbf y=\mathbf x+\mathbf h$" title="Math" /> donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6ce54f9ab6efe2d0dcf7b19121f427db.png" class="latex_inline" alt="$\mathbf x$" title="Math" /> e <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf4f271a109af0725a75f01b6f2947f01.png" class="latex_inline" alt="$\mathbf y$" title="Math" /> es una solución del sistema no homogéneo y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga82abe0d599d817ca299f88902c3042e.png" class="latex_inline" alt="$\mathbf h$" title="Math" /> es solución del sistema homogéneo, por lo tanto para encontrar todas las soluciones al sistema no homogéneo basta con encontrar una solución del sistema no homogéneo y todas las soluciones del sistema homogéneo relacionado.
+</p>
+
+</div>
+<!-- EDIT11 SECTION "Sistemas homogéneos" [6844-8134] -->
+<h3 class="sectionedit12" id="matriz_inversa">Matriz Inversa</h3>
+<div class="level3">
+
+<p>
+La matriz inversa de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> es aquella que multiplicada por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> produce la matriz identidad de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img734e2e714358a12170c2347e49a7231b.png" class="latex_inline" alt="$\mathbf I$" title="Math" /> del mismo tamaño de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" />. No todas las matrices tienen inversa y sólo se encuentra definida para matrices cuadradas.
+</p>
+
+<p>
+El concepto es poderoso y simple por que permite resolver el sistema de ecuaciones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img19854adea78c53740eecd820e35afc81.png" class="latex_inline" alt="$\mathbf A \cdot x=b$" title="Math" /> con una simple multiplicación, así:
+</p>
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img19854adea78c53740eecd820e35afc81.png" class="latex_inline" alt="$\mathbf A \cdot x=b$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc464b624c9f49942d37a7ab781094e22.png" class="latex_inline" alt="$\mathbf A^{-1} \mathbf A \cdot x=\mathbf A^{-1} \cdot b$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8810b32336aabf19bdb170a074ff36c1.png" class="latex_inline" alt="$\mathbf I \cdot x = \mathbf A^{-1} \cdot b$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe82eae952103bf09b442c65841e6097.png" class="latex_inline" alt="$x = \mathbf A^{-1} \cdot b$" title="Math" /></div>
+</li>
+</ul>
+
+<p>
+Hemos denotado la inversa de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgce6c763ca027f1ccdfe7f775c934a6e0.png" class="latex_inline" alt="$\mathbf A^-1$" title="Math" /> donde se cumplen las siguientes propiedades:
+</p>
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf1a2711be1fa227fd8fd0341db466222.png" class="latex_inline" alt="$\mathbf A_n \mathbf I_n = \mathbf I_n \mathbf A_n = \mathbf A_n $" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img09f30d578867bcb83223d1a4bb8e8ece.png" class="latex_inline" alt="$\mathbf A_n \mathbf A^{-1}_n = I_n$" title="Math" /></div>
+</li>
+</ul>
+
+<p>
+Para calcular la inversa de una matriz puede recurrirse a la solución de sistemas de ecuaciones o a determinantes, veamos ambos casos.
+</p>
+
+</div>
+<!-- EDIT12 SECTION "Matriz Inversa" [8135-9079] -->
+<h3 class="sectionedit13" id="procedimiento_para_encontrar_la_inversa_usando_sistemas_de_ecuaciones">Procedimiento para encontrar la inversa usando sistemas de ecuaciones</h3>
+<div class="level3">
+<ol>
+<li class="level1"><div class="li"> Escriba la matriz aumentada del sistema <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5b0810aa49a09bfa1f27ca57905505d0.png" class="latex_inline" alt="$\mathbf A| \matbbf I$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Reduzca el sistema para poner <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> en su forma reducida por reglones</div>
+</li>
+<li class="level1"><div class="li"> Se decide si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> es invertible</div>
+</li>
+</ol>
+<ul>
+<li class="level1"><div class="li"> Si la forma escalonada reducida por reglones de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> es la matriz identidad, entonces la inversa se encuentra a la izquierda en el sistema resuelto</div>
+</li>
+<li class="level1"><div class="li"> Si en la reducción existe un reglón de ceros a la izquierda, la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> no es invertible</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT13 SECTION "Procedimiento para encontrar la inversa usando sistemas de ecuaciones" [9080-9616] -->
+<h3 class="sectionedit14" id="procedimiento_para_encontrar_la_inversa_usando_determinantes">Procedimiento para encontrar la inversa usando determinantes</h3>
+<div class="level3">
+
+<p>
+Para hallar la inversa usando determinantes basta recurrir a la siguiente multiplicación:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgefc0acd55333e8c69f6a6343f88ab480.png" class="latex_displayed" alt="$$\mathbf A^{-1} = \frac{1}{\det \mathbf A}\begin{bmatrix} a_1_1 &amp; -a_1_2 \\ -a_2_1 &amp; a_2_2 \end{bmatrix}$$" title="Equation" />
+</p>
+
+<p>
+Donde el determinante de una matriz cuadrada de tamaño 2 es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img57dfbad293e84152fa11c27a3b5a29ac.png" class="latex_displayed" alt="$$\det \mathbf A = a_{11}a_{22}-a_{12}a_{21}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT14 SECTION "Procedimiento para encontrar la inversa usando determinantes" [9617-10000] -->
+<h3 class="sectionedit15" id="matriz_transpuesta">Matriz transpuesta</h3>
+<div class="level3">
+
+<p>
+Una matriz transpuesta <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfd21ef6a477ff53e3cf69e8af8623a89.png" class="latex_inline" alt="$\mathbf A^t$" title="Math" /> de una matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> se obtiene al escribir las filas como columnas. Las matrices transpuestas tienen muchas propiedades útiles, a continuación se muestran estas propiedades:
+</p>
+<ol>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img911f767fd09de936f70a338c25fc26c5.png" class="latex_inline" alt="${(\mathbf A^t)}^t=\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img9a34ac5c737f6c4864d7a5dad1af5657.png" class="latex_inline" alt="$(\mathbf A^t\mathbf B^t)=\mathbf A^t\mathbf B^t$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6fb8605bae5983fdfdf13895a19f045c.png" class="latex_inline" alt="$(\mathbf A^t + \mathbf B^t)=\mathbf A^t + \mathbf B^t$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> es invertible, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfd21ef6a477ff53e3cf69e8af8623a89.png" class="latex_inline" alt="$\mathbf A^t$" title="Math" /> es invertible y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7c7bd5459458b586797016e318e69a6f.png" class="latex_inline" alt="${(\mathbf A^t)}^{-1}={(\mathbf A^{-1})}^{t}$" title="Math" /></div>
+</li>
+</ol>
+
+<p>
+Se dice que una matriz es <strong>simétrica</strong> si su transpuesta es igual a la matriz, note que sólo las matrices cuadradas pueden ser también simétricas
+</p>
+
+</div>
+<!-- EDIT15 SECTION "Matriz transpuesta" [10001-10670] -->
+<h3 class="sectionedit16" id="matrices_elementales_y_matrices_inversas">Matrices elementales y matrices inversas</h3>
+<div class="level3">
+
+<p>
+Una operación elemental entre reglones puede representarse a través de una operación de multiplicación entre matrices, la matriz por la cual se multiplica se llama matriz elemental. Adicionalmente una matriz inversa (o las operaciones de eliminación Gauss-Jordan) se puede representar como una multiplicación de matrices elementales, esto quiere decir que si una matriz es invertible se puede representar como una multiplicación de matrices elementales.
+</p>
+<div class="table sectionedit17"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Matriz elemental </th><th class="col1">Efecto de multiplicación </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Multiplicación </td><td class="col1"> Multiplica el reglón <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Suma </td><td class="col1"> Multiplica el reglon <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> y lo suma al reglon <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" /> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Permutación </td><td class="col1"> Permuta los reglones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" /> de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> </td>
+	</tr>
+</table></div>
+<!-- EDIT17 TABLE [11185-11447] -->
+<p>
+La representación simbólica de estas operaciones y las matrices correspondientes se muestran a continuación:
+</p>
+
+</div>
+
+<h4 id="multiplicacion">Multiplicación</h4>
+<div class="level4">
+<div class="table sectionedit18"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Representación </th><th class="col1"> Matriz elemental </th><th class="col2"> Observación </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img556648f82eb4d79ce5a36d608f76b6f6.png" class="latex_inline" alt="$cR_i$" title="Math" /> </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img84e29aa1cb0e359a15a93060c6a7bee8.png" class="latex_inline" alt="$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; c &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}$" title="Math" /> </td><td class="col2"> Siendo i el reglón 2 en este ejemplo </td>
+	</tr>
+</table></div>
+<!-- EDIT18 TABLE [11587-11761] -->
+</div>
+
+<h4 id="suma">Suma</h4>
+<div class="level4">
+<div class="table sectionedit19"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Representación </th><th class="col1"> Matriz elemental </th><th class="col2"> Observación </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0f762e91edf239220ecbd1720bc96974.png" class="latex_inline" alt="$R_j+cR_i$" title="Math" /> </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img60f922159f7b67646c4f3588227007ea.png" class="latex_inline" alt="$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ c &amp; 0 &amp; 1 \end{bmatrix}$" title="Math" /> </td><td class="col2"> Siendo i el reglón 1 y j 3 en este ejemplo </td>
+	</tr>
+</table></div>
+<!-- EDIT19 TABLE [11777-11961] -->
+</div>
+
+<h4 id="permutacion">Permutación</h4>
+<div class="level4">
+<div class="table sectionedit20"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Representación </th><th class="col1"> Matriz elemental </th><th class="col2"> Observación </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgea2306a8d1b4985c89ba5be73a9c95d9.png" class="latex_inline" alt="$P_{ij}$" title="Math" /> </td><td class="col1"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf534186b005518392e2372c814eccb71.png" class="latex_inline" alt="$\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ c &amp; 0 &amp; 1 \end{bmatrix}$" title="Math" /> </td><td class="col2"> Siendo i el reglón 2 y j 3 en este ejemplo </td>
+	</tr>
+</table></div>
+<!-- EDIT20 TABLE [11985-12167] -->
+</div>
+<!-- EDIT16 SECTION "Matrices elementales y matrices inversas" [10671-12168] -->
+<h2 class="sectionedit21" id="factorizacion_de_matrices">Factorización de matrices</h2>
+<div class="level2">
+
+<p>
+<strong> Factorización </strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0c4aa1361ffc24e44b2acd63b615b6a7.png" class="latex_inline" alt="$\mathbf A = \mathbf {LU}$" title="Math" />
+</p>
+
+<p>
+Suponga que una matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> invertible puede reducir por reglones a una matriz triangular superior sin realizar permutaciones. Entonces existen matrices únicas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge81078fb9f2ad9f194a3204e2a8950f4.png" class="latex_inline" alt="$\mathbf L$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30abddbfa131e42edf25371dd28f57e3.png" class="latex_inline" alt="$\mathbf U$" title="Math" /> tales que L es triangular inferior con unos en la diagonal, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30abddbfa131e42edf25371dd28f57e3.png" class="latex_inline" alt="$\mathbf U$" title="Math" /> es una matriz triangular superior invertible y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6596e73f58ac41ff6a301e82feba9bea.png" class="latex_inline" alt="$\mathbf A=\mathbf L \mathbf U$" title="Math" />.
+</p>
+
+<p>
+Para hallar la factorización se puede reducir la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> por reglones (sin dejar unos en la diagonal principal) y la matriz resultante será la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30abddbfa131e42edf25371dd28f57e3.png" class="latex_inline" alt="$\mathbf U$" title="Math" />. De forma similar si se expresan las operaciones elementales sobre reglones como matrices y se multiplican estas matrices se obtiene la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge81078fb9f2ad9f194a3204e2a8950f4.png" class="latex_inline" alt="$\mathbf L$" title="Math" />
+</p>
+
+<p>
+<strong> Factorización </strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc818988324832918a09726cb2aa1a07c.png" class="latex_inline" alt="$\mathbf {PA} = \mathbf{LU}$" title="Math" />
+</p>
+
+<p>
+Sea <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> cualquier matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgec311aa42309e12c35bb41e7b73399ee.png" class="latex_inline" alt="$mxn$" title="Math" />. Entonces existe una matriz de permutación <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfcd2734096871621785a98083242d486.png" class="latex_inline" alt="$\mathbf P$" title="Math" /> tal que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgbfb648b84bcbfd9c19312d06d7001099.png" class="latex_inline" alt="$\mathbf{PA}=\mathbf{LU}$" title="Math" /> donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge81078fb9f2ad9f194a3204e2a8950f4.png" class="latex_inline" alt="$\mathbf L$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30abddbfa131e42edf25371dd28f57e3.png" class="latex_inline" alt="$\mathbf U$" title="Math" /> son como en la factorización <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img973d97ed341a3d6e008033487d946cc2.png" class="latex_inline" alt="$\mathbf {LU}$" title="Math" />, en general <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfcd2734096871621785a98083242d486.png" class="latex_inline" alt="$\mathbf P$" title="Math" />, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30abddbfa131e42edf25371dd28f57e3.png" class="latex_inline" alt="$\mathbf U$" title="Math" /> no son únicas.
+</p>
+
+<p>
+Para hallar esta factorización se procede como en el caso anterior, pero las permutaciones que se requieran hacer para obtener una matriz triangular superior (proceso de reducción por reglones) se expresan en una matriz de permutación <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfcd2734096871621785a98083242d486.png" class="latex_inline" alt="$\mathbf P$" title="Math" /> haciendo uso de matrices elementales
+</p>
+
+</div>
+<!-- EDIT21 SECTION "Factorización de matrices" [12169-13549] -->
+<h2 class="sectionedit22" id="determinantes">Determinantes</h2>
+<div class="level2">
+
+<p>
+Los determinantes son herramientas operativas del álgebra de matrices y lineal que permite simplificar ciertas operaciones que se realizan como el cálculo de la matriz inversa y la determinación del rango de una matriz.
+Las siguientes son definiciones útiles acerca de los determinantes de matrices.
+</p>
+<ul>
+<li class="level1"><div class="li"> El determinante de una matriz cuadrada se expresa como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img37e49fc95c20f83f2e53dfcf2af1d897.png" class="latex_inline" alt="$\det \mathbf A=|\mathbf A|$" title="Math" />, note que aquí las barras no indican valor absoluto</div>
+</li>
+<li class="level1"><div class="li"> Se llama <em><strong>menor </strong></em><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge5a8bc7bac1dd7d337c9e609a4ae3f99.png" class="latex_inline" alt="$ij$" title="Math" /> de una matriz cuadrada <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> representado con <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1560b16fd6675ef66616e6a640216daa.png" class="latex_inline" alt="$M_i_j$" title="Math" /> a la matriz obtenida al eliminar el reglon <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> y la columna <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" /> de la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> El <em><strong>cofactor </strong></em><img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge5a8bc7bac1dd7d337c9e609a4ae3f99.png" class="latex_inline" alt="$ij$" title="Math" /> de una matriz cuadrada denotado por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30b6e237a2b5c91c388abee161736f8f.png" class="latex_inline" alt="$A_i_j$" title="Math" /> esta dado por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga111f2aa754e0e366033effc0b509030.png" class="latex_inline" alt="$A_i_j=(-1)^{i+j}|M_i_j|$" title="Math" /></div>
+</li>
+</ul>
+
+<p>
+Con estas definiciones podemos expresar fácilmente el determinante de cualquier matriz utilizando una expresión conocida como expansión por cofactores, así:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3fe9d9f5044a7b2bcf6af305b174f888.png" class="latex_displayed" alt="$$\det \mathbf A=\sum_{k=1}^n a_1_kA_1_k$$" title="Equation" />
+</p>
+
+<p>
+Esta expansión por cofactores también se puede llevar a cabo tomando cualquier fila o columna de la matriz. Note que esto lleva a que si cualquier fila o columna de la matriz sean su componentes cero, entonces el determinante será cero también.
+</p>
+
+<p>
+Para algunas matrices el cálculo del determinante se puede simplificar, por ejemplo, para las matrices triangulares (superiores o inferiores) el determinante es sólo el producto los componentes de su diagonal principal.
+</p>
+
+</div>
+<!-- EDIT22 SECTION "Determinantes" [13550-14996] -->
+<h3 class="sectionedit23" id="propiedades_de_los_determinantes">Propiedades de los determinantes</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgee91814d82efdb3a74f7e3f79ec7f4c4.png" class="latex_inline" alt="$\det \mathbf {AB}=\det \mathbf A \det \mathbf B$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si una matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> tiene factorización <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img45908c4bd7bd1cdadd7b7c03b4d51335.png" class="latex_inline" alt="$\mathbf{A=LU}$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img22c697bf417c4ee6b3e74600bc2126f5.png" class="latex_inline" alt="$\det \mathbf{A} = \det \mathbf{U}$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si una matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> tiene factorización <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img47498121146f5a9879d9bad48b9df9df.png" class="latex_inline" alt="$\mathbf{PA=LU}$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf9d88c93a2bc11d3f52c26e7fee4177b.png" class="latex_inline" alt="$\det \mathbf{A} = \frac {\det \mathbf{U}}{\det \mathbf P} = \pm \det \mathbf U$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd1a31737c461910e08b89750c5457943.png" class="latex_inline" alt="$\det \mathbf A = \det \mathbf A^t$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si una columna o fila de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> se multiplica por un escalar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> entonces el deteminante de la nueva matriz es <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdc18936517b39982548913d1756ee1d0.png" class="latex_inline" alt="$c| \mathbf A|$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Sea tres matrices <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3a45e17b5826fbcb0fae5a3522b17090.png" class="latex_inline" alt="$\mathbf{A,B,C}$" title="Math" />, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcaf318af296c67d62969dd56fbb8c97c.png" class="latex_inline" alt="$\mathbf B$" title="Math" /> son identicas excepto por una columna <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" />, y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img50e2d0dd6c94377e97df8626a78d6e53.png" class="latex_inline" alt="$\mathbf C$" title="Math" /> es identica a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb3750fb7dca3e55192f506a3d56a2021.png" class="latex_inline" alt="$\mathbf{A,B}$" title="Math" /> excepto que la columna de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img50e2d0dd6c94377e97df8626a78d6e53.png" class="latex_inline" alt="$\mathbf C$" title="Math" /> es la suma de las columnas <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" /> de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb3750fb7dca3e55192f506a3d56a2021.png" class="latex_inline" alt="$\mathbf{A,B}$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img918daed8157e40dd45f6152dbe482cf7.png" class="latex_inline" alt="$\det \mathbf C = \det \mathbf A + \det \mathbf B$" title="Math" />, la misma afirmación es cierta para un reglon <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> El intercambio de dos reglones (o columnas) de una matriz, tiene el efecto de multiplicar su determinante por -1</div>
+</li>
+<li class="level1"><div class="li"> Si una matriz tiene dos reglones (o columnas) iguales entonces su determinante es cero</div>
+</li>
+<li class="level1"><div class="li"> Si una matriz tiene un reglon (o columna) igual a cero entonces su determinante es cero</div>
+</li>
+<li class="level1"><div class="li"> Si una matriz tiene un reglon (o columna) múltiplo escalar de otro entonces su determinante es cero</div>
+</li>
+<li class="level1"><div class="li"> Si una matriz se suma un multiplo escalar de un reglon (o columna) a otro entonces su determinante no cambia</div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img00c3cb4e5fd45b4deee7b7825b1019e3.png" class="latex_inline" alt="$\mathbf E$" title="Math" /> es una matriz elemental que representa la operación de intercambio de dos filas, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge87fc55611ca8ec60914b1322893c673.png" class="latex_inline" alt="$\det \mathbf E=-1$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img00c3cb4e5fd45b4deee7b7825b1019e3.png" class="latex_inline" alt="$\mathbf E$" title="Math" /> es una matriz elemental que representa la operación de suma de una fila con un múltiplo de otra fila, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgea3b8e3ae29a8786537e5a343af3fbe1.png" class="latex_inline" alt="$\det \mathbf E=1$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img00c3cb4e5fd45b4deee7b7825b1019e3.png" class="latex_inline" alt="$\mathbf E$" title="Math" /> es una matriz elemental que representa la operación de multiplicación de una fila por un escalar <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1062c2cb789cb4f60998c0724e47e28d.png" class="latex_inline" alt="$\det \mathbf E=c$" title="Math" /></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT23 SECTION "Propiedades de los determinantes" [14997-16842] -->
+<h3 class="sectionedit24" id="determinantes_y_matrices_inversas">Determinantes y matrices inversas</h3>
+<div class="level3">
+
+<p>
+Una de las propiedades más importantes de los determinantes se relaciona con la invertibilidad de una matriz, así:
+</p>
+
+<p>
+<em>Una matriz es invertible, si su determinante es diferente de cero</em>
+</p>
+
+<p>
+A continuación se explorará un concepto importante denominado adjunta de una matriz. Sea <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> una matriz y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img30b6e237a2b5c91c388abee161736f8f.png" class="latex_inline" alt="$A_i_j$" title="Math" /> el cofactor de la matriz para los relgones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img36b5afebdba34564d884d347484ac0c7.png" class="latex_inline" alt="$j$" title="Math" />; sea <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcaf318af296c67d62969dd56fbb8c97c.png" class="latex_inline" alt="$\mathbf B$" title="Math" /> otra matriz pero esta construida con los cofactores de la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> así:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img63676c0491ee1c8028ecdca06bbc5d45.png" class="latex_displayed" alt="$$\begin{bmatrix} A_1_1 &amp; A_1_2 &amp; \dotsm &amp; A_1_n \\ A_2_1 &amp; A_2_2 &amp; \dotsm &amp; A_2_n \\ \vdots &amp; \vdots &amp; &amp; \vdots \\ A_n_1 &amp; A_n_2 &amp; \dotsm &amp; A_n_n \end{bmatrix}$$" title="Equation" />
+</p>
+
+<p>
+Se denomina matriz adjunta de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> a la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4f5e062a6b594e8e6d6262c76226ba91.png" class="latex_inline" alt="$\mathbf B^t$" title="Math" />, es decir a la matriz de cofactores transpuesta. La adjunta se puede representar simbolicamente así:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc77d9d9fc90e612e38fb4012944899a3.png" class="latex_inline" alt="$adj \mathbf A=\mathbf B^t$" title="Math" />
+</p>
+
+<p>
+La utilidad de la matriz adjunta tiene que ver con los siguiente dos resultados:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img14a59202a2873df5fdf80f1697cd5710.png" class="latex_displayed" alt="$$(\mathbf A)(adj \mathbf A)=(\det \mathbf A)(\mathbf I)$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga7b6e28eb84fee2619792aecaeb4eb58.png" class="latex_displayed" alt="$$\mathbf A^{-1}=\frac{1}{\det \mathbfA}adj \mathbf A$$" title="Equation" />
+</p>
+
+<p>
+Observe que el primer resultado pone en la diagonal principal el valor del determinante y el segundo resultado implica un cálculo para obtener la inversa de una matriz.
+</p>
+
+</div>
+<!-- EDIT24 SECTION "Determinantes y matrices inversas" [16843-18087] -->
+<h2 class="sectionedit25" id="regla_de_cramer">Regla de Cramer</h2>
+<div class="level2">
+
+<p>
+La regla de Cramer es otro método que permite encontrar la solución a un sistema de ecuaciones simultáneas, con <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img55a049b8f161ae7cfeb0197d75aff967.png" class="latex_inline" alt="$n$" title="Math" /> ecuaciones y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img55a049b8f161ae7cfeb0197d75aff967.png" class="latex_inline" alt="$n$" title="Math" /> incógnitas. El método actualmente esta en desuso pero tiene trascendencia historia.
+</p>
+
+<p>
+Sea el sistema de ecuaciones:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img6143e46e96de8cee31b393631c1d24d8.png" class="latex_displayed" alt="$$\mathbf{Ax}=\mathbf b$$" title="Equation" />
+</p>
+
+<p>
+Donde se representara con <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img78ec2b7008296ce0561cf83393cb746d.png" class="latex_inline" alt="$D$" title="Math" /> el determinante de la matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" />. Adicionalmente se tinen <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img55a049b8f161ae7cfeb0197d75aff967.png" class="latex_inline" alt="$n$" title="Math" /> matrices representadas como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgca09a36db30ecd8eaadee656ebac4500.png" class="latex_inline" alt="$\mathbf A_i$" title="Math" /> donde cada matriz es la misma matriz <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1f932ce252dc49d856218165fa7a0b4b.png" class="latex_inline" alt="$\mathbf A$" title="Math" /> pero cambiando la columna <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img77a3b857d53fb44e33b53e4c8b68351a.png" class="latex_inline" alt="$i$" title="Math" /> por el vector <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga4582e31b2eb717ae9477feb8e582b68.png" class="latex_inline" alt="$\mathbf b$" title="Math" />, respectivamente se cuentan con los determinantes de cada una de estas matrices representados como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3bdf20a1d3bb8900a92e3b28088057f1.png" class="latex_inline" alt="$D_i$" title="Math" />, entonces la solución al sistema de ecuaciones es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc81bd20e3e54bd56b2d854f84ff2244b.png" class="latex_displayed" alt="$$x_i=\frac{D_i}{D}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT25 SECTION "Regla de Cramer" [18088-] -->

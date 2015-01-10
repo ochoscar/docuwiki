@@ -1,0 +1,15 @@
+<span class="co1">#import “MiObjeto.h”</span>
+<span class="co1">#import &lt;stdio.h&gt;</span>
+<span class="kw1">@implementation</span> MiClase
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setNumeroEntero<span class="sy0">:</span>  <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> numero <span class="br0">&#123;</span>
+     <span class="co2">// Asignamos a nuestra variable numeroEntero el valor de numero</span>
+     numeroEntero <span class="sy0">=</span> numero;
+<span class="br0">&#125;</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> printNumeroEntero <span class="br0">&#123;</span>
+     <span class="co2">// Mostramos por pantalla el valor de numeroEntero</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span>“Numero entero<span class="sy0">:</span> <span class="sy0">%</span>d”, numeroEntero<span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> getNumeroEntero <span class="br0">&#123;</span>
+     <span class="kw1">return</span> numeroEntero;
+<span class="br0">&#125;</span>
+<span class="kw1">@end</span>

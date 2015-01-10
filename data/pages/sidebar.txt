@@ -1,0 +1,86 @@
+**Matemáticas**
+
+  * [[discretas|Matemáticas discretas]]
+  * [[matematicas:operativas|Matemáticas operativas]]
+  * **Álgebra Lineal**
+    * [[matematicas:vectorial|Geometría vectorial]]
+    * [[matematicas:matrices|Matrices y sistemas de ecuaciones]]
+    * [[matematicas:espacios|Espacios vectoriales]]
+  * **Cálculo**
+     * [[matematicas:diferencial|Límites]]
+     * [[matematicas:derivadas|Derivadas]]
+     * [[matematicas:integral|Integrales]]
+     * [[matematicas:series|Sucesiones y Series]]
+     * [[matematicas:calculovectorial|Vectorial]]
+     * [[matematicas:multiplesvar|Múltiples variables]]
+  * **Métodos numéricos**
+     * [[matematicas:metododerivar|Derivadas]]
+     * [[matematicas:metodointegrar|Integrales]]
+  * **Ecuaciones diferenciales**
+  * [[matematicas:estadistica|Estadística]]
+  * **Geometría**
+     * [[matematicas:geometria|Geometría euclidiana]]
+     * [[matematicas:hiperbolica|Geometría Hiperbólica]]
+     * [[matematicas:reimann|Geometría Reimann]]
+  * [[matematicas:complejo|Análisis complejo]]
+  * [[matematicas:tensores|Tensores]]
+  * [[matematicas:numeros|Teoría de números]]
+
+**Física**
+
+  * [[matematicas:relatividad|Relatividad]]
+  * [[fisica:cuantica|Cuántica]]
+  * [[fisica:electromagnetismo|Electromagnetismo]]
+  * [[fisica:clasica|Clásica]]
+  
+**Electrónica**
+
+  * [[electronica:circuitos|Circuitos]]
+  * [[electronica:micros|Microcontroladores]]
+  * [[electronica:digitales|Digitales]]
+  * [[electronica:semiconductores|Semiconductores]]
+
+**Sistemas**
+
+  * [[sistemas:scrum|Scrum]]
+  * [[sistemas:criptografia|Criptografía]]
+  * [[sistemas:phyton|Phyton]]
+  * [[sistemas:mongo|Mongo]]
+  * [[sistemas:html5|HTML5]]
+  * [[sistemas:css3|CCS3]]
+  * [[sistemas:phonega|Phonegap]]
+  * [[sistemas:android|Android]]
+  * [[sistemas:objetivec|Objective C]]
+  * [[sistemas:cplusplus|C/C++]]
+  * [[sistemas:qt|Qt]]
+  * [[sistemas:uml|UML]]
+
+**Cátedras**
+
+  * [[catedras:algoritmos|Fundamentos de programación]]
+  * [[udearroba:planeacion|Planeación de redes]]
+  * [[udearroba:informaticaii|Informática II]]
+
+
+**Música** 
+
+  * [[musica:conceptos|Conceptos básicos]]
+  * [[musica:partituras|Partituras]]
+
+
+**Process**
+
+  * [[pol:bpms|BPMS]]
+
+
+**QSys**
+
+  * [[qsys:keeper|Keeper]]
+
+**Recetas de cocina**
+
+  * [[cocina:recetas|recetas]]
+
+**Investigación**
+
+  * [[fuerzas:unificacion|Unificación]]

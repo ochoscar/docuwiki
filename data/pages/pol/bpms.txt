@@ -1,0 +1,43 @@
+====== Plataforma BPMS ======
+
+===== Accesos =====
+
+=== Nueva Plataforma ===
+
+Esta sección muestra los accesos que se tienen configurados para la nueva plataforma desarrollada en HTML5
+
+== Acceso local ==
+
+URL: http://localhost/bpms \\ 
+''Usuario: admin \\ 
+Password: homero''
+
+== Despliegue de pruebas ==
+
+URL: http://www.process-on-line.com:8087/bpms \\ 
+''Usuario: admin \\ 
+Password: homero''
+
+=== Clientes y accesos ===
+
+En esta sección se muestran los accesos que se tenia en la plataforma en Flex al producto BPMS
+
+== Instalación en la nube ==
+ 
+URL: http://70.38.11.11/BPMS \\ 
+''Usuario: process@process-on-line.com \\ 
+Password: homero''
+
+== Greendoc == 
+
+URL: http://69.195.252.35/greendoc/ \\ 
+''Usuario: process@process-on-line.com \\ 
+Password: homero''
+
+===== Ambientes de Pruebas =====
+
+===== Planeación =====
+
+El ambiente para ingresar al sistema dotproject de planeación de los diferentes proyectos se ha publciado en la siguiente dirección
+
+URL: http://70.38.11.11:8080/dotproject

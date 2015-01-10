@@ -1,0 +1,785 @@
+
+<h1 class="sectionedit1" id="tangentes_y_razones_de_cambio">Tangentes y razones de cambio</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Tangentes y razones de cambio" [1-45] -->
+<h2 class="sectionedit2" id="tangentes">Tangentes</h2>
+<div class="level2">
+
+<p>
+En una curva se puede trazar una recta secante que corte la curva en dos puntos, así las cosas la pendiente de esta recta esta dada por:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img66226ae5956f87c8656fa95c7fab7574.png" class="latex_displayed" alt="$$m_{PQ}=\frac{f(p)-f(q)}{p-q}$$" title="Equation" />
+</p>
+
+<p>
+En el caso en que el punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdf5a289587a2f0247a5b97c1e8ac58ca.png" class="latex_inline" alt="$P$" title="Math" /> se haga acercar al punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img1afcdb0f704394b16fe85fb40c45ca7a.png" class="latex_inline" alt="$Q$" title="Math" /> de forma que la recta se transforme en tangente (toque la curva en un solo punto) se tendrá el siguiente cálculo de la pendiente de la recta:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7c30bcd49d823639a40e136133c84829.png" class="latex_displayed" alt="$$m=\lim_{x \to a}\frac{f(x)-f(a)}{x-a}$$" title="Equation" />
+</p>
+
+<p>
+Es importante advertir que este limite puede no existir en punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4d74936f278565f42f4bb42d6534712a.png" class="latex_inline" alt="$x=a$" title="Math" /> determinado
+La siguiente gráfica ilustra ambas rectas:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:recta_tangente.png" class="media" title="matematicas:recta_tangente.png"><img src="/docuwiki/lib/exe/fetch.php?w=300&amp;tok=afbd41&amp;media=matematicas:recta_tangente.png" class="media" alt="" width="300" /></a>
+</p>
+
+<p>
+La expresión para calcular la recta anterior se pude reescribir de la siguiente manera:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd21dbbcbffcff283920ac7dd9ef450ee.png" class="latex_displayed" alt="$$\text{Sea }h=x-a \text{ y } x=a+h$$" title="Equation" />
+</p>
+
+<p>
+Entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdd7ae00e68013521e08fd4b4970be7fc.png" class="latex_displayed" alt="$$m=\lim_{h \to 0}\frac{f(a+h)-f(a)}{h}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Tangentes" [46-842] -->
+<h2 class="sectionedit3" id="razones_de_cambio">Razones de cambio</h2>
+<div class="level2">
+
+<p>
+Suponga que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdeceeaf6940a8c7a5a02373728002b0f.png" class="latex_inline" alt="$y$" title="Math" /> es una cantidad que depende de otra <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" />. Por tanto, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0e241c321e18ed6141f9a47d8095bebd.png" class="latex_inline" alt="$y=f(x)$" title="Math" />. Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> cambia de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img277fbbae7d4bc65b6aa601ea481bebcc.png" class="latex_inline" alt="$x_1$" title="Math" /> a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img95d239357c7dfa2e8d1fd21ff6ed5c7b.png" class="latex_inline" alt="$x_2$" title="Math" /> entonces se conoce como incremento a la cantidad representada por:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3801192cb25373597a7ebdcd6e132890.png" class="latex_displayed" alt="$$\Delta x = x_1-x_2$$" title="Equation" />
+</p>
+
+<p>
+Se llama <strong>razón promedio de cambio de y con respecto a x</strong> sobre el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img357c53fb50db20e1dd55f74ed62e558b.png" class="latex_inline" alt="$[x_1,x_2]$" title="Math" /> al cociente de las diferencias:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfbe60b116f6c7435d2ef2a5e270ca89f.png" class="latex_displayed" alt="$$\text{razón promedio de cambio}=\frac{\Delta y}{\Delta x}=\frac{f(x_2)-f(x_1)}{x_2-x_1}$$" title="Equation" />
+</p>
+
+<p>
+Este se puede interpretar como la pendiente de la recta secante a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4dc2cc46a0b93726518c4efa8a7b1820.png" class="latex_inline" alt="$PQ$" title="Math" />
+</p>
+
+<p>
+De forma similar, si se toma el límite de la expresión anterior se obtiene la <strong>razón instantánea de cambio de y respecto a x</strong> así:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgd2e9b1e9e14bd90f196635b3b989b728.png" class="latex_displayed" alt="$$\text{razón instantánea de cambio}=\lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x}=\lim_{x_2 \to x_1}\frac{f(x_2)-f(x_1)}{x_2-x_1}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Razones de cambio" [843-1641] -->
+<h1 class="sectionedit4" id="derivadas">Derivadas</h1>
+<div class="level1">
+
+<p>
+Tal como se vio en las sección anterior sobre el cálculo de pendientes de rectas tangentes, y usando ese resultado se define:
+</p>
+
+<p>
+La derivada de una función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en un punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> y denotada <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdd698b90ed3a39aaed0e6c50ddfd659d.png" class="latex_inline" alt="$f'(a)$" title="Math" /> como:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5a8507b5608813700750cdd9de2a89f1.png" class="latex_displayed" alt="$$f'(a)=\lim_{h \to 0}\frac{f(a+h)-f(a)}{h}$$" title="Equation" />
+</p>
+
+<p>
+Si el límite existe. Alternativamente se puede escribir:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgce59f7105d685573e0aeb9716648c4d1.png" class="latex_displayed" alt="$$f'(a)=\lim_{x \to a}\frac{f(x)-f(a)}{x-a}$$" title="Equation" />
+</p>
+
+<p>
+De esta forma la derivada puede interpretarse de las siguiente formas:
+</p>
+<ol>
+<li class="level1"><div class="li"> La pendiente de la recta tangente de la función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en el punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> La razón instantanea de cambio de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> con respecto a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> cuando <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4d74936f278565f42f4bb42d6534712a.png" class="latex_inline" alt="$x=a$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT4 SECTION "Derivadas" [1642-2246] -->
+<h2 class="sectionedit5" id="derivada_como_una_funcion">Derivada como una función</h2>
+<div class="level2">
+
+<p>
+Si bien es posible calcular la derivada de una función en un punto determinado también se puede calcular en cualquier punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> y de esta forma obtener una nueva función denominada derivada de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />, esta función esta determinada por:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5fab097d5daeaff3af0e040407871506.png" class="latex_displayed" alt="$$f'(x)=\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$$" title="Equation" />
+</p>
+
+<p>
+A continuación se muestra gráficamente una función (rojo) y su correspondiente derivada (azul). Es importante observar que cuando la gráfica de la función tiene pendiente cero, la gráfica de la derivada corta el eje x.
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:pendientes.png" class="media" title="matematicas:pendientes.png"><img src="/docuwiki/lib/exe/fetch.php?w=300&amp;tok=27db87&amp;media=matematicas:pendientes.png" class="media" alt="" width="300" /></a>
+</p>
+
+<p>
+Algunas notaciones alternativas para representar la deriva se muestran a continuación:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img92b3512448f962521910b8ee6c158190.png" class="latex_displayed" alt="$$f'(x)=y'=\frac{dy}{dx}=\frac{df}{dx}=\frac{d}{dx}f(x)=Df(x)=D_Xf(x)=\lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Derivada como una función" [2247-3044] -->
+<h2 class="sectionedit6" id="funciones_derivables_y_no_derivables">Funciones derivables y no derivables</h2>
+<div class="level2">
+
+<p>
+Una función es derivable en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdd698b90ed3a39aaed0e6c50ddfd659d.png" class="latex_inline" alt="$f'(a)$" title="Math" /> existe, también puede ser derivable en un intervalo abierto o cerrado si es derivable en todo numero perteneciente al intervalo.
+</p>
+
+<p>
+<strong> Teorema </strong>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es derivable en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" />, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" />. Note que el reciproco de este teorema es falso, es decir que una función sea continua no implica que esta sea derivable.
+</p>
+
+<p>
+En general una función no es derivable cuando presenta picos, o su recta tangente tiene una pendiente infinita, veamos un caso y para ello trate de calcular la derivada de la función valor absoluto:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf06912d204f6cf8315e7e3e7f2af9936.png" class="latex_displayed" alt="$$f(x)=|x|$$" title="Equation" />
+</p>
+
+<p>
+Cuya gráfica se presenta a continuación:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:absx.png" class="media" title="matematicas:absx.png"><img src="/docuwiki/lib/exe/fetch.php?w=300&amp;tok=e5c8a4&amp;media=matematicas:absx.png" class="media" alt="" width="300" /></a>
+</p>
+
+<p>
+En este caso:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4f7551b25f0e62e0bc2796735039a87f.png" class="latex_displayed" alt="$$f'(x)=1 \text{ si } x&gt;0 \text{ y }f'(x)=-1 \text{ si } x&lt;0 $$" title="Equation" />
+</p>
+
+<p>
+Por lo tanto no se tiene una recta pendiente para esta función en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8436d02a042a1eec745015a5801fc1a0.png" class="latex_inline" alt="$x=0$" title="Math" />
+</p>
+
+<p>
+En resumen un función no es derivable en un punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> si:
+</p>
+<ol>
+<li class="level1"><div class="li"> El límite de la definición de derivada no existe</div>
+</li>
+<li class="level1"><div class="li"> La función no es continua en un punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> La gráfica presenta picos en el punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> La función presenta pendiente vertical en el punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT6 SECTION "Funciones derivables y no derivables" [3045-4172] -->
+<h2 class="sectionedit7" id="derivadas_superiores">Derivadas superiores</h2>
+<div class="level2">
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es una función derivable, entonces su derivada <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06e7cc81ea7c4442d159c33723c273db.png" class="latex_inline" alt="$f'$" title="Math" /> también es una función, y por lo tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06e7cc81ea7c4442d159c33723c273db.png" class="latex_inline" alt="$f'$" title="Math" /> puede tener una derivada que se denota como:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img49a025067cad87626576a5398034a4f9.png" class="latex_displayed" alt="$$(f')'=f''=\frac{d}{dx}\biggl(\frac{dy}{dx}\biggr)=\frac{d^2y}{dx^2}$$" title="Equation" />
+</p>
+
+<p>
+Se llama <strong>segunda derivada</strong> de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />
+</p>
+
+<p>
+De forma similar se puede extender el concepto a terceras derivadas o n-esimas derivadas de una función.
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Derivadas superiores" [4173-4576] -->
+<h2 class="sectionedit8" id="interpretacion_alternativa_de_las_derivadas">Interpretación alternativa de las derivadas</h2>
+<div class="level2">
+
+<p>
+La primera derivada expresa la pendiente de la curva <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> por lo tanto podemos concluir que:
+</p>
+<ol>
+<li class="level1"><div class="li"> Si la primera derivada es cero la funcion <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> tiene pendiente cero</div>
+</li>
+<li class="level1"><div class="li"> Si la primera derivada es positiva en un intervalo, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> es creciente en ese intervalo</div>
+</li>
+<li class="level1"><div class="li"> Si la primera derivada es negativa en un intervalo, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> es decreciente en ese intervalo</div>
+</li>
+</ol>
+
+<p>
+La siguiente gráfica aclara este concepto:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:primeraderivada.gif" class="media" title="matematicas:primeraderivada.gif"><img src="/docuwiki/lib/exe/fetch.php?w=400&amp;tok=b68976&amp;media=matematicas:primeraderivada.gif" class="media" alt="" width="400" /></a>
+</p>
+
+<p>
+Note que en los puntos marcados como a y b la pendiente de la función (primera derivada) es cero.
+</p>
+
+<p>
+La segunda derivada también aporta información importante acerca de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" />
+</p>
+<ol>
+<li class="level1"><div class="li"> Si la segunda derivada es cero existe en ese punto, un <strong>punto de inflexión</strong> para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" />, es decir, un punto donde la concavidad de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> cambia</div>
+</li>
+<li class="level1"><div class="li"> Si la segunda derivada es positiva en un intervalo, la concavidad de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> es hacia arriba en ese intervalo</div>
+</li>
+<li class="level1"><div class="li"> Si la segunda derivada es negativa en un intervalo, la concavidad de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> es hacia abajo en ese intervalo</div>
+</li>
+</ol>
+
+<p>
+La siguiente gráfica aclara este concepto:
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:concavidades.jpg" class="media" title="matematicas:concavidades.jpg"><img src="/docuwiki/lib/exe/fetch.php?w=350&amp;tok=7bdf33&amp;media=matematicas:concavidades.jpg" class="media" alt="" width="350" /></a>
+</p>
+
+<p>
+Note que la segunda derivada indica si la primera derivada es creciente o decreciente.
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Interpretación alternativa de las derivadas" [4577-5811] -->
+<h1 class="sectionedit9" id="reglas_de_derivacion">Reglas de derivación</h1>
+<div class="level1">
+
+<p>
+Dado que el cálculo de derivadas con límites es un poco engorroso se tiene la posibilidad de calcular derivadas con unas sencillas reglas. Los resultados que se resumen a continuación se entregan sin demostración.
+</p>
+
+</div>
+<!-- EDIT9 SECTION "Reglas de derivación" [5812-6067] -->
+<h2 class="sectionedit10" id="derivada_de_una_funcion_constante">Derivada de una función constante</h2>
+<div class="level2">
+
+<p>
+La derivada de esta función es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5748ba9bad732c60505cc6d74b969a4f.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(c\biggr)=0$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Derivada de una función constante" [6068-6183] -->
+<h2 class="sectionedit11" id="derivada_de_la_funcion_potencia">Derivada de la función potencia</h2>
+<div class="level2">
+
+<p>
+Sea la función:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8e170d16d328125851758d202f740cd2.png" class="latex_displayed" alt="$$f(x)=x^n \text{ ; } n\in \mathbb R$$" title="Equation" />
+</p>
+
+<p>
+Su derivada es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgccad1b8908be7ac3367938a1d22d3cd4.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(x^n\biggr)=nx^{n-1}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT11 SECTION "Derivada de la función potencia" [6184-6347] -->
+<h2 class="sectionedit12" id="regla_del_multiplo_constante">Regla del múltiplo constante</h2>
+<div class="level2">
+
+<p>
+Sea la función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> diferenciable y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> una constante que no depende de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> entonces su derivada es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img90d29b588a4b111a227340bb545ccfe7.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(cf(x)\biggr)=c\frac{d}{dx}g(x)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT12 SECTION "Regla del múltiplo constante" [6348-6549] -->
+<h2 class="sectionedit13" id="regla_de_la_suma_y_diferencia">Regla de la suma y diferencia</h2>
+<div class="level2">
+
+<p>
+Sea las funciones <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7997339883ac20f551e7f35efff0a2b9.png" class="latex_inline" alt="$f(x)$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgffcbbb391bc04da2d07f7aef493d3e2a.png" class="latex_inline" alt="$g(x)$" title="Math" /> ambas diferenciable entonces se cumple que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc318588c17892f134b6a84e114caddb3.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(f(x)+g(x)\biggr)=\frac{d}{dx}f(x)+\frac{d}{dx}g(x)$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga012a02e79cfea082b8c773ca7969521.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(f(x)-g(x)\biggr)=\frac{d}{dx}f(x)-\frac{d}{dx}g(x)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT13 SECTION "Regla de la suma y diferencia" [6550-6820] -->
+<h2 class="sectionedit14" id="definicion_del_numero_e">Definición del número e</h2>
+<div class="level2">
+
+<p>
+Para una función exponencial <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgde3d8f7b407c24d0fa99cf58a31e419d.png" class="latex_inline" alt="$f(x)=a^x$" title="Math" /> donde el número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> se conoce como base, existe un número para el cual la pendiente de la función exponencial en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8436d02a042a1eec745015a5801fc1a0.png" class="latex_inline" alt="$x=0$" title="Math" /> es 1. Es decir, una función exponencial donde la pendiente de su recta tangente vale lo mismo que la función, este número se conoce como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8cd34385ed61aca950a6b06d09fb50ac.png" class="latex_inline" alt="$e$" title="Math" /> y se trata de un número irracional.
+</p>
+
+<p>
+<a href="/docuwiki/lib/exe/detail.php?id=matematicas%3Aderivadas&amp;media=matematicas:numeroe.png" class="media" title="matematicas:numeroe.png"><img src="/docuwiki/lib/exe/fetch.php?w=200&amp;tok=8fa842&amp;media=matematicas:numeroe.png" class="media" alt="" width="200" /></a>
+</p>
+
+<p>
+Formalmente el número e se puede definir como el número tal que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgaf7aa9c7ff8a5a5f14b3ba58e02eb765.png" class="latex_displayed" alt="$$\lim_{h \to 0}\frac{e^h-1}{h}=1$$" title="Equation" />
+</p>
+
+<p>
+El valor de este número se aproxima a:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img296d9c0f670c26972b243ced289939b3.png" class="latex_inline" alt="$e \approx 2.71828$" title="Math" />
+</p>
+
+<p>
+Utilizando estos hechos y la definición de derivada se puede expresar el número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8cd34385ed61aca950a6b06d09fb50ac.png" class="latex_inline" alt="$e$" title="Math" /> con los siguientes límites alternativos:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb0e70e49a67d1895ddcaac95050204d3.png" class="latex_displayed" alt="$$e=\lim_{x \to 0}(1+x)^{\frac{1}{x}}=\lim_{n \to \infty}\biggl(1+\frac{1}{n}\biggr)^n$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT14 SECTION "Definición del número e" [6821-7624] -->
+<h2 class="sectionedit15" id="derivada_de_la_funcion_exponencial_natural">Derivada de la función exponencial natural</h2>
+<div class="level2">
+
+<p>
+La derivada de esta función es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img60fb4979654c926658d10f42c2f4eb14.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(e^x\biggr)=e^x$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT15 SECTION "Derivada de la función exponencial natural" [7625-7753] -->
+<h2 class="sectionedit16" id="derivada_de_la_funcion_exponencial">Derivada de la función exponencial</h2>
+<div class="level2">
+
+<p>
+La derivada de esta función en la cual el exponente varia y la base es un número real es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img8ab90dc35a754c9e7cdf1bb99aa51b09.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(a^x\biggr)=a^x\ln a$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT16 SECTION "Derivada de la función exponencial" [7754-7938] -->
+<h2 class="sectionedit17" id="regla_del_producto_y_del_cociente">Regla del producto y del cociente</h2>
+<div class="level2">
+
+<p>
+En general, la derivada del producto no es el producto de las derivadas, similarmente ocurre con la división. A continuación se muestran las fórmulas correctas para calcular estas derivadas.
+En primer lugar se muestra la fórmula para el producto. Si tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> son diferenciables, entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcc5550aa26db5cf869c02cb9ccb4bf37.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl[f(x)g(x)\biggr]=f(x)\frac{d}{dx}\biggl[g(x)\biggr]+g(x)\frac{d}{dx}\biggl[f(x)\biggr]$$" title="Equation" />
+</p>
+
+<p>
+En segundo lugar se muestra la fórmula para el cociente. Si tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> son diferenciables, entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img94e6754e3cde7988f680112c2b3c5862.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl[\frac{f(x)}{g(x)}\biggr]=\frac{g(x)\frac{d}{dx}[f(x)]-f(x)\frac{d}{dx}[g(x)]}{[g(x)]^2}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT17 SECTION "Regla del producto y del cociente" [7939-8621] -->
+<h2 class="sectionedit18" id="derivadas_de_funciones_trigonometricas">Derivadas de funciones trigonométricas</h2>
+<div class="level2">
+
+<p>
+Antes de mostrar las derivadas de las funciones trigonométricas es importante contar con dos resultados en cuando a límites trigonométricos comunes:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga16e16c991f8f97530bd36079c39668d.png" class="latex_displayed" alt="$$\lim_{\theta \to 0}\frac{\sin\theta}{\theta}=1$$" title="Equation" />
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imged3ab15b9d3bc28eadcf17658a196ccf.png" class="latex_displayed" alt="$$\lim_{\theta \to 0}\frac{\cos\theta-1}{\theta}=0$$" title="Equation" />
+</p>
+
+<p>
+Los límites anteriores que se pueden obtener con argumentos geométricos y con ayuda del teorema de la compresión sirven para calcular las siguientes derivadas de funciones trigonométricas.
+</p>
+
+<p>
+<em>Derivada del seno</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgb62d3fe5b8301de6b59a6edb085ef42f.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\sin x\biggr)=\cos x$$" title="Equation" />
+</p>
+
+<p>
+<em>Derivada del coseno</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcf7b19757999cb6f858805b0bea86306.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\cos x\biggr)=-\sin x$$" title="Equation" />
+</p>
+
+<p>
+<em>Derivada de la tangente</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf2d64292bdb6a30c2c8966478cfdaeba.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\tan x\biggr)=\sec^2 x$$" title="Equation" />
+</p>
+
+<p>
+<em> Derivada de la cosecante</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img62272ff3d6ebce7e6fc1e1f1d1b23be3.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\csc x\biggr)=-\csc x \cot x$$" title="Equation" />
+</p>
+
+<p>
+<em>Derivada de la secante</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf69f799fe6b7147842337f31bd307588.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\sec x\biggr)=\sec x \tan x$$" title="Equation" />
+</p>
+
+<p>
+<em>Derivada de la cotangente</em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img941789ce7df660358838417bd2d51bdc.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\cot x\biggr)=-csc^2 x$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT18 SECTION "Derivadas de funciones trigonométricas" [8622-9583] -->
+<h2 class="sectionedit19" id="regla_de_la_cadena">Regla de la cadena</h2>
+<div class="level2">
+
+<p>
+Esta regla permite derivar funciones compuestas que son funciones más complejas que las funciones sencillas anteriormente relacionadas.
+</p>
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3cf4fbd05970446973fc3d9fa3fe3c41.png" class="latex_inline" alt="$g$" title="Math" /> es derivable en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es derivable en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgffcbbb391bc04da2d07f7aef493d3e2a.png" class="latex_inline" alt="$g(x)$" title="Math" />, entonces la función compuesta <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7bac998778b4ce0bd6d661cb145c9a7c.png" class="latex_inline" alt="$F=f \circ g$" title="Math" /> definida por <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img844eafae1569708a3ed50afce177ea72.png" class="latex_inline" alt="$F(x)=f(g(x))$" title="Math" /> es derivable en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgf7fe419d8681ca1be2f53fbd90acf017.png" class="latex_inline" alt="$F'$" title="Math" /> está dada por el producto
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img687ace5896a248e7b41ac2ed41a899be.png" class="latex_displayed" alt="$$F'(x)=f'(g(x)) \cdot g'(x)$$" title="Equation" />
+</p>
+
+<p>
+En la notación de Leibniz, si tanto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img081dc4af533daf8d3160bf89f9c7efeb.png" class="latex_inline" alt="$y=f(u)$" title="Math" /> como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2e1d79effd763d1f6d872f8fad0eee3e.png" class="latex_inline" alt="$u=g(x)$" title="Math" /> son funciones diferenciables entonces:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgef9cdecba79b416923454226644f3826.png" class="latex_displayed" alt="$$\frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT19 SECTION "Regla de la cadena" [9584-10116] -->
+<h3 class="sectionedit20" id="tangentes_a_curvas_parametricas">Tangentes a curvas paramétricas</h3>
+<div class="level3">
+
+<p>
+Si se tienen las ecuaciones de una curva paramétricas de la forma:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgce373ce3db5f8c817cdd0caf88b417d9.png" class="latex_displayed" alt="$$x=f(t) \text{ y } y=g(t)$$" title="Equation" />
+</p>
+
+<p>
+Donde el parámetro <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4f4f4e395762a3af4575de74c019ebb5.png" class="latex_inline" alt="$t$" title="Math" /> varia, se puede calcular la pendiente de esta curva sin necesidad de eliminar el parámetro <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4f4f4e395762a3af4575de74c019ebb5.png" class="latex_inline" alt="$t$" title="Math" /> con la siguiente aplicación de la regla de la cadena.
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3fe0e8d2b9386c5c44bd1eea6873e39a.png" class="latex_displayed" alt="$$\frac{dy}{dx}=\frac{\frac{dy}{dx}}{\frac{dx}{dt}}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT20 SECTION "Tangentes a curvas paramétricas" [10117-10490] -->
+<h3 class="sectionedit21" id="derivacion_implicita">Derivación implícita</h3>
+<div class="level3">
+
+<p>
+Algunas ecuaciones son imposibles de resolver en términos de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdeceeaf6940a8c7a5a02373728002b0f.png" class="latex_inline" alt="$y$" title="Math" />, de forma que se puede hallar la derivada de una ecuación (como la de un circulo) sin necesidad de resolver la ecuación para <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdeceeaf6940a8c7a5a02373728002b0f.png" class="latex_inline" alt="$y$" title="Math" /> derivando ambos lados de la ecuación y utilizando la regla de la cadena, este tipo de solución puede ahorrar mucho trabajo, pero es importante tener en cuenta la regla de la cadena.
+</p>
+
+</div>
+<!-- EDIT21 SECTION "Derivación implícita" [10491-10907] -->
+<h3 class="sectionedit22" id="trayectorias_ortogonales">Trayectorias ortogonales</h3>
+<div class="level3">
+
+<p>
+Dos funciones (o familias de funciones) pueden ser ortogonales si en cada punto de intersección las pendientes de las rectas tangentes en esos puntos son perpendiculares.
+Recuerde que dos rectas son perpendiculares siempre y cuando sus pendientes multiplicadas den -1
+</p>
+
+</div>
+<!-- EDIT22 SECTION "Trayectorias ortogonales" [10908-11213] -->
+<h2 class="sectionedit23" id="derivadas_de_funciones_trigonometricas_inversas">Derivadas de funciones trigonométricas inversas</h2>
+<div class="level2">
+
+<p>
+<em> Derivada de seno inverso </em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img7add705ed1b83a15cb5a2bd2e203cc96.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\sin ^{-1}x\biggr)=\frac{1}{\sqrt{1-x^2}}$$" title="Equation" />
+</p>
+
+<p>
+<em> Derivada de coseno inverso </em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4d44bbb003a8f37888c34d660735e4f5.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\cos ^{-1}x\biggr)=-\frac{1}{{\sqrt{1-x^2}}}$$" title="Equation" />
+</p>
+
+<p>
+<em> Derivada de tangente inversa </em>
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imge8fcf34bb786796f88031a4fe3d7719e.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\tan ^{-1}x\biggr)=\frac{1}{{1+x^2}}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT23 SECTION "Derivadas de funciones trigonométricas inversas" [11214-11572] -->
+<h2 class="sectionedit24" id="derivadas_de_funciones_logaritmicas">Derivadas de funciones logarítmicas</h2>
+<div class="level2">
+
+<p>
+La derivada de la función logaritmo en base <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgc2fb6eb076c29d23587ba2d55b5d3335.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\log_a x\biggr)=\frac{1}{x\ln a}$$" title="Equation" />
+</p>
+
+<p>
+Similarmente la derivada de la función logaritmo natural es:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgff12bdc9c0a4c6a732eb03732118a0e8.png" class="latex_displayed" alt="$$\frac{d}{dx}\biggl(\ln x\biggr)=\frac{1}{x}$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT24 SECTION "Derivadas de funciones logarítmicas" [11573-11844] -->
+<h3 class="sectionedit25" id="derivacion_logaritmica">Derivación logarítmica</h3>
+<div class="level3">
+
+<p>
+En ocasiones se tienen funciones difíciles de derivar por su complejidad operativa, por ejemplo funciones que incluyan muchas raíces y fracciones. Una forma fácil de derivar estas funciones consiste en utilizar el método denominado derivación logarítmica el cual se aplica siguiendo los siguientes tres pasos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Tome el logaritmo natural en ambos miembros de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0e241c321e18ed6141f9a47d8095bebd.png" class="latex_inline" alt="$y=f(x)$" title="Math" /> esto convertira las potencias en multiplicaciones, las divisiones en restas y las multiplicaciones en sumas utilizando leyes de logaritmos.</div>
+</li>
+<li class="level1"><div class="li"> Derive implicitamente respecto a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Despeje en la ecuación resultante <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img15f93b25ba881e5829e8fc647b680fb2.png" class="latex_inline" alt="$y'$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT25 SECTION "Derivación logarítmica" [11845-12483] -->
+<h2 class="sectionedit26" id="aproximaciones_lineales">Aproximaciones lineales</h2>
+<div class="level2">
+
+<p>
+En ocasiones es conveniente trabajar con aproximaciones de funciones en lugar de la función como tal, esto se puede hacer por que la recta tangente en un punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> es muy similar a la función cerca del punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" />. Se conoce como <strong>linealización de</strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> <strong>en</strong> <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> a la ecuación de la recta tangente en ese punto. La linealización de una curva <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> se denota como <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgddcb483302ed36a59286424aa5e0be17.png" class="latex_inline" alt="$L$" title="Math" /> y se puede obtener así:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img38eb87558ef50e43e1040d9268a709a3.png" class="latex_displayed" alt="$$L=f(a)+f'(a)(x-a)$$" title="Equation" />
+</p>
+
+</div>
+<!-- EDIT26 SECTION "Aproximaciones lineales" [12484-12947] -->
+<h1 class="sectionedit27" id="aplicaciones_de_la_derivacion">Aplicaciones de la derivación</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT27 SECTION "Aplicaciones de la derivación" [12948-12993] -->
+<h2 class="sectionedit28" id="maximos_y_minimos">Máximos y mínimos</h2>
+<div class="level2">
+
+<p>
+Una función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un máximo absoluto (o máximo global) en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img61325a34c98f9a991b21026fba602b67.png" class="latex_inline" alt="$f(c) \ge f(x) \forall x \in D$" title="Math" />, donde <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img78ec2b7008296ce0561cf83393cb746d.png" class="latex_inline" alt="$D$" title="Math" /> es el dominio de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />. El número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img01b5d07b6b39ee917e3eb6119953d672.png" class="latex_inline" alt="$f(c)$" title="Math" /> se llama valor máximo de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img78ec2b7008296ce0561cf83393cb746d.png" class="latex_inline" alt="$D$" title="Math" />. De manera análoga, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un mínimo absoluto en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img5ceeee56eaac74a5f7c6fb8a05404ab1.png" class="latex_inline" alt="$f(c) \le f(x) \forall x \in D$" title="Math" />; el número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img01b5d07b6b39ee917e3eb6119953d672.png" class="latex_inline" alt="$f(c)$" title="Math" /> se denomina valor mínimo de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img78ec2b7008296ce0561cf83393cb746d.png" class="latex_inline" alt="$D$" title="Math" />. los valores máximo y mínimo de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> se conocen como valores extremos de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />.
+</p>
+
+<p>
+Una función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> posee un máximo local (o mñaximo relativo) en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img62b475bd69eb4c9d12f5d87e10367fdc.png" class="latex_inline" alt="$f(c) \ge f(x)$" title="Math" /> cuando <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> esta cercano a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> o alternativamente para todo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> en un intervalo abierto que contiene a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" />. De manera analoga, <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un mínimo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imga6a00967eddbf4c0f048fb9ff422c78c.png" class="latex_inline" alt="$f(c) \le f(x)$" title="Math" /> cuando <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img332cc365a4987aacce0ead01b8bdcc0b.png" class="latex_inline" alt="$x$" title="Math" /> esta cerca de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" />.
+</p>
+
+</div>
+<!-- EDIT28 SECTION "Máximos y mínimos" [12994-13748] -->
+<h2 class="sectionedit29" id="teorema_del_valor_extremo">Teorema del valor extremo</h2>
+<div class="level2">
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es continua sobre un intervalo cerrado <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> alcanza un valor máximo absoluto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img01b5d07b6b39ee917e3eb6119953d672.png" class="latex_inline" alt="$f(c)$" title="Math" /> y un valor mínimo absoluto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img986df0641cc560e1987e27241f794429.png" class="latex_inline" alt="$f(d)$" title="Math" /> en algunos números <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img2103f85b8b1477f430fc407cad462224.png" class="latex_inline" alt="$d$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" />
+</p>
+
+</div>
+<!-- EDIT29 SECTION "Teorema del valor extremo" [13749-13973] -->
+<h2 class="sectionedit30" id="teorema_de_fermat">Teorema de Fermat</h2>
+<div class="level2">
+
+<p>
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un máximo o un mínimo locales en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> y si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img62a79739bba3661528ade8086c0ad8e5.png" class="latex_inline" alt="$f'(c)$" title="Math" /> existe, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedaab0204c9a67600b600ff33409b547.png" class="latex_inline" alt="$f'(c)=0$" title="Math" />
+</p>
+
+<p>
+Es importante anotar respecto de este teorema que dice que los máximos o mínimos cumplen una condición y no que en los puntos en los cuales <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedaab0204c9a67600b600ff33409b547.png" class="latex_inline" alt="$f'(c)=0$" title="Math" /> sea necesariamente un máximo o un mínimo; en otras palabras el teorema de Fermat da los puntos en los cuales se podría comenzar a buscar máximos y mínimos.
+</p>
+
+</div>
+<!-- EDIT30 SECTION "Teorema de Fermat" [13974-14412] -->
+<h2 class="sectionedit31" id="numeros_criticos">Números críticos</h2>
+<div class="level2">
+
+<p>
+Un número crítico de una función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> es un número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> en el dominio de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tal que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedaab0204c9a67600b600ff33409b547.png" class="latex_inline" alt="$f'(c)=0$" title="Math" /> o <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img62a79739bba3661528ade8086c0ad8e5.png" class="latex_inline" alt="$f'(c)$" title="Math" /> no existe.
+</p>
+
+<p>
+Con esta definición se podría reescribir el teorema de Fermat de la siguiente manera:
+Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un extremo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" />, entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> es un número crítico de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />
+</p>
+
+</div>
+<!-- EDIT31 SECTION "Números críticos" [14413-14734] -->
+<h2 class="sectionedit32" id="metodo_del_intervalo_cerrado">Método del intervalo cerrado</h2>
+<div class="level2">
+
+<p>
+El siguiente método permite hallar los máximos y mínimos absolutos de una función continua sobre un intervalo cerrado:
+</p>
+
+<p>
+Para hallar los valores máximos y mínimos absolutos de una función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> sobre un intervalo cerraado <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" />:
+</p>
+<ol>
+<li class="level1"><div class="li"> Encuentre los valores de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en los números críticos de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img0cd27d4708cd735f6ea469dc3debed0e.png" class="latex_inline" alt="$(a,b)$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Halle los valores de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> en los puntos extremos del intervalo</div>
+</li>
+<li class="level1"><div class="li"> El más grande de los valores de los pasos anteriores es el valor máximo absoluto, el valor más pequeño es el valor mínimo absoluto.</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT32 SECTION "Método del intervalo cerrado" [14735-15298] -->
+<h2 class="sectionedit33" id="teorema_del_valor_medio">Teorema del valor medio</h2>
+<div class="level2">
+
+<p>
+Si es una función derivable sobre el intervalo <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfe477a2781d275b4481790690fccd15f.png" class="latex_inline" alt="$[a,b]$" title="Math" /> entonces existe un número <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> entre <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> tal que:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgdf20012bf3dd05e2884685221d5fccf9.png" class="latex_displayed" alt="$$f'(c)=\frac{f(b)-f(a)}{b-a}$$" title="Equation" />
+</p>
+
+<p>
+o lo que equivale a:
+</p>
+
+<p>
+<img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img803aa229e449c13f0fb70d3dc535b2a7.png" class="latex_displayed" alt="$$f(b)-f(a)=f'(c)(b-a)$$" title="Equation" />
+</p>
+
+<p>
+En palabras lo que este teorema dice es entre el punto <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" /> se puede trazar una recta cuya pendiente es igual a la pendiente de la recta tangente en algún punto del recorrido que la función <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> realiza de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img44bc9d542a92714cac84e01cbbb7fd61.png" class="latex_inline" alt="$a$" title="Math" /> a <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img4bdc8d9bcfb35e1c9bfb51fc69687dfc.png" class="latex_inline" alt="$b$" title="Math" />.
+</p>
+
+</div>
+<!-- EDIT33 SECTION "Teorema del valor medio" [15299-15754] -->
+<h2 class="sectionedit34" id="prueba_de_la_primera_derivada">Prueba de la primera derivada</h2>
+<div class="level2">
+
+<p>
+Esta prueba permite determinar los máximos y mínimos locales de una función. La prueba afirma lo siguiente:
+Suponga que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> es un número crítico de una función continua <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" />
+</p>
+<ol>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06e7cc81ea7c4442d159c33723c273db.png" class="latex_inline" alt="$f'$" title="Math" /> cambia de positiva a negativa en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un máximo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06e7cc81ea7c4442d159c33723c273db.png" class="latex_inline" alt="$f'$" title="Math" /> cambia de negativa a positiva en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un mínimo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img06e7cc81ea7c4442d159c33723c273db.png" class="latex_inline" alt="$f'$" title="Math" /> no cambia de signo en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> no tiene ni máximos ni mínimos locales en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT34 SECTION "Prueba de la primera derivada" [15755-16261] -->
+<h2 class="sectionedit35" id="prueba_de_la_segunda_derivada">Prueba de la segunda derivada</h2>
+<div class="level2">
+
+<p>
+Esta prueba permite determinar los máximos y mínimos locales de una función. La prueba afirma lo siguiente:
+Suponga que <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgfec324240ef649ee5fdceadeb7c6edcf.png" class="latex_inline" alt="$f''$" title="Math" /> es continua cerca de <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" />
+</p>
+<ol>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedaab0204c9a67600b600ff33409b547.png" class="latex_inline" alt="$f'(c)=0$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img69e32658e603b6e658be5e989aa35b7e.png" class="latex_inline" alt="$f''(c)&gt;0$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un mínimo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /></div>
+</li>
+<li class="level1"><div class="li"> Si <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgedaab0204c9a67600b600ff33409b547.png" class="latex_inline" alt="$f'(c)=0$" title="Math" /> y <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/imgcfd21a9607f3edfb2e03c1f34ff2ae4b.png" class="latex_inline" alt="$f''(c)&lt;0$" title="Math" /> entonces <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img190083ef7a1625fbc75f243cffb9c96d.png" class="latex_inline" alt="$f$" title="Math" /> tiene un máximo local en <img src="/docuwiki/lib/exe/fetch.php?media=wiki:latex:/img3e18a4a28fdee1744e5e3f79d13b9ff6.png" class="latex_inline" alt="$c$" title="Math" /></div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT35 SECTION "Prueba de la segunda derivada" [16262-] -->

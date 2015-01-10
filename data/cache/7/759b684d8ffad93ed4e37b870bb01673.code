@@ -1,0 +1,7 @@
+<span class="re3">$$
+f(n) = 
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">cases</span><span class="sy0">}</span> 
+n/2, <span class="sy0">&amp;</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="sy0">}</span>n<span class="re12">\text</span><span class="sy0">{</span> is even<span class="sy0">}</span> <span class="sy0">\\</span>
+3n+1, <span class="sy0">&amp;</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="sy0">}</span>n<span class="re12">\text</span><span class="sy0">{</span> is odd<span class="sy0">}</span> 
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">cases</span></span>}
+$</span>$

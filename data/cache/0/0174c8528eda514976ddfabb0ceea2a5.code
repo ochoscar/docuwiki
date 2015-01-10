@@ -1,0 +1,5 @@
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">align*</span><span class="sy0">}</span>
+&nbsp;
+ f(x) <span class="sy0">&amp;</span>= (x+a)(x+b) <span class="sy0">\\</span>
+ <span class="sy0">&amp;</span>= x^2 + (a+b)x + ab
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">align*</span></span><span class="sy0">}</span>

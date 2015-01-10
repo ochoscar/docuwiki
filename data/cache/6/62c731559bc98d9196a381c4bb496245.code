@@ -1,0 +1,3 @@
+NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;ALL YOUR BASE ARE BELONG TO US&quot;</span><span class="br0">&#41;</span>;
+NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;x = %d, y = %d&quot;</span>, x, y<span class="br0">&#41;</span>;
+NSLog<span class="br0">&#40;</span><span class="co3">@</span><span class="st0">&quot;%s<span class="es0">\t</span>%s<span class="es0">\t</span>0x%08x&quot;</span>, <span class="st0">&quot;hex&quot;</span>, <span class="st0">&quot;value&quot;</span>, 0x1243<span class="br0">&#41;</span>;

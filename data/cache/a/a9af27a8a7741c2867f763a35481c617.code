@@ -1,0 +1,9 @@
+<span class="co2">// Archivo main.m</span>
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     MiObjeto<span class="sy0">*</span> objeto <span class="sy0">=</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>MiObjeto alloc<span class="br0">&#93;</span> init<span class="br0">&#93;</span>;
+     <span class="kw4">id</span> &lt;MiPrimerProtocolo&gt; esteObjetoPuedeHacerPrint <span class="sy0">=</span> objeto;
+     <span class="co2">// Llamamos al método print de esteObjetoPuedeHacerPrint:</span>
+     <span class="br0">&#91;</span>esteObjetoPuedeHacerPrint print<span class="br0">&#93;</span>;
+     <span class="br0">&#91;</span>release objeto<span class="br0">&#93;</span>
+     <span class="kw1">return</span> <span class="nu0">0</span>;
+<span class="br0">&#125;</span>

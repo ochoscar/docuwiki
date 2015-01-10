@@ -1,0 +1,6 @@
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">figure</span><span class="sy0">}[</span><span class="re2">htb</span><span class="sy0">]</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Ccentering"><span class="kw1">centering</span></a>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cincludegraphics"><span class="kw1">includegraphics</span></a><span class="sy0">[</span><span class="re2">width=0.42\<a href="http://www.golatex.de/wiki/index.php?title=%5Ctextwidth"><span class="kw1">textwidth</span></a></span><span class="sy0">]{</span>./img/MDP1.png<span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Ccaption"><span class="kw1">caption</span></a><span class="sy0">{</span>Gridworld<span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Clabel"><span class="kw1">label</span></a><span class="sy0">{</span>fig:grid_model<span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">figure</span></span><span class="sy0">}</span>

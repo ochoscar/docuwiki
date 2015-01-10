@@ -1,0 +1,16 @@
+<span class="co1">#import &lt;Foundation/NSObject.h&gt;\\ </span>
+Esta es la definición de atributos\\ 
+<span class="kw1">@interface</span> NombreClase <span class="sy0">:</span> <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/"><span class="kw5">NSObject</span></a> <span class="br0">&#123;</span>\\ 
+<span class="kw1">@public</span>\\ 
+     Atributo de tipo entero, también pudo haber sido puntero u otro\\ 
+     <span class="kw4">int</span> numeroEntero;\\ 
+<span class="kw1">@private</span>\\ 
+<span class="kw1">@protected</span>\\ 
+<span class="br0">&#125;</span>\\ 
+Método para asignar un valor al atributo numeroEntero\\ 
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> setNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> numero;\\ 
+Método para mostrar en pantalla el valor de numeroEntero\\ 
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> printNumeroEntero;\\ 
+Método que devuelve el valor del atributo numeroEntero\\ 
+<span class="sy0">-</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> getNumeroEntero;\\ 
+<span class="kw1">@end</span><span class="st0">''</span>

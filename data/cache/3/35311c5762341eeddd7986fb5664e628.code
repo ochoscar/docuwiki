@@ -1,0 +1,21 @@
+<span class="co2">// Dentro de la interface de la clase</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> init;
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> initConNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> entero<span class="sy0">:</span>
+&nbsp;
+<span class="co2">// Dentro de la implemetación de la clase</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjeto<span class="sy0">*</span><span class="br0">&#41;</span> init <span class="br0">&#123;</span>
+     self <span class="sy0">=</span> <span class="br0">&#91;</span>super init<span class="br0">&#93;</span>;
+     <span class="kw1">if</span> <span class="br0">&#40;</span>self<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          numeroEntero <span class="sy0">=</span> <span class="nu0">100</span>;
+     <span class="br0">&#125;</span>
+     <span class="kw1">return</span> self;
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co2">// Otro constructor, donde definimos de forma explícita los valores de numeroEntero</span>
+<span class="sy0">-</span><span class="br0">&#40;</span>MiObjecto<span class="br0">&#41;</span> initConNumeroEntero<span class="sy0">:</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> entero <span class="br0">&#123;</span>
+     self <span class="sy0">=</span> <span class="br0">&#91;</span>super init<span class="br0">&#93;</span>;
+     <span class="kw1">if</span> <span class="br0">&#40;</span>self<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          <span class="br0">&#91;</span>setNumeroEntero<span class="sy0">:</span> entero<span class="br0">&#93;</span>;
+     <span class="br0">&#125;</span>
+     <span class="kw1">return</span> self;
+<span class="br0">&#125;</span>

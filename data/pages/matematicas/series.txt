@@ -1,0 +1,296 @@
+====== Sucesiones ======
+
+Las sucesiones son números consecutivos que se escriben como:
+
+$$a_1,a_2.a_3,...,a_n$$
+
+Alternativamente una sucesión infinita se puede escribir de la siguiente manera: ${a_n}$
+
+Una sucesión ${a_n}$ tiene límite $L$ y se escribe:
+
+$$\lim_{n \to \infty}a_n=L$$
+
+Siempre y cuando podamos hacer los términos $a_n$ se acerquen a $L$ tanto como queramos al hacer $n$ lo suficientemente grande. Si el límite anterior existe se dice que la sucesión converge de lo contrario se dice que la sucesión diverge.
+
+Por lo anterior todas las leyes de los límites son aplicables a las sucesiones, incluyendo el teorema del emparedado y el siguiente teorema que se da sin demostración
+
+===== Teoremas y definiciones =====
+
+==== Crecimiento y decrecimiento ====
+
+Una sucesión ${a_n}$ es creciente si $a_n < a_{n+1}$ para toda $n \ge 1$ \\
+Una sucesión ${a_n}$ es decreciente si $a_n > a_{n+1}$ para toda $n \ge 1$ \\
+Una sucesión es monótona si es creciente o decreciente \\
+
+==== Acotamiento ====
+
+Una sucesión ${a_n}$ esta acotada por arriba si existe un número $M$ tal que $a_n \le M$ para toda $n \ge 1$\\
+Una sucesión ${a_n}$ esta acotada por debajo si existe un número $m$ tal que $a_n \ge m$ para toda $n \ge 1$\\
+Si la sucesión esta acotada por encima y por debajo se dice que la sucesión esta acotada.\\
+
+==== Teoremas ====
+
+Si $\lim_{n \to \infty}|a_n|=0$ entonces $\lim_{n \to \infty}a_n=0$
+
+La sucesión ${r^n}$ es convergente si $-1 < r \le 1$ y divergente para los demás valores de r.
+
+Toda suceción acotada y monótona es convergente
+
+====== Series ======
+
+Una serie se obtiene al sumar los términos de una sucesión y la cual se representa de la siguiente manera
+
+$$\sum_{n=1}^\infty a_n$$
+
+Dada una serie, se denota con $s_n$ a su n-ésima suma parcial:
+
+$$s_n=\sum_{i=1}^n {a_i}=a_1+a_2+a_3+ \dots +a_n$$
+
+Si la sucesión ${s_n}$ es convergente y si esite el $\lim_{n\to\infty}{s_n}=s$ como un número real, entonces la serie $\sum{a_n}$ se llama convergente y el número $s$ se denomina suma de la serie. En otro caso se entiende la serie como divergente.
+
+===== Serie geométrica =====
+
+La serie geométrica esta dada por la siguiente expresión:
+
+$$\sum_{n=1}^{\infty}{ar^{n-a}}$$
+
+Esta serie converge siempre y cuando $|r|<1$, en caso contrario diverge.
+Cuando la serie converge su suma es:
+
+$$\sum_{n=1}^{\infty}{ar^{n-a}}=\frac{a}{1-r}$$
+
+===== Teoremas =====
+
+==== Prueba de la convergencia ====
+
+Si la serie $\sum_{n=1}^{\infty}{a_n}$ es convergente, entonces $\lim_{n\to\infty}{a_n}=0$
+Nota: el inverso de este teorema por lo regular es falso. Hay que diferenciar en este punto del límite de las sumas parciales al límite de los términos, ambos son límites que se le pueden asociar a cualquier serie.
+
+==== Prueba de la divergencia ====
+
+Si $\lim_{n\to\infty}{a_n}$ no existe, o si $\lim_{n\to\infty}{a_n}=0$, entonces la serie $\sum_{n=1}^{\infty}{a_n}$ diverge
+
+==== Convergencia de series ====
+
+Si $\sum{a_n}$ y $\sum{b_n}$ son series convergentes, entonces también lo son las series: $\sum{ca_n}$ (donde $c$ es una constante), $\sum{(a_n+b_n)}$, $\sum{a_n-b_n}$ y
+
+  * $$\sum_{n=1}^{\infty}{ca_n}=c\sum_{n=1}^{\infty}{a_n}$$
+  * $$\sum_{n=1}^{\infty}{(a_n+b_n)}=\sum_{n=1}^{\infty}{a_n}+\sum_{n=1}^{\infty}{b_n}$$
+  * $$\sum_{n=1}^{\infty}{(a_n-b_n)}=\sum_{n=1}^{\infty}{a_n}-\sum_{n=1}^{\infty}{b_n}$$
+
+==== Prueba de la integral ====
+
+Suponga que $f$ es una función continua, positiva y decreciente en $[1,\infty)$ y sea $a_n=f(n)$. Entonces la serie $\sum_{n=1}^\infty a_n$ es convergente si y sólo si la integral impropia $\int_1^\infty f(x)dx$ es convergente. En resumen:
+
+  * Si $\int_1^\infty f(x)dx$ es convergente, entonces $\sum_{n=1}^\infty a_n$ es convergente
+  * Si $\int_1^\infty f(x)dx$ es divergente, entonces $\sum_{n=1}^\infty a_n$ es divergente
+
+Un resultado importante al aplicar la prueba de la integral es el siguiente:
+
+  * Si la serie $p$, $\sum_{n=1}^\infty \frac{1}{n^p}$ es convergente si $p>1$ y diverge cuando $p \le 1$
+
+==== Prueba de la comparación ====
+
+Suponga que $\sum a_n$ y $\sum b_n$ son series con términos positivos.
+
+  * Si $\sum bn$ es convergente y $a_n \le b_n$ para toda $n$, entonces $\sum a_n$ también converge.
+  * Si $\sum bn$ es divergente y $a_n \ge b_n$ para toda $n$, entonces $\sum a_n$ también diverge. 
+
+==== Prueba de comparación de límites ====
+
+Suponga que $\sum a_n$ y $\sum b_n$ son series con términos positivos. Si
+
+$$\lim_{n \to \infty}\frac{a_n}{b_n}=c$$
+
+Donde $c$ es un número finito y $c>0$, entonces ambas series convergen o divergen.
+
+==== Estimado del residuo para la prueba de la integral ====
+
+Suponga que $f(x)=a_k$, donde $f$ es una función decreciente, continua y positiva para $x \ge n$ y $\sum a_n$, converge. Si $R_n=s-s_n$, entonces:
+
+$$\int_{n+1}^{\infty}f(x)dx \le R_n \le \int_{n}^{\infty}f(x)dx$$
+
+De donde se obtiene inmediatamente:
+
+$$s_n+\int_{n+1}^{\infty}f(x)dx \le s \le s_n+\int_{n}^{\infty}f(x)dx$$
+
+==== Prueba de la serie alternante ====
+
+Si la serie alternante
+
+$$\sum_{n=1}^\infty{(-1)^{n-1}b_n}\text{ con }(b_n>0)$$
+
+Satisface:
+
+  * $$b_{n+1} \le b_n$$
+  * $$\lim_{n\to \infty}b_n=0$$
+
+Entonces la serie converge.
+
+==== Teorema de estimación de la serie alternante ====
+
+Si $s=\sum(-1)^{n-1}b_n$ es la suma de una serie alternante que satisface:
+
+  * $$b_{n+1} \le b_n$$
+  * $$\lim_{n\to \infty}b_n=0$$
+
+Entonces:
+
+$$|R_n|=|s-s_n| \le b_n+1$$
+
+==== Convergencia absoluta ====
+
+La serie $\sum a_n$ es absolutamente convergente si la serie de valores absolutos $\sum |a_n|$ converge.
+Si una serie $\sum a_n$ es absolutamente convergente, entonces es convergente
+
+==== Prueba de la razón ====
+
+Si $\lim_{n \to \infty} |\frac{a_{n-1}}{a_n}|=L<1$, entonces la serie $\sum_{n=1}^\infty{a_n}$ es absolutamente convergente y por lo tanto convergente
+
+Si $\lim_{n \to \infty} |\frac{a_{n-1}}{a_n}|=L>1$ o $\lim_{n \to \infty}|\frac{a_{n-1}}{a_n}|=\infty$ entonces la serie $\sum_{n=1}^\infty{a_n}$ es divergente
+
+Si $\lim_{n \to \infty} |\frac{a_{n-1}}{a_n}|=L=1$, entonces la prueba de la razón no es concluyente.
+
+===== Series de potencias =====
+
+La serie de potencias es aquella que viene dada por la forma:
+
+$$\sum_{x=0}^{\infty}c_nx^n=c_0+c_1x+c_2x^2+c_3x^3+\dots$$
+
+Donde $x$ es una variable y las $c_n$ son constantes llamadas **coeficientes** de la serie. Note que una serie corresponde a un polinomio de grado infinito. De forma más general se puede escribir la serie como:
+
+$$\sum_{x=0}^{\infty}c_n(x-a)^n=c_0+c_1(x-a)+c_2(x-a)^2+c_3(x-a)^3+\dots$$
+
+La cual se denomina serie de potencias en $x-a$ o **serie de potencias centrada** en $a$
+
+En general para una serie de potencias $\sum_{x=0}^{\infty}c_n(x-a)^n$ centrada en $a$ sólo existen tres posibilidades:
+
+  - La serie converge sólo cuando $x=a$
+  - La serie converge para toda $x$
+  - Ha un número positivo $R$, tal que la serie converge si $|x-a|<R$ y diverge si $|x-a|>R$
+
+El número $R$ es conocido como **radio de convergencia** de la serie de potencias y dependiendo de alguno de los tres casos anteriores, todos los valores de $x$ para los cuales la serie converge se conocen como **intervalo de convergencia**
+Hay que tener en cuenta que para la mayoría de las series de potencias se puede utilizar la prueba de la razón para obtener un criterio de convergencia y el intervalo de convergencia, sin embargo para los extremos del intervalo esta prueba no es aplicable y debe sustituirse el valor del intervalo en la serie y determinar por algún otro medio la convergencia de la misma en estos puntos.
+
+==== Representación de funciones como series de potencias ====
+
+Las funciones matemáticas pueden representarse usando una serie de potencias, y para ello es importante retomar la serie:
+
+$$\frac{1}{1-x}=1+x+x^2+x^2+x^3+\dots=\sum_{n=0}^{\infty}x^n\text{  }|x|<1$$
+
+De esta forma tambien podemos escribir:
+
+$$f(x)=\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n\text{  }|x|<1$$
+
+Tenga presente que se pueden transformar las funciones usando álgebra básica para representarlas como series de potencias y que no todas las funciones se pueden representar como una serie de potencias.
+
+==== Derivación e integración de las series de potencias ====
+
+La suma de una serie de potencias de una función, permite obtener la derivada y la integral de dicha función derivando termino a termino. Si la serie de potencias $\sum c_n(x-a)^n$ tiene el radio de convergencia $R>0$, entonces la función $f$ definida por
+
+$$f(x) =c_0+c_1(x-a)+c_2(x-a)^2+\dots=\sum_{n=0}^{\infty}c_n(x-a)^n$$
+
+es derivable y como consecuencia continua en el intervalo $(a-R,a+R)$ y
+
+  - $$f'(x) =c_1+2c_2(x-a)+3c_3(x-a)^2+\dots=\sum_{n=1}^{\infty}nc_n(x-a)^{n-1}$$
+  - $$\int{f(x)dx} =C+c_0(x-a)+c_1\frac{(x-a)^2}{2}+c_2\frac{(x-a)^3}{3}+\dots=C+\sum_{n=0}^{\infty}c_n\frac{(x-a)^{n+1}}{n+1}$$
+
+Los radios de convergencia de las series de potencias anteriores son $R$.
+Las ecuaciones anteriores pueden volver a escribirse de la siguiente manera:
+
+  - $$\frac{d}{dx}\left[\sum_{n=0}^{\infty} c_n(x-a)^n \right] = \sum_{n=0}^{\infty} \frac{d}{dx}\left [c_n(x-a)^n\right ]$$
+  - $$\int\left[\sum_{n=0}^{\infty} c_n(x-a)^n \right] = \sum_{n=0}^{\infty} \int\left [c_n(x-a)^n\right ]$$
+
+Estas ecuaciones afirman que la derivada de una suma es la suma de las derivadas y la integral de una suma es la suma de las integrales incluso para sumas infinitas. Debe tenerse mucho cuidado puesto que lo anterior sólo es cierto para sumas de series de potencias y no para otro caso. 
+Los resultados expuestos aquí son muy útiles puesto que permiten expresar una función como una serie incluso para funciones menos usuales a través del uso de sus derivadas y sus integrales conocidas.
+
+===== Series de Taylor y Maclaurin =====
+
+Dado que una función se puede representar como serie de potencias, usando derivadas y teniendo presente que en $x=a$  los terminos que contienen $x$ se anulan se puede escribir los coeficientes de la serie de potencias en terminos de $f$ así:
+
+Si $f$ tiene una representación en series de potencias centradas en $a$, esto es:
+
+$$f(x)=\sum_{n=0}^{\infty}c_n(x-a)^n\text{ cuando } |x-a|<R $$
+
+entonces los coeficinetes de la serie pueden ser expresados por la fórmula:
+
+$$c_n=\frac{f^{(n)}(a)}{n!}$$
+
+La serie resultante tiene dos casos: 
+
+  * Serie de potencias centrada en $0$, conocida como serie de Maclaurin
+
+$$f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n$$
+
+  * Serie de potencias centrada en $a$, conocida como serie de Taylor
+
+$$f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n$$
+
+==== Teoremas y definiciones ====
+
+Las representaciones de las series de Taylor y Maclaurin pueden conincidir con la función y para demostrar ello los siguiente resultados son utiles.
+
+**Definición: Polinomio de Taylor**
+
+Las sumas parciales de la serie de Taylor equivalen a un polinomio de grado $n$ que se puede expresar como:
+
+$$T_n(x)=\sum_{i=0}^{\infty}\frac{f^{(i)}(a)}{i!}(x-a)^i$$
+
+**Definición: Residuo de la serie de Taylor**
+
+Se define el residuo de la serie de Taylor como el polinomio de grado $n$ entre el polinomio de Taylor de grado $n$ Y la función $f$, así:
+
+$$R_n(x)=f(x)-T_n(x)$$
+
+Note que si $\lim_{n \to \infty}R_n(x) = 0$ entonces la serie de Taylor y la función coniciden
+**Teorema:**
+
+Si $f(x)=T_n(x)+R_n(x)$, donde $T_n(x)$ es el polinomio de Taylor y $R_n(x)$ es el residuo de la serie de Taylor de n-esimo grado de $f$ en $a$ y si
+
+$$\lim_{n \to \infty}R_n(x)=0$$
+
+para $|x-a|<R$, entonces $f$ es igual a la suma de su serie de Taylor en el intervalo $|x-a|<R$
+
+**Teorema Desigualdad de Taylor:**
+
+El siguiente resultado es útil para demostrar que el residuo de la serie de Taylor es cero.
+SI $|f^{(n+a)}(x)|\le M$ para $|x-a| \le d$, etonces el residuo $R_n(x)$ de la serie de Taylor satisface la desigualdad:
+
+$$|R_n(x)| \le \frac{M}{(n+1)!}|x-a|^{n+1} \text{ para } |x-a| \le d$$
+
+==== Resultados importantes ====
+
+Algunos de los resultados más importantes que tienen relación con las series de Taylor y Maclaurin de funciones conocidas se recopilan a continuación:
+
+  * $$\lim_{n \to \infty}\frac{x^n}{n!}=0 \text{ para todo número real x}$$
+  * $$\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n$$
+  * $$e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!}$$
+  * $$\sin x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{(2n+1)!}$$
+  * $$\cos x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n}}{(2n)!}$$
+  * $$\arctan x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{2n+1}$$
+
+===== Serie Binomial =====
+
+El teorema del binomio es una forma de factorización muy conocida y que se expresa como:
+
+$$(a+b)^k=a^k+ka^{k-1}b+\frac{k(k-1)}{2!}a^{k-2}b^{2}+\frac{k(k-1)(k-2)}{3!}a^{k-3}b^{3}+\dots+\frac{k(k-1)(k-2)\dots(k-n+1)}{n!}a^{k-n}b^{n}+\dots+kab^{k-1}+b^k$$
+
+La notación tradicional de los coeficientes es la siguiente:
+
+$$\binom{k}{0}=1$$
+
+$$\binom{k}{n}=\frac{k(k-1)(k-2)\dots(k-n+1)}{nª}\text{ con }n=1,2,3, \dots ,k$$
+
+La notación anterior permite escribir el teorema del binomio así:
+
+$$(a+b)^k=\sum_{n=0}^{k}\binom{k}{n}a^{k-n}b^n$$
+
+Considerando el caso particular $a=1$ y $b=x$:
+
+$$(1+x)^k=\sum_{n=0}^{k}\binom{k}{n}x^n$$
+
+Esta fórmula es bien conocida para números $k$ que sean enteros positivos. Utilizando series de potencias y la serie de Maclaurin se puede expresar esta serie para otros casos de $k$ siendo fraccionario o negativo. 
+Si $k$ es un número real y $|x|<1$ entonces se puede expresar la serie binomial como:
+
+$$(1+x)^k=\sum_{n=0}^{\infty}\binom{k}{n}x^n$$
+

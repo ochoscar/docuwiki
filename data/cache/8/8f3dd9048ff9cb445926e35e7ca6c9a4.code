@@ -1,0 +1,19 @@
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">itemize</span><span class="sy0">}</span>
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ <span class="re12">\neg</span> p $</span> (read &quot;not p&quot;)--the negation of p
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\land</span> q $</span> (read &quot;p and q&quot;)--the conjunction of p and q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p<span class="re12">\lor</span> q $</span> (read &quot;p or q&quot;)--the disjunction of p and q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\implies</span> q$</span> (read &quot;p implies q&quot;)--the implication of q from p
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\leftarrow</span> q $</span> (read &quot;p if q&quot;)--the implication of p from q
+<span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> <span class="re3">$ p <span class="re12">\iff</span> q$</span> (read &quot;p if and only if q&quot; or &quot;p is equivalent to q&quot;) 
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">itemize</span><span class="sy0">}</span>
+&nbsp;
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">center</span><span class="sy0">}</span>
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">tabular</span><span class="sy0">}{</span> c | c | c |c | c | c | c  <span class="sy0">}</span>
+p <span class="sy0">&amp;</span> q <span class="sy0">&amp;</span> <span class="re3">$<span class="re12">\neg</span> p$</span> <span class="sy0">&amp;</span> <span class="re3">$ p <span class="re12">\land</span> q$</span> <span class="sy0">&amp;</span><span class="re3">$ p <span class="re12">\lor</span> $</span>q <span class="sy0">&amp;</span> <span class="re3">$ p <span class="re12">\implies</span> q$</span> <span class="sy0">&amp;</span><span class="re3">$ p <span class="re12">\iff</span> q$</span> <span class="sy0">\\</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chline"><span class="kw1">hline</span></a>
+true <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true  <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true <span class="sy0">\\</span>
+true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span>  false <span class="sy0">&amp;</span> false <span class="sy0">\\</span>
+false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span>  true <span class="sy0">&amp;</span> false <span class="sy0">\\</span>
+false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> true <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span> false <span class="sy0">&amp;</span>  true <span class="sy0">&amp;</span> true <span class="sy0">\\</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">tabular</span><span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">center</span></span><span class="sy0">}</span>

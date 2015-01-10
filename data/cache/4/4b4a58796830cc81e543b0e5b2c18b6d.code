@@ -1,0 +1,10 @@
+<span class="re3">$ $</span>
+&nbsp;
+<span class="sy0">\[</span><span class="re2"> \</span><span class="sy0">]</span>
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">equation</span><span class="sy0">}</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">equation</span><span class="sy0">}</span>
+&nbsp;
+<span class="re3">$\<a href="http://www.golatex.de/wiki/index.php?title=%5Cmbox"><span class="kw1">mbox</span></a>{Text}$</span>
+&nbsp;
+<span class="re3">$<span class="re12">\text</span>{Text</span>}$</span>

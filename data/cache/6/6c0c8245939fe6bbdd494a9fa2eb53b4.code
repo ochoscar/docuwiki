@@ -1,0 +1,7 @@
+<span class="sy0">\[</span><span class="re2">
+  f(n) = <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cleft"><span class="kw1">left</span></a><span class="sy0">\{</span><span class="re9"> 
+  <span class="re8">\begin</span><span class="sy0">{</span><span class="re7">array</span><span class="sy0">}{</span>l l<span class="sy0">}</span>
+    n/2 <span class="sy0">&amp;</span> <span class="re12">\quad</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="re3">$n$</span> is even<span class="sy0">}\\</span>
+    -(n+1)/2 <span class="sy0">&amp;</span> <span class="re12">\quad</span> <span class="re12">\text</span><span class="sy0">{</span>if <span class="re3">$n$</span> is odd<span class="sy0">}\\</span>
+  <span class="re8">\end</span><span class="sy0">{</span><span class="re7">array</span></span><span class="sy0">}</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Cright"><span class="kw1">right</span></a>.
+\</span><span class="sy0">]</span>

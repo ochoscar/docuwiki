@@ -1,0 +1,10 @@
+====== Ingreso a la plataforma ====== 
+
+La siguiente es la dirección para accede a keeper en la nube:
+
+URL: http://keeper.qsystems.co/keeper/ \\ 
+''Usuario: administraq\\ Password: adminq2011''
+
+Prueba que se realizo para capturar una firma digitalizada:
+
+URL: http://keeper.qsystems.co:8080/firmadigitalizada/

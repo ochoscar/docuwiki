@@ -1,0 +1,19 @@
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re9"><span class="re7">description</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[First</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The first item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Second</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The second item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a><span class="sy0">[</span><span class="re2">[Third</span><span class="sy0">]]</span> <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Chfill"><span class="kw1">hfill</span></a> <span class="sy0">\\</span>
+  The third etc <span class="re12">\ldots</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">description</span><span class="sy0">}</span>
+&nbsp;
+&nbsp;
+<span class="re8">\begin</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The first item
+  <span class="re8">\begin</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+    <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Nested item 1
+    <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> Nested item 2
+  <span class="re8">\end</span><span class="sy0">{</span><span class="re7">enumerate</span><span class="sy0">}</span>
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The second item
+  <span class="sy0">\</span><a href="http://www.golatex.de/wiki/index.php?title=%5Citem"><span class="kw1">item</span></a> The third etc <span class="re12">\ldots</span>
+<span class="re8">\end</span><span class="sy0">{</span><span class="re7">enumerate</span></span><span class="sy0">}</span>
